@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Markdown</title>
+
+    <style>
+        #html img {
+            max-width: 500px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>RochaGabriel | 10Hs | + 10 - </h1>
+
+    <label>Titulo: </label><input style="width: 500px;" type="text" name="" id="">
+
+    <br>
+    <br>
+
+    <button onclick="converter()">Converter</button>
+
+    <button onclick="visualizar()">Visualizar</button>
+
+
+    <br>
+
+    <div style="display: flex;">
+        <textarea style="width: 500px; height: 500px;" id="markdown">
+# Medic Search
+_Este é um repositório dedicado ao treinamento de Django, e ao desenvolvimento de meus conhecimentos com o Django. Conteúdo aprendido no livro, [Django de A a Z - Crie Aplicações Web Rápidas, Seguras e Escaláveis com Python](https://www.linkedin.com/feed/update/urn:li:activity:7035781323155750912/)_
+
+Aplicação web para consulta de médicos. Ela permitirá que usuários consultem os médicos, podendo filtrá-los por nome, especialidade, estado, cidade e bairro do médico.
+
+![img](https://github.com/RochaGabriell/MedicSearch/blob/main/.github/home.png?raw=true)
+
+</textarea>
+
+        <div style="margin-left: 100px; border: solid; width: 500px; height: 500px;" id="html"></div>
+    </div>
+
+    <form action="" method="get">
+        <label for="materia">Materia: </label>
+        <select name="materia" id="materia">
+            <option value="0" selected disabled>Selecione uma matéria</option>
+            <option value="poo">POO</option>
+            <option value="matematica">Matematica</option>
+        </select>
+
+        <div id="idioma" style="display:none;">
+            <label for="java">Idioma: </label>
+            <select name="java" id="java">
+                <option value="0" selected disabled>Selecione um idioma</option>
+                <option value="java">Java</option>
+            </select>
+        </div>
+    </form>
+
+    <script>
+        // Recebe a lista de valores do Django
+        var djangoLista = 'poo' //{{ lista_django }};
+        // Seleciona o campo de seleção de matéria
+        var materiaSelect = document.getElementById("materia");
+
+        // Adiciona um listener de mudança ao campo de seleção de matéria
+        materiaSelect.addEventListener("change", function () {
+            // Se a opção selecionada estiver presente na lista de valores do Django, mostra o campo de seleção de idioma
+            if (djangoLista.includes(materiaSelect.value)) {
+                document.getElementById("idioma").style.display = "block";
+            }
+            // Caso contrário, oculta o campo de seleção de idioma
+            else {
+                document.getElementById("idioma").style.display = "none";
+            }
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.4.0/showdown.min.js"></script>
+    <script>
+        converter()
+        function converter() {
+            var markdown = document.getElementById("markdown").value;
+            var converter = new showdown.Converter();
+            var html = converter.makeHtml(markdown);
+            document.getElementById("html").innerHTML = html;
+        }
+        function visualizar() {
+            var html = document.getElementById("html").innerHTML;
+            var win = window.open("", "_blank");
+            win.document.write(html);
+        }
+    </script>
+
+</body>
+
+</html>
