@@ -38,7 +38,8 @@ header {
 .navbar {
     background-color: #0e1217;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     width: 100%;
     align-items: center;
     padding: 0.625rem 0.5rem;
@@ -53,21 +54,30 @@ header {
     gap: 0.625rem;
 }
 
+.navbar-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
 .nav-link:hover {
     opacity: 0.7;
     text-decoration: underline;
 }
 
 .navbar-right {
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
     display: flex;
     justify-content: end;
 }
 
 .navbar-bottom {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 4;
 }
 
 .module-box-form {
@@ -368,6 +378,10 @@ footer {
 @media only screen and (max-width: 480px) {
     .heading-style {
         font-size: 22px;
+    }
+
+    .navbar-center {
+        display: none;
     }
     
     .module-box-form::-webkit-scrollbar {

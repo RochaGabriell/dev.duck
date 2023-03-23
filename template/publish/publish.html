@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/assets/static/style.css">
+    <link rel="shortcut icon" href="/assets/img/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <title>Publicar novo conteúdo</title>
 </head>
 
@@ -15,14 +15,17 @@
         <nav class="navbar">
             <div class="navbar-left">
                 <a class="navbar-brand nav-link" href="#/">
-                    <img src="/assets/img/duck.png" alt="Logo" width="30">
-                    <p>Dev.Duck</p>
+                    <img src="/assets/img/favicon_io/android-chrome-192x192.png" alt="Logo" width="30">
                 </a>
 
                 <ul class="navbar-nav">
                     <li><a class="nav-link" href="#/">Relevantes</a></li>
                     <li><a class="nav-link" href="#/recent">Recentes</a></li>
                 </ul>
+            </div>
+
+            <div class="navbar-center nav-link">
+                <p>DEV.DUCK</p>
             </div>
 
             <div class="navbar-right">
@@ -134,25 +137,27 @@
                 <p>Crie uma postagem, atraia alunos de todo o instituto e ganhe notoriedade.</p>
             </div>
 
-            <dir class="footer-area-right">
+            <div class="footer-area-right">
                 <a href="#/new_post">
                     <button>Faça uma Postagem</button>
                 </a>
-            </dir>
+            </div>
         </div>
 
         <span class="separator"></span>
 
         <div class="footer-box-bottom">
             <div class="logo-footer logo-copyright">
-                <img width="60" src="/assets/img/duck.png" alt="duck">
+                <img width="60" src="/assets/img/favicon_io/android-chrome-192x192.png" alt="duck">
             </div>
 
             <div class="link-cont">
+                <a href="" target="_blank" class="nav-link">Contato</a>
                 <a href="https://github.com/RochaGabriell/ProjetoIntegradorI" target="_blank"
                     class="nav-link">GitHub</a>
-                <a href="" target="_blank" class="nav-link">Contato</a>
-                <a href="https://www.ifpi.edu.br/corrente" target="_blank" class="nav-link">Instituição</a>
+                <a href="#" target="_blank" class="nav-link">Guia</a>
+                <a href="#" target="_blank" class="nav-link">Sobre</a>
+                <a href="#" target="_blank" class="nav-link">Termos</a>
             </div>
 
             <div class="copyright-text logo-copyright">
@@ -161,45 +166,10 @@
         </div>
     </footer>
 
-    <script>
-        const selectElement = document.querySelectorAll('#select-subjects');
-        selectElement.forEach(selectElement => {
-            selectElement.addEventListener('change', (event) => {
-                event.target.form.submit();
-            });
-        });
-    </script>
-
+    <script src="/assets/js/search.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.4.0/showdown.min.js"></script>
-    <script>
-        function escrever() {
-            document.getElementById("html").style = "display: none;"
-            document.getElementById("markdown").style = "display: block;"
-        }
-        function visualizar() {
-            document.getElementById("html").style = "display: block;"
-            document.getElementById("markdown").style = "display: none;"
-            var markdown = document.getElementById("markdown").value;
-            var converter = new showdown.Converter();
-            var html = converter.makeHtml(markdown);
-            document.getElementById("html").innerHTML = html;
-        }
-    </script>
-
-    <script>
-        var djangoLista = 'poo'
-        var materiaSelect = document.getElementById("only-subjects");
-
-        materiaSelect.addEventListener("change", function () {
-            if (djangoLista.includes(materiaSelect.value)) {
-                document.getElementById("subjects-language").style.display = "block";
-            }
-            else {
-                document.getElementById("subjects-language").style.display = "none";
-                document.getElementById("subjects-language").value = "0"
-            }
-        });
-    </script>
+    <script src="/assets/js/showdown.js"></script>
+    <script src="/assets/js/select_subject.js"></script>
 </body>
 
 </html>
