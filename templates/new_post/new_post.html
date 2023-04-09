@@ -1,175 +1,60 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Nova Postagem {% endblock %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/assets/img/favicon_io/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <title>Publicar novo conteúdo</title>
-</head>
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/new_post/new_post.css' %}"> {% endblock %}
 
-<body>
-    <header>
-        <nav class="navbar">
-            <div class="navbar-left">
-                <a class="navbar-brand nav-link" href="#/">
-                    <img src="/assets/img/favicon_io/android-chrome-192x192.png" alt="Logo" width="30">
-                </a>
+{% block content %}
+<div class="container">
+    <h1 class="heading-style">Publicar novo conteúdo</h1>
 
-                <ul class="navbar-nav">
-                    <li><a class="nav-link" href="#/">Relevantes</a></li>
-                    <li><a class="nav-link" href="#/recent">Recentes</a></li>
-                </ul>
+    <div class="post-panel">
+        <div class="text-input-wrapper">
+            <input type="text" name="" id="title" class="name-heading-input" placeholder="Título">
+        </div>
+
+        <div class="box-form-post">
+            <div class="box-button-top">
+                <button class="button-transaction" onclick="escrever()">Editar</button>
+                <button class="button-transaction" onclick="visualizar()">Visualizar</button>
             </div>
 
-            <div class="navbar-center nav-link">
-                <p>DEV.DUCK</p>
-            </div>
+            <form action="" method="post" style="display: flex; flex-direction: column;">
+                <textarea name="" id="markdown" cols="40" rows="25" class="post-form"
+                    placeholder="Escreva o conteúdo do seu post aqui..."></textarea>
 
-            <div class="navbar-right">
-                <button class="person-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="img"
-                        class="mdi-duck" viewBox="0 0 24 24" width="16" height="16">
-                        <path
-                            d="M8.5,5A1.5,1.5 0 0,0 7,6.5A1.5,1.5 0 0,0 8.5,8A1.5,1.5 0 0,0 10,6.5A1.5,1.5 0 0,0 8.5,5M10,2A5,5 0 0,1 15,7C15,8.7 14.15,10.2 12.86,11.1C14.44,11.25 16.22,11.61 18,12.5C21,14 22,12 22,12C22,12 21,21 15,21H9C9,21 4,21 4,16C4,13 7,12 6,10C2,10 2,6.5 2,6.5C3,7 4.24,7 5,6.65C5.19,4.05 7.36,2 10,2Z" />
-                    </svg>
-                </button>
-            </div>
+                <div class="post-form" id="html"></div>
 
-            <div class="navbar-bottom">
-                <form action="/subjects" method="get" class="module-box-form">
-                    <div class="form-control">
-                        <select name="materia" id="select-subjects">
-                            <option value="0" selected disabled>Módulo I</option>
-                            <option value="1">Algoritmo e Programação</option>
+                <div class="box-button-bottom">
+                    <div class="button-bottom-left">
+                        <select class="button-transaction select-subjects-bottom" name="" id="only-subjects">
+                            <option value="0" selected disabled>Matéria</option>
+                            <option value="poo">Programação Orientada a Objetos</option>
+                            <option value="estatistica">Estatística</option>
                         </select>
-                    </div>
-                    <div class="form-control">
-                        <select name="materia" id="select-subjects">
-                            <option value="0" selected disabled>Módulo II</option>
-                            <option value="1">Programação para Internet I</option>
-                        </select>
-                    </div>
-                    <div class="form-control">
-                        <select name="materia" id="select-subjects">
-                            <option value="0" selected disabled>Módulo III</option>
-                            <option value="1">Algoritmo e Programação</option>
-                        </select>
-                    </div>
-                    <div class="form-control">
-                        <select name="materia" id="select-subjects">
-                            <option value="0" selected disabled>Módulo IV</option>
-                            <option value="1">Análise e Projeto de Sistemas</option>
-                        </select>
-                    </div>
-                    <div class="form-control">
-                        <select name="materia" id="select-subjects">
-                            <option value="0" selected disabled>Módulo V</option>
-                            <option value="1">Programação para Dispositivos Móveis</option>
-                        </select>
-                    </div>
-                    <div class="form-control">
-                        <select name="materia" id="select-subjects">
-                            <option value="0" selected disabled>Módulo VI</option>
-                            <option value="1">Segurança da Informação</option>
-                        </select>
-                    </div>
-                </form>
-            </div>
-        </nav>
-    </header>
 
-    <main>
-        <div class="container">
-            <h1 class="heading-style">Publicar novo conteúdo</h1>
+                        <select class="button-transaction select-subjects-bottom" name="" id="subjects-language"
+                            style="display: none;">
+                            <option value="0" selected disabled>Linguagem</option>
+                            <option value="java">Java</option>
+                            <option value="pyton">Python</option>
+                        </select>
+                    </div>
 
-            <div class="post-panel">
-                <div class="text-input-wrapper">
-                    <input type="text" name="" id="title" class="name-heading-input" placeholder="Título">
+                    <div class="button-bottom-right">
+                        <input class="button-transaction button-reset" type="reset" value="Limpar">
+                        <input class="button-transaction button-submit" type="submit" value="Postar">
+                    </div>
                 </div>
-
-                <div class="box-form-post">
-                    <div class="box-button-top">
-                        <button class="button-transaction" onclick="escrever()">Editar</button>
-                        <button class="button-transaction" onclick="visualizar()">Visualizar</button>
-                    </div>
-
-                    <form action="" method="post" style="display: flex; flex-direction: column;">
-                        <textarea name="" id="markdown" cols="40" rows="25" class="post-form"
-                            placeholder="Escreva o conteúdo do seu post aqui..."></textarea>
-
-                        <div class="post-form" id="html"></div>
-
-                        <div class="box-button-bottom">
-                            <div class="button-bottom-left">
-                                <select class="button-transaction select-subjects-bottom" name="" id="only-subjects">
-                                    <option value="0" selected disabled>Matéria</option>
-                                    <option value="poo">Programação Orientada a Objetos</option>
-                                    <option value="estatistica">Estatística</option>
-                                </select>
-
-                                <select class="button-transaction select-subjects-bottom" name="" id="subjects-language"
-                                    style="display: none;">
-                                    <option value="0" selected disabled>Linguagem</option>
-                                    <option value="java">Java</option>
-                                    <option value="pyton">Python</option>
-                                </select>
-                            </div>
-
-                            <div class="button-bottom-right">
-                                <input class="button-transaction button-reset" type="reset" value="Limpar">
-                                <input class="button-transaction button-submit" type="submit" value="Postar">
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+            </form>
         </div>
+    </div>
+</div>
+{% endblock %}
 
-    </main>
-
-    <footer>
-        <div class="footer-box-top">
-            <div class="footer-area-left">
-                <h1>Compartilhe seus conhecimento e aprendizados</h1>
-                <p>Crie uma postagem, atraia alunos de todo o instituto e ganhe notoriedade.</p>
-            </div>
-
-            <div class="footer-area-right">
-                <a href="#/new_post">
-                    <button>Faça uma Postagem</button>
-                </a>
-            </div>
-        </div>
-
-        <span class="separator"></span>
-
-        <div class="footer-box-bottom">
-            <div class="logo-footer logo-copyright">
-                <img width="60" src="/assets/img/favicon_io/android-chrome-192x192.png" alt="duck">
-            </div>
-
-            <div class="link-cont">
-                <a href="" target="_blank" class="nav-link">Contato</a>
-                <a href="https://github.com/RochaGabriell/ProjetoIntegradorI" target="_blank"
-                    class="nav-link">GitHub</a>
-                <a href="#" target="_blank" class="nav-link">Guia</a>
-                <a href="#" target="_blank" class="nav-link">Sobre</a>
-                <a href="#" target="_blank" class="nav-link">Termos</a>
-            </div>
-
-            <div class="copyright-text logo-copyright">
-                <p>&copy; 2023 Dev.Duck, Inc.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="/assets/js/search.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.4.0/showdown.min.js"></script>
-    <script src="/assets/js/showdown.js"></script>
-    <script src="/assets/js/select_subject.js"></script>
-</body>
-
-</html>
+{% block scripts %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.4.0/showdown.min.js"></script>
+<script src="{% static 'js/showdown.js' %}"></script>
+<script src="{% static 'js/select_subject.js' %}"></script>
+{% endblock %}

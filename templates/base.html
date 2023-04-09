@@ -9,24 +9,26 @@
     <link rel="shortcut icon" href="{% static 'img/favicon_io/favicon.ico' %}" type="image/x-icon">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     {% block style %} {% endblock %}
-    <title>Dev.Duck: {% block title %} {% endblock %}</title>
+    <title>{% block title %} {% endblock %}</title>
 </head>
 
 <body>
     <header>
         <nav class="navbar">
             <div class="navbar-left">
+                <!--
                 <a class="navbar-brand nav-link" href="{% url 'home' %}">
                     <img src="{% static 'img/favicon_io/android-chrome-192x192.png' %}" alt="Logo" width="30">
                 </a>
+                -->
 
                 <ul class="navbar-nav">
-                    <li><a class="nav-link" href="#/">Relevantes</a></li>
-                    <li><a class="nav-link" href="#/recent">Recentes</a></li>
+                    <li><a class="nav-link" href="{% url 'home' %}">Relevantes</a></li>
+                    <li><a class="nav-link" href="{% url 'home' %}">Recentes</a></li>
                 </ul>
             </div>
 
-            <div class="navbar-center nav-link">
+            <div class="navbar-center title">
                 <p>DEV.DUCK</p>
             </div>
 
@@ -95,7 +97,7 @@
             </div>
 
             <div class="footer-area-right">
-                <a href="#/new_post">
+                <a href="{% url 'new_post' %}">
                     <button>Faça uma Postagem</button>
                 </a>
             </div>
