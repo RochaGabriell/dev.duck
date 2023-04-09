@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/assets/img/favicon_io/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="shortcut icon" href="{% static 'img/favicon_io/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     {% block style %} {% endblock %}
     <title>Dev.Duck: {% block title %} {% endblock %}</title>
 </head>
@@ -16,8 +16,8 @@
     <header>
         <nav class="navbar">
             <div class="navbar-left">
-                <a class="navbar-brand nav-link" href="#/">
-                    <img src="/assets/img/favicon_io/android-chrome-192x192.png" alt="Logo" width="30">
+                <a class="navbar-brand nav-link" href="{% url 'home' %}">
+                    <img src="{% static 'img/favicon_io/android-chrome-192x192.png' %}" alt="Logo" width="30">
                 </a>
 
                 <ul class="navbar-nav">
@@ -105,16 +105,16 @@
 
         <div class="footer-box-bottom">
             <div class="logo-footer logo-copyright">
-                <img width="60" src="/assets/img/favicon_io/android-chrome-192x192.png" alt="duck">
+                <img width="60" src="{% static 'img/favicon_io/android-chrome-192x192.png' %}" alt="duck">
             </div>
 
             <div class="link-cont">
-                <a href="" target="_blank" class="nav-link">Contato</a>
+                <a href="{% url 'contact' %}" class="nav-link">Contato</a>
                 <a href="https://github.com/RochaGabriell/ProjetoIntegradorI" target="_blank"
                     class="nav-link">GitHub</a>
-                <a href="#" target="_blank" class="nav-link">Guia</a>
-                <a href="#" target="_blank" class="nav-link">Sobre</a>
-                <a href="#" target="_blank" class="nav-link">Termos</a>
+                <a href="{% url 'editor-guide' %}" class="nav-link">Guia</a>
+                <a href="{% url 'about' %}" class="nav-link">Sobre</a>
+                <a href="{% url 'terms' %}" class="nav-link">Termos</a>
             </div>
 
             <div class="copyright-text logo-copyright">
@@ -123,6 +123,7 @@
         </div>
     </footer>
 
+    <script src="{% static 'js/search.js' %}"></script>
     {% block scripts %} {% endblock %}
 </body>
 

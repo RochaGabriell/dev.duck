@@ -2,8 +2,8 @@
     // workbench
     "workbench.editor.enablePreview": false,
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Omni",
-    "liveServer.settings.port": 5500,
+    "workbench.colorTheme": "SynthWave '84",
+    "liveServer.settings.port": 5501,
     // editor
     "python.formatting.provider": "yapf",
     "editor.formatOnSave": true,
@@ -15,5 +15,5 @@
             "when": "$(basename).py"
         },
         "**/__pycache__": true
-    } 
+    }
 }
