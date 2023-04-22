@@ -1,40 +1,27 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends 'base.html' %}
+{% load static %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/auth.css">
-    <link rel="shortcut icon" href="/assets/img/favicon_io/favicon.ico" type="image/x-icon">
-    <title>login Screen</title>
-</head>
+{% block style %}{% endblock %}
 
-<body>
-    <main>
-        <div class="left_login">
-            <h1>Faça login! <br> Venha fazer parte da Duck House</h1>
-            <img src="/assets/img/favicon_io/android-chrome-512x512.png" alt="duck">
+{% block title %} {{ title }} {% endblock %}
+
+{% block content %}
+
+<div class="right_login">
+    <form method="post">
+        {% csrf_token %}
+        <h1>{{ title }}</h1>
+        {% for input in form %}
+        <div class="loginfield">
+            {{ input.label }}
+            {{ input }}
+            {% for error in input.errors %}
+            <p>{{ error }}</p>
+            {% endfor %}
         </div>
-
-
-        <div class="right_login">
-            <form action="#">
-                <h1>LOGIN</h1>
-                <div class="loginfield">
-                    <label for="user">Usuário</label>
-                    <input type="text" name="user" id="user" placeholder="Usuário">
-                </div>
-
-                <div class="loginfield">
-                    <label for="password">Senha</label>
-                    <input type="password" name="password" id="password" placeholder="Senha">
-                </div>
-
-                <button type="submit">LOGIN</button>
-            </form>
-        </div>
-    </main>
-</body>
-
-</html>
+        {% endfor %}
+        <button type="submit">LOGIN</button>
+    </form>
+    <a href="{% url button_link %}"><button>{{ button }}</button></a>
+</div>
+{% endblock %}

@@ -8,12 +8,11 @@ class UserCreationForm(UserCreationForm):
 
     class Meta:
         model = User
-        fields = ["matriculation", "username", "email", "password"]
+        fields = ["matriculation", "username", "email"]
         widgets = {
             "matriculation": forms.TextInput(attrs={"class": "form-control"}),
             "username": forms.TextInput(attrs={"class": "form-control"}),
             "email": forms.EmailInput(attrs={"class": "form-control"}),
-            "password": forms.PasswordInput(attrs={"class": "form-control"}),
         }
 
 
@@ -21,23 +20,11 @@ class UserChangeForm(UserChangeForm):
 
     class Meta:
         model = User
-        fields = ["matriculation", "username", "email", "password"]
+        fields = ["matriculation", "username", "email"]
         widgets = {
             "matriculation": forms.TextInput(attrs={"class": "form-control"}),
             "username": forms.TextInput(attrs={"class": "form-control"}),
             "email": forms.EmailInput(attrs={"class": "form-control"}),
-            "password": forms.PasswordInput(attrs={"class": "form-control"}),
-        }
-
-
-class LoginUser(ModelForm):
-
-    class Meta:
-        model = User
-        fields = ["username", "password"]
-        widgets = {
-            "username": forms.TextInput(attrs={"class": "form-control"}),
-            "password": forms.PasswordInput(attrs={"class": "form-control"}),
         }
 
 
