@@ -9,7 +9,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     matriculation = models.CharField(
         _("matrícula"),
         max_length=150,
-        null=True,
+        null=False,
         blank=False,
         unique=True,
         error_messages={'unique': _("Já existe um usuário com essa matrícula.")},
@@ -17,14 +17,16 @@ class User(AbstractBaseUser, PermissionsMixin):
     username = models.CharField(
         _("nome de usuário"),
         max_length=150,
-        unique=True,
+        null=False,
         blank=False,
+        unique=True,
         error_messages={'unique': _("Já existe um usuário com esse nome.")},
     )
     email = models.EmailField(
         _("endereço de email"),
-        unique=True,
+        null=False,
         blank=False,
+        unique=True,
         error_messages={'unique': _("Já existe um usuário com esse email.")},
     )
     is_staff = models.BooleanField(_("Equipe"), default=False)
