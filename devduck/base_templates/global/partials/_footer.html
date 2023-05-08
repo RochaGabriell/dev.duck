@@ -1,0 +1,36 @@
+{% load static%}
+<footer>
+    <div class="footer-box-top">
+        <div class="footer-area-left">
+            <h1>Compartilhe seus conhecimento e aprendizados</h1>
+            <p>Crie uma postagem, atraia alunos de todo o instituto e ganhe notoriedade.</p>
+        </div>
+
+        <div class="footer-area-right">
+            <a href="{% url 'blog:new_post' %}">
+                <button>Faça uma Postagem</button>
+            </a>
+        </div>
+    </div>
+
+    <span class="separator"></span>
+
+    <div class="footer-box-bottom">
+        <div class="logo-footer logo-copyright">
+            <img width="60" src="{% static 'global/img/android-chrome-192x192.png' %}" alt="duck">
+        </div>
+
+        <div class="link-cont">
+            <a href="{% url 'docs:contact' %}" class="nav-link">Contato</a>
+            <a href="https://github.com/RochaGabriell/ProjetoIntegradorI" target="_blank"
+                class="nav-link">GitHub</a>
+            <a href="{% url 'docs:editor_guide' %}" class="nav-link">Guia</a>
+            <a href="{% url 'docs:about' %}" class="nav-link">Sobre</a>
+            <a href="{% url 'docs:terms' %}" class="nav-link">Termos</a>
+        </div>
+
+        <div class="copyright-text logo-copyright">
+            <p>&copy; 2023 Dev.Duck, Inc.</p>
+        </div>
+    </div>
+</footer>

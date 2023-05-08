@@ -1,0 +1,27 @@
+{% extends 'global/base.html' %}
+{% load static %}
+
+{% block style %}{% endblock %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block content %}
+
+<div class="right_login">
+    <form method="post">
+        {% csrf_token %}
+        <h1>{{ title }}</h1>
+        {% for input in form %}
+        <div class="loginfield">
+            {{ input.label }}
+            {{ input }}
+            {% for error in input.errors %}
+            <p>{{ error }}</p>
+            {% endfor %}
+        </div>
+        {% endfor %}
+        <button type="submit">{{ title }}</button>
+    </form>
+    <a href="{% url button_link %}"><button>{{ button }}</button></a>
+</div>
+{% endblock %}

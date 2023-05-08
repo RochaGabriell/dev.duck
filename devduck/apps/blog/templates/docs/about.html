@@ -1,0 +1,26 @@
+{% extends 'global/base.html' %}
+{% load static %}
+
+{% block title %} Sobre {% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'global/css/docs/docs.css' %}"> {% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <h1 class="title">Sobre Dev.Duck</h1>
+    <p>
+        Trata-se do desenvolvimento de um sistema web, com o objetivo de criar uma plataforma simples onde qualquer estudante pode publicar, também permite ao escritor compartilhar seus conhecimentos ou experiências sobre determinada matéria dentro de sua grade curricular.
+    </p>
+    <p>
+        É um software de código aberto projetado para ajudar a comunidades acadêmicos do IFPI - Campus Corrente. Como nosso site é de código aberto, você pode inspecionar cada pequeno detalhe do código e inserir você mesmo uma nova funcionalidade!
+    </p>
+    
+    <h2 class="subtitle">Equipe</h2>
+    <p>
+        Projeto dos alunos do M-III 2023.1, <a href="https://github.com/RochaGabriell" target="_blank" class="links">Gabriel Rocha</a> e <a href="https://github.com/LivramentoAmaral" target="_blank" class="links">Marcos Amaral</a> sob orientação do Prof. Eutino Júnior Vieira Sirqueira.    
+    </p>
+</div>
+
+{% endblock %}

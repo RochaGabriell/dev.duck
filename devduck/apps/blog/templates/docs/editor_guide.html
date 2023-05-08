@@ -1,0 +1,117 @@
+{% extends 'global/base.html' %}
+{% load static %}
+
+{% block title %} Guia Markdown {% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'global/css/docs/docs.css' %}">
+<link rel="stylesheet" href="{% static 'global/css/docs/editor_guide.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <h1 class="title">Guia básico de Markdown</h1>
+    <p>
+        Markdown é uma linguagem de marcação popular e intuitiva que permite a formatação fácil de textos para a web.
+        Com ela, é possível criar diversos elementos como títulos, listas, links, imagens e muito mais.
+    </p>
+    <p>Confira abaixo um guia com todas as funcionalidades do Markdown disponíveis na plataforma.</p>
+
+
+    <h2 class="subtitle">Títulos</h2>
+    <p>Para criar títulos, adicione um ou mais sinais de hashtag (#) antes do texto do título. Quanto mais hashtags,
+        menor o título.</p>
+    <p>Exemplo:</p>
+    <code>
+        <pre>
+# Título de nível 1
+## Título de nível 2
+### Título de nível 3</pre>
+    </code>
+
+
+    <h2 class="subtitle">Texto em negrito e itálico</h2>
+    <p>Para deixar o texto em negrito, envolva-o com dois asteriscos (**). Para deixar o texto em itálico, envolva-o
+        com um asterisco (*).</p>
+    <p>Exemplo:</p>
+    <code>
+        <pre>
+**texto em negrito**
+*texto em itálico*</pre>
+    </code>
+
+
+    <h2 class="subtitle">Listas</h2>
+    <p>Para criar uma lista não ordenada, use um asterisco (*) ou um sinal de menos (-) antes de cada item. Para criar
+        uma lista ordenada, use um número seguido de um ponto (.).</p>
+    <p>Exemplo:</p>
+    <code>
+        <pre>
+* Item 1
+* Item 2
+    * Item 2a
+    * Item 2b
+1. Item 1
+2. Item 2</pre>
+    </code>
+
+
+    <h2 class="subtitle">Links</h2>
+    <p>Para criar um link, coloque o texto do link entre colchetes [] e a URL entre parênteses ().</p>
+    <p>Exemplo:</p>
+    <code>
+        <pre>
+[Google](https://www.google.com/)</pre>
+    </code>
+
+
+    <h2 class="subtitle">Imagens</h2>
+    <p>Para inserir uma imagem, use a mesma sintaxe de um link, mas adicione um ponto de exclamação (!) antes dos
+        colchetes.</p>
+    <p>Exemplo:</p>
+    <code>
+        <pre>
+![Pato fofo](https://www.example.com/pato.jpg)</pre>
+    </code>
+
+
+    <h2 class="subtitle">Parágrafos</h2>
+    <p>Para criar um novo parágrafo, basta deixar uma linha em branco entre eles.</p>
+    <p>Exemplo:</p>
+    <code>
+        <pre>
+Este é um parágrafo.
+
+Este é outro parágrafo.</pre>
+    </code>
+
+
+    <h2 class="subtitle">Quebras de linha</h2>
+    <p>Para criar uma quebra de linha sem criar um novo parágrafo, use dois espaços no final da linha.</p>
+    <p>Exemplo:</p>
+    <code>
+        <pre>
+Esta linha  
+será quebrada em duas.</pre>
+    </code>
+
+    <h2 class="subtitle">Código</h2>
+    <p>Para formatar um trecho de código, envolva-o com um acento grave (`). Para formatar um bloco de código,
+        envolva-o com três acentos graves (```).</p>
+    <p>Exemplo:</p>
+    <code>
+        <pre>
+```    
+public class Simples {
+    public static void main(String[] args) {
+            System.out.print(“Gabriel”);
+            System.out.print(“Silva Moraes”); 
+    }
+}
+```</pre>
+    </code>
+
+</div>
+
+{% endblock %}
