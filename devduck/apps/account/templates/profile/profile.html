@@ -1,0 +1,26 @@
+{% extends 'global/base.html' %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'global/css/profile/profile.css' %}"> {% endblock %}
+
+{% block title %} DevDuck - {{ user }}{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="name-profile">
+        <h1>{{ data_user.user }}</h1>
+        {% if data_user.post != Null %}
+        {% for post in data_user.post %}
+        <p>{{ post.title }}</p>
+        <p>{{ post.content }}</p>
+        <p>{{ post.id_prog_language }}</p>
+        <p>{{ post.created_at }}</p>
+        {% endfor %}
+        {% endif %}
+
+    </div>
+</div>
+
+{% endblock %}

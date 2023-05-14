@@ -24,6 +24,7 @@ urlpatterns = [
     path('', include('devduck.apps.blog.urls.HomeUrls')),
     path('docs/', include('devduck.apps.blog.urls')),
     path('accounts/', include('devduck.apps.account.urls.AuthUrls')),
+    path('request_permission', include('devduck.apps.core.urls.PermissionUrls'))
 ]
 
-# urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

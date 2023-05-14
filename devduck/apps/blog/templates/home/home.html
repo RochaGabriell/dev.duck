@@ -10,160 +10,35 @@
 {% block content %}
 <div class="container">
     <div class="news">
-        <div class="order-news">1.</div>
+        <div class="order-news">1°</div>
         <article class="content-news">
             <div class="news-header">
                 <div class="author-news">
-                    <a href="">Author (autor)</a>
+                    <a href="">RochaGabriell</a>
                 </div>
                 <div class="divider-content"></div>
                 <div class="title-news">
-                    <a href="">Article (artigo)</a>
+                    <a href="">O que é DevDuck?</a>
                 </div>
             </div>
             <div class="rating-news">
-                <div class="rating">Rating (avaliação)</div>
+                <div class="rating">Likes: 13 - Deslike: 3</div>
                 <!--
                 <div class="comments">comments (comentários)</div>
                 -->
             </div>
             <div class="about-news">
-                <div class="date-news">Date (data)</div>
+                <div class="date-news">May 13 (1H)</div>
                 <div class="divider-content dc-botton"></div>
                 <div class="tags-news">
-                    <a href="/subjects" class="subjects">POO</a>
-                    <a href="/subjects" class="languagem-prog-news">PHP</a>
+                    <a href="/subjects" class="subjects">Projeto Integrador I</a>
+                    <a href="/subjects" class="languagem-prog-news">Python</a>
                 </div>
             </div>
         </article>
     </div>
     <span class="divider-next-news"></span>
 
-
-    <div class="news">
-        <div class="order-news">2.</div>
-        <article class="content-news">
-            <div class="news-header">
-                <div class="author-news">Author (autor)</div>
-                <div class="divider-content"></div>
-                <div class="title-news">Article (artigo)</div>
-            </div>
-            <div class="rating-news">
-                <div class="rating">Rating (avaliação)</div>
-                <!--
-                <div class="comments">comments (comentários)</div>
-                -->
-            </div>
-            <div class="about-news">
-                <div class="date-news">Date (data)</div>
-                <div class="divider-content dc-botton"></div>
-                <div class="tags-news">
-                    <a href="/subjects" class="subjects">POO</a>
-                    <a href="/subjects" class="languagem-prog-news">PHP</a>
-                </div>
-            </div>
-        </article>
-    </div>
-    <span class="divider-next-news"></span>
-    <div class="news">
-        <div class="order-news">3.</div>
-        <article class="content-news">
-            <div class="news-header">
-                <div class="author-news">Author (autor)</div>
-                <div class="divider-content"></div>
-                <div class="title-news">Article (artigo)</div>
-            </div>
-            <div class="rating-news">
-                <div class="rating">Rating (avaliação)</div>
-                <!--
-                <div class="comments">comments (comentários)</div>
-                -->
-            </div>
-            <div class="about-news">
-                <div class="date-news">Date (data)</div>
-                <div class="divider-content dc-botton"></div>
-                <div class="tags-news">
-                    <a href="/subjects" class="subjects">POO</a>
-                    <a href="/subjects" class="languagem-prog-news">PHP</a>
-                </div>
-            </div>
-        </article>
-    </div>
-    <span class="divider-next-news"></span>
-    <div class="news">
-        <div class="order-news">4.</div>
-        <article class="content-news">
-            <div class="news-header">
-                <div class="author-news">Author (autor)</div>
-                <div class="divider-content"></div>
-                <div class="title-news">Article (artigo)</div>
-            </div>
-            <div class="rating-news">
-                <div class="rating">Rating (avaliação)</div>
-                <!--
-                <div class="comments">comments (comentários)</div>
-                -->
-            </div>
-            <div class="about-news">
-                <div class="date-news">Date (data)</div>
-                <div class="divider-content dc-botton"></div>
-                <div class="tags-news">
-                    <a href="/subjects" class="subjects">POO</a>
-                    <a href="/subjects" class="languagem-prog-news">PHP</a>
-                </div>
-            </div>
-        </article>
-    </div>
-    <span class="divider-next-news"></span>
-    <div class="news">
-        <div class="order-news">5.</div>
-        <article class="content-news">
-            <div class="news-header">
-                <div class="author-news">Author (autor)</div>
-                <div class="divider-content"></div>
-                <div class="title-news">Article (artigo)</div>
-            </div>
-            <div class="rating-news">
-                <div class="rating">Rating (avaliação)</div>
-                <!--
-                <div class="comments">comments (comentários)</div>
-                -->
-            </div>
-            <div class="about-news">
-                <div class="date-news">Date (data)</div>
-                <div class="divider-content dc-botton"></div>
-                <div class="tags-news">
-                    <a href="/subjects" class="subjects">POO</a>
-                    <a href="/subjects" class="languagem-prog-news">PHP</a>
-                </div>
-            </div>
-        </article>
-    </div>
-    <span class="divider-next-news"></span>
-    <div class="news">
-        <div class="order-news">6.</div>
-        <article class="content-news">
-            <div class="news-header">
-                <div class="author-news">Author (autor)</div>
-                <div class="divider-content"></div>
-                <div class="title-news">Article (artigo)</div>
-            </div>
-            <div class="rating-news">
-                <div class="rating">Rating (avaliação)</div>
-                <!--
-                <div class="comments">comments (comentários)</div>
-                -->
-            </div>
-            <div class="about-news">
-                <div class="date-news">Date (data)</div>
-                <div class="divider-content dc-botton"></div>
-                <div class="tags-news">
-                    <a href="/subjects" class="subjects">POO</a>
-                    <a href="/subjects" class="languagem-prog-news">PHP</a>
-                </div>
-            </div>
-        </article>
-    </div>
-    <span class="divider-next-news"></span>
+    {% include 'global/partials/_pagination.html' %}
 </div>
 {% endblock %}

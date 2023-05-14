@@ -1,0 +1,17 @@
+main {
+    background-color: aliceblue;
+    width: 100%;
+    height: 651px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    max-width: 1012px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(0, 0, 0);
+}
