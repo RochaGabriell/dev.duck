@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     # local
     'devduck.apps.account',
     'devduck.apps.blog',
+    'devduck.apps.core',
 ]
 
 MIDDLEWARE = [
@@ -84,6 +85,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'devduck.apps.core.context_processors.header_context',
             ],
         },
     },
