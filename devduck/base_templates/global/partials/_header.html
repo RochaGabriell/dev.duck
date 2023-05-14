@@ -44,43 +44,27 @@
         </div>
 
         <div class="navbar-bottom">
-            <form action="/subjects" method="get" class="module-box-form">
+            <form action="/languagem-prog" method="get" class="module-box-form">
                 <div class="form-control">
-                    <select name="materia" id="select-subjects">
-                        <option value="0" selected disabled>Módulo I</option>
-                        <option value="1">Algoritmo e Programação</option>
+                    <select name="languagem-prog" id="select-subjects">
+                        <option value="0" selected disabled>Linguagem de Programação</option>
+                        {% for lang in language %}
+                        <option value="{{ lang.id }}">{{ lang }}</option>
+                        {% endfor %}
                     </select>
                 </div>
+                {% for module in modules %}
                 <div class="form-control">
                     <select name="materia" id="select-subjects">
-                        <option value="0" selected disabled>Módulo II</option>
-                        <option value="1">Programação para Internet I</option>
+                        <option value="0" selected disabled>{{ module }}</option>
+                        {% for sub in grid %}
+                        {% if sub.id_module == module %}
+                        <option value="{{ sub.id }}">{{ sub.id_subject }}</option>
+                        {% endif %}
+                        {% endfor %}
                     </select>
                 </div>
-                <div class="form-control">
-                    <select name="materia" id="select-subjects">
-                        <option value="0" selected disabled>Módulo III</option>
-                        <option value="1">Algoritmo e Programação</option>
-                    </select>
-                </div>
-                <div class="form-control">
-                    <select name="materia" id="select-subjects">
-                        <option value="0" selected disabled>Módulo IV</option>
-                        <option value="1">Análise e Projeto de Sistemas</option>
-                    </select>
-                </div>
-                <div class="form-control">
-                    <select name="materia" id="select-subjects">
-                        <option value="0" selected disabled>Módulo V</option>
-                        <option value="1">Programação para Dispositivos Móveis</option>
-                    </select>
-                </div>
-                <div class="form-control">
-                    <select name="materia" id="select-subjects">
-                        <option value="0" selected disabled>Módulo VI</option>
-                        <option value="1">Segurança da Informação</option>
-                    </select>
-                </div>
+                {% endfor %}
             </form>
         </div>
     </nav>
