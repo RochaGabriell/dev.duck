@@ -10,35 +10,47 @@
     <h1 class="heading-style">Publicar novo conteúdo</h1>
 
     <div class="post-panel">
-        <div class="text-input-wrapper">
-            <input type="text" name="" id="title" class="name-heading-input" placeholder="Título">
-        </div>
+        <form method="post">
+            {% csrf_token %}
 
-        <div class="box-form-post">
-            <div class="box-button-top">
-                <button class="button-transaction" onclick="escrever()">Editar</button>
-                <button class="button-transaction" onclick="visualizar()">Visualizar</button>
+            <div class="text-input-wrapper">
+                <input type="text" name="title" id="title" class="name-heading-input" placeholder="Título">
             </div>
 
-            <form action="" method="post" style="display: flex; flex-direction: column;">
-                <textarea name="" id="markdown" cols="40" rows="25" class="post-form"
+            <div class="box-form-post">
+                <div class="box-button-top">
+                    <div class="button-transaction" id="edit">Editar</div>
+                    <div class="button-transaction" id="show">Visualizar</div>
+                </div>
+
+                <textarea name="content" id="markdown" cols="40" rows="25" class="post-form"
                     placeholder="Escreva o conteúdo do seu post aqui..."></textarea>
 
                 <div class="post-form" id="html"></div>
 
                 <div class="box-button-bottom">
                     <div class="button-bottom-left">
-                        <select class="button-transaction select-subjects-bottom" name="" id="only-subjects">
-                            <option value="0" selected disabled>Matéria</option>
-                            <option value="poo">Programação Orientada a Objetos</option>
-                            <option value="estatistica">Estatística</option>
+                        <select class="button-transaction select-subjects-bottom" name="" id="module">
+                            <option value="0" selected disabled>Módulos</option>
+                            {% for module in modules %}
+                            <option value="{{ module.id }}">{{ module }}</option>
+                            {% endfor %}
                         </select>
 
-                        <select class="button-transaction select-subjects-bottom" name="" id="subjects-language"
+                        <select class="button-transaction select-subjects-bottom" name="id_grid" id="subjects"
                             style="display: none;">
-                            <option value="0" selected disabled>Linguagem</option>
-                            <option value="java">Java</option>
-                            <option value="pyton">Python</option>
+                            <option value="0" selected disabled>Matérias</option>
+                            {% for grid_subject in grid %}
+                            <option value="{{ grid_subject.id }}" id="{{ grid_subject.id_module.id }}">{{grid_subject.id_subject }}</option>
+                            {% endfor %}
+                        </select>
+
+                        <select class="button-transaction select-subjects-bottom" name="id_prog_language"
+                            id="subjects-language" style="display: none;">
+                            <option value="0" selected disabled>Linguagens</option>
+                            {% for lang in language %}
+                            <option value="{{ lang.id }}">{{ lang }}</option>
+                            {% endfor %}
                         </select>
                     </div>
 
@@ -47,9 +59,9 @@
                         <input class="button-transaction button-submit" type="submit" value="Postar">
                     </div>
                 </div>
-            </form>
-        </div>
+        </form>
     </div>
+</div>
 </div>
 {% endblock %}
 

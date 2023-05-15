@@ -18,6 +18,8 @@ class Post(models.Model):
         verbose_name=_("linguagem de programação"),
         on_delete=models.CASCADE,
         related_name="posts",
+        null=True,
+        blank=True,
     )
     id_grid = models.ForeignKey(
         Grid,
