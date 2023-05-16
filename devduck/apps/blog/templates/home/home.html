@@ -9,36 +9,37 @@
 
 {% block content %}
 <div class="container">
-    <div class="news">
-        <div class="order-news">1°</div>
-        <article class="content-news">
-            <div class="news-header">
-                <div class="author-news">
-                    <a href="">RochaGabriell</a>
+    <div class="content_posts">
+        <div class="news">
+            <div class="order-news">1°</div>
+            <article class="content-news">
+                <div class="news-header">
+                    <div class="author-news">
+                        <a href="">RochaGabriell</a>
+                    </div>
+                    <div class="divider-content"></div>
+                    <div class="title-news">
+                        <a href="">O que é DevDuck?</a>
+                    </div>
                 </div>
-                <div class="divider-content"></div>
-                <div class="title-news">
-                    <a href="">O que é DevDuck?</a>
+                <div class="rating-news">
+                    <div class="rating">Likes: 13 - Deslike: 3</div>
+                    <!--
+                    <div class="comments">comments (comentários)</div>
+                    -->
                 </div>
-            </div>
-            <div class="rating-news">
-                <div class="rating">Likes: 13 - Deslike: 3</div>
-                <!--
-                <div class="comments">comments (comentários)</div>
-                -->
-            </div>
-            <div class="about-news">
-                <div class="date-news">May 13 (1H)</div>
-                <div class="divider-content dc-botton"></div>
-                <div class="tags-news">
-                    <a href="/subjects" class="subjects">Projeto Integrador I</a>
-                    <a href="/subjects" class="languagem-prog-news">Python</a>
+                <div class="about-news">
+                    <div class="date-news">May 13 (1H)</div>
+                    <div class="divider-content dc-botton"></div>
+                    <div class="tags-news">
+                        <a href="/subjects" class="subjects">Projeto Integrador I</a>
+                        <a href="/subjects" class="languagem-prog-news">Python</a>
+                    </div>
                 </div>
-            </div>
-        </article>
+            </article>
+        </div>
+        <span class="divider-next-news"></span>
     </div>
-    <span class="divider-next-news"></span>
-
     {% include 'global/partials/_pagination.html' %}
 </div>
 {% endblock %}
