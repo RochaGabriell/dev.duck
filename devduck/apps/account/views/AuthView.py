@@ -28,7 +28,6 @@ class LoginView(LoginView):
         return context
 
     def form_valid(self, form) -> HttpResponse:
-        user = form
         return super().form_valid(form)
 
 
