@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic.edit import CreateView, UpdateView
 from django.views.generic.detail import DetailView
+from django.views.generic import ListView
 from django.contrib.auth.views import LoginView, LogoutView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.paginator import Paginator
@@ -55,24 +56,17 @@ class RegisterView(CreateView):
         return super().form_valid(form)
 
 
-class ProfileView(DetailView):
+class ProfileView(ListView):
 
     template_name = 'profile/profile.html'
     context_object_name = 'data_user'
-    paginate_by = 10
+    paginate_by = 3
 
-    def get_object(self):
-        user = None
-        post = None
-
-        if self.kwargs.get('username'):
-            user = User.objects.get(username=self.kwargs.get('username'))
-            post = Post.objects.filter(id_user=user.id)
+    def get_queryset(self):
+        username = self.kwargs.get('username')
+        if username:
+            user = User.objects.get(username=username)
         else:
             user = self.request.user
-            post = Post.objects.filter(id_user=user.id)
 
-        return {
-            'user': user.username,
-            'post': post,
-        }
+        return Post.objects.filter(id_user=user.id)

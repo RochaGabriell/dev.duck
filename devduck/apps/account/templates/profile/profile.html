@@ -9,18 +9,18 @@
 {% block content %}
 
 <div class="container">
+    <h1>{{ user.username|upper }}</h1>
     <div class="name-profile">
-        <h1>{{ data_user.user }}</h1>
-        {% if data_user.post != Null %}
-        {% for post in data_user.post %}
-        <p>{{ post.title }}</p>
-        <p>{{ post.content }}</p>
-        <p>{{ post.id_prog_language }}</p>
-        <p>{{ post.created_at }}</p>
+        {% for post in data_user %}
+        <p><b>Title:</b> {{ post.title }}</p>
+        <p><b>Content:</b> {{ post.content }}</p>
+        <p><b>Langue:</b> {{ post.id_prog_language }}</p>
+        <p><b>Created:</b> {{ post.created_at }}</p>
+        <br>
         {% endfor %}
-        {% endif %}
-
     </div>
+
+    {% include 'global/partials/_pagination.html' %}
 </div>
 
 {% endblock %}
