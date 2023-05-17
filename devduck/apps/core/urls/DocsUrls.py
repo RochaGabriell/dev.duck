@@ -1,10 +1,8 @@
 from django.urls import path
-from devduck.apps.blog.views.DocsView import (
+from devduck.apps.core.views.DocsView import (
     AboutView, ContactView, EditorGuideView,
     TermsView
 )
-
-app_name = 'docs'
 
 urlpatterns = [
     path('about/', AboutView.as_view(), name='about'),

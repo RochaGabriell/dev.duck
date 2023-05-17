@@ -154,5 +154,5 @@ else:
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'account.User'
-LOGIN_REDIRECT_URL = 'blog:home'
-LOGOUT_REDIRECT_URL = 'blog:home'
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'

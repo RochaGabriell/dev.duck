@@ -22,9 +22,10 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('devduck.apps.blog.urls.HomeUrls')),
-    path('docs/', include('devduck.apps.blog.urls')),
     path('accounts/', include('devduck.apps.account.urls.AuthUrls')),
-    path('request_permission', include('devduck.apps.core.urls.PermissionUrls'))
+    path('profile/', include('devduck.apps.account.urls.ProfileUrls')),
+    path('docs/', include('devduck.apps.core.urls.DocsUrls')),
+    path('request_permission', include('devduck.apps.core.urls.PermissionUrls')),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

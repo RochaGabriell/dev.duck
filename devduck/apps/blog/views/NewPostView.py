@@ -11,7 +11,7 @@ class NewPostView(LoginRequiredMixin, CreateView):
     model = Post
     form_class = CreatePostForm
     template_name = 'new_post/new_post.html'
-    success_url = reverse_lazy('blog:home')
+    success_url = reverse_lazy('home')
 
     def form_valid(self, form):
         form.instance.id_user = self.request.user

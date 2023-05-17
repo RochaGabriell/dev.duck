@@ -2,14 +2,14 @@
 <header>
     <nav class="navbar">
         <!--         
-        <a class="navbar-brand nav-link" href="{% url 'blog:home' %}">
+        <a class="navbar-brand nav-link" href="{% url 'home' %}">
             <img src="{% static 'img/favicon_io/android-chrome-192x192.png' %}" alt="Logo" width="30">
         </a> 
         -->
 
         <ul class="navbar-nav">
-            <li><a class="nav-link" href="{% url 'blog:home' %}">Relevantes</a></li>
-            <li><a class="nav-link" href="{% url 'blog:home' %}">Recentes</a></li>
+            <li><a class="nav-link" href="{% url 'home' %}">Relevantes</a></li>
+            <li><a class="nav-link" href="{% url 'home' %}">Recentes</a></li>
         </ul>
         </div>
 
@@ -39,18 +39,18 @@
                         </div>
                     </li>
                     <span class="line_divider"></span>
-                    <li class="single_line line_link_center"><a href="{% url 'account:profile' %}">Minhas Postagens</a></li>
-                    <li class="single_line line_link_center"><a href="{% url 'blog:new_post' %}">Novo Conteúdo</a></li>
-                    <li class="single_line line_link_center"><a href="{% url 'blog:home' %}">Editar Perfil</a></li>
+                    <li class="single_line line_link_center"><a href="{% url 'profile' %}">Minhas Postagens</a></li>
+                    <li class="single_line line_link_center"><a href="{% url 'new_post' %}">Novo Conteúdo</a></li>
+                    <li class="single_line line_link_center"><a href="{% url 'home' %}">Editar Perfil</a></li>
                     <span class="line_divider"></span>
-                    <li class="single_line line_link_bottom"><a href="{% url 'account:logout' %}">Sair</a></li>
+                    <li class="single_line line_link_bottom"><a href="{% url 'logout' %}">Sair</a></li>
                 </ul>
             </div>
 
             {% else %}
             <div class="auth-buttons">
-                <a href="{% url 'account:login' %}" class="nav-link">Login</a>
-                <a href="{% url 'account:register' %}" class="nav-link">Registrar</a>
+                <a href="{% url 'login' %}" class="nav-link">Login</a>
+                <a href="{% url 'register' %}" class="nav-link">Registrar</a>
             </div>
             {% endif %}
         </div>
