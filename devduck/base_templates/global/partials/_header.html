@@ -39,11 +39,11 @@
                         </div>
                     </li>
                     <span class="line_divider"></span>
-                    <li class="single_line line_link_center"><a href="{% url 'profile' %}">Minhas Postagens</a></li>
-                    <li class="single_line line_link_center"><a href="{% url 'new_post' %}">Novo Conteúdo</a></li>
-                    <li class="single_line line_link_center"><a href="{% url 'home' %}">Editar Perfil</a></li>
+                    <a href="{% url 'profile' %}" class="single_line line_link_center"><li>Minhas Postagens</li></a>
+                    <a href="{% url 'new_post' %}" class="single_line line_link_center"><li>Novo Conteúdo</li></a>
+                    <a href="{% url 'home' %}" class="single_line line_link_center"><li>Editar Perfil</li></a>
                     <span class="line_divider"></span>
-                    <li class="single_line line_link_bottom"><a href="{% url 'logout' %}">Sair</a></li>
+                    <a href="{% url 'logout' %}" class="single_line line_link_bottom"><li>Sair</li></a>
                 </ul>
             </div>
 
