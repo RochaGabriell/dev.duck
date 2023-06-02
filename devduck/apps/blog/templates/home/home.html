@@ -10,16 +10,17 @@
 {% block content %}
 <div class="container">
     <div class="content_posts">
+        {% for post in page_obj %}
         <div class="news">
-            <div class="order-news">1°</div>
+            <div class="order-news">{{ post.count }}</div>
             <article class="content-news">
                 <div class="news-header">
                     <div class="author-news">
-                        <a href="">RochaGabriell</a>
+                        <a href="{% url 'profile' post.id_user.username %}">{{ post.id_user.username|upper }}</a>
                     </div>
                     <div class="divider-content"></div>
                     <div class="title-news">
-                        <a href="">O que é DevDuck?</a>
+                        <a href="">{{ post.title }}</a>
                     </div>
                 </div>
                 <div class="rating-news">
@@ -29,16 +30,17 @@
                     -->
                 </div>
                 <div class="about-news">
-                    <div class="date-news">May 13 (1H)</div>
+                    <div class="date-news">{{ post.created_at }}</div>
                     <div class="divider-content dc-botton"></div>
                     <div class="tags-news">
-                        <a href="/subjects" class="subjects">Projeto Integrador I</a>
-                        <a href="/subjects" class="languagem-prog-news">Python</a>
+                        <a href="/subjects" class="subjects">{{post.id_grid.id_subject}} - </a>
+                        <a href="/subjects" class="languagem-prog-news">{{post.id_prog_language}}</a>
                     </div>
                 </div>
             </article>
         </div>
         <span class="divider-next-news"></span>
+        {% endfor %}
     </div>
     {% include 'global/partials/_pagination.html' %}
 </div>

@@ -1,7 +1,20 @@
-from django.shortcuts import render
-from django.views.generic import View
+from django.views.generic.list import ListView
 
-class HomeView(View):
+from devduck.apps.blog.models import Post
 
-    def get(self, request):
-        return render(request, template_name='home/home.html', status=200)
+
+class HomeView(ListView):
+
+    model = Post
+    template_name = 'home/home.html'
+    paginate_by = 10
+
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        count = 0
+
+        for obj in queryset:
+            count += 1
+            obj.count = count
+
+        return queryset

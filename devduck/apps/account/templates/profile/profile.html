@@ -9,9 +9,14 @@
 {% block content %}
 
 <div class="container">
-    <h1>{{ user.username|upper }}</h1>
+    {% if username %}
+        <h1>{{ username|upper }}</h1>
+    {% else %}
+        <h1>{{user.username|upper}}</h1>
+    {% endif %}
     <div class="name-profile">
-        {% for post in data_user %}
+        {% for post in page_obj %}
+        <p><b>Usuário:</b> {{ post.id_user }}</p>
         <p><b>Title:</b> {{ post.title }}</p>
         <p><b>Content:</b> {{ post.content }}</p>
         <p><b>Langue:</b> {{ post.id_prog_language }}</p>
