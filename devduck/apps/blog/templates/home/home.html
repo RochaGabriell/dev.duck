@@ -10,9 +10,9 @@
 {% block content %}
 <div class="container">
     <div class="content_posts">
-        {% for post in page_obj %}
+        {% for post in posts %}
         <div class="news">
-            <div class="order-news">{{ post.count }}</div>
+            <div class="order-news">{{ post.count }}.</div>
             <article class="content-news">
                 <div class="news-header">
                     <div class="author-news">

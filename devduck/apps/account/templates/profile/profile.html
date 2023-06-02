@@ -7,25 +7,46 @@
 {% block title %} DevDuck - {{ user }}{% endblock %}
 
 {% block content %}
-
 <div class="container">
     {% if username %}
-        <h1>{{ username|upper }}</h1>
+    <h1>{{ username|upper }}</h1>
     {% else %}
-        <h1>{{user.username|upper}}</h1>
+    <h1>{{user.username|upper}}</h1>
     {% endif %}
-    <div class="name-profile">
-        {% for post in page_obj %}
-        <p><b>Usuário:</b> {{ post.id_user }}</p>
-        <p><b>Title:</b> {{ post.title }}</p>
-        <p><b>Content:</b> {{ post.content }}</p>
-        <p><b>Langue:</b> {{ post.id_prog_language }}</p>
-        <p><b>Created:</b> {{ post.created_at }}</p>
-        <br>
+
+    <div class="content_posts">
+        {% for post in posts %}
+        <div class="news">
+            <div class="order-news">{{ post.count }}.</div>
+            <article class="content-news">
+                <div class="news-header">
+                    <div class="author-news">
+                        <a href="{% url 'profile' post.id_user.username %}">{{ post.id_user.username|upper }}</a>
+                    </div>
+                    <div class="divider-content"></div>
+                    <div class="title-news">
+                        <a href="">{{ post.title }}</a>
+                    </div>
+                </div>
+                <div class="rating-news">
+                    <div class="rating">Likes: 13 - Dislike: 3</div>
+                    <!--
+                    <div class="comments">comments (comentários)</div>
+                    -->
+                </div>
+                <div class="about-news">
+                    <div class="date-news">{{ post.created_at }}</div>
+                    <div class="divider-content dc-botton"></div>
+                    <div class="tags-news">
+                        <a href="/subjects" class="subjects">{{post.id_grid.id_subject}} - </a>
+                        <a href="/subjects" class="languagem-prog-news">{{post.id_prog_language}}</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <span class="divider-next-news"></span>
         {% endfor %}
     </div>
-
     {% include 'global/partials/_pagination.html' %}
 </div>
-
 {% endblock %}

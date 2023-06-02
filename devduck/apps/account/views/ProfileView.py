@@ -9,7 +9,8 @@ class ProfileView(ListView):
 
     model = Post
     template_name = 'profile/profile.html'
-    paginate_by = 3
+    context_object_name = 'posts'
+    paginate_by = 9
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -18,14 +19,19 @@ class ProfileView(ListView):
         return context
 
     def get_queryset(self):
-        posts = super().get_queryset()
+        queryset = super().get_queryset()
         username = self.kwargs.get('username')
+        count = 0
 
         if username:
             user = User.objects.get(username=username)
         else:
             user = self.request.user
 
-        posts = Post.objects.filter(id_user=user.id)
+        queryset = Post.objects.filter(id_user=user.id)
 
-        return posts
+        for obj in queryset:
+            count += 1
+            obj.count = count
+
+        return queryset
