@@ -111,7 +111,7 @@ header {
     justify-content: center;
 }
 
-#select-subjects {
+.select-subjects, #select-language {
     outline: none;
     background-color: #0e1217;
     color: #ffffff;

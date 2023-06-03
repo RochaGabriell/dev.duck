@@ -78,6 +78,10 @@ main {
     resize: none;
 }
 
+.post-form > p, pre {
+    white-space: pre-line;
+} /* temporário */
+
 .post-form::-webkit-scrollbar {
     background-color: transparent;
     width: 8px;
