@@ -29,6 +29,7 @@ class ProfileView(ListView):
             user = self.request.user
 
         queryset = Post.objects.filter(id_user=user.id)
+        queryset = queryset.order_by('-created_at')
 
         for obj in queryset:
             count += 1

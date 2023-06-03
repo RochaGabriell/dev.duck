@@ -4,7 +4,7 @@
 {% block style %}
 <link rel="stylesheet" href="{% static 'global/css/profile/profile.css' %}"> {% endblock %}
 
-{% block title %} DevDuck - {{ user }}{% endblock %}
+{% block title %} {{ user.username }} - DevDuck{% endblock %}
 
 {% block content %}
 <div class="container">
@@ -38,8 +38,12 @@
                     <div class="date-news">{{ post.created_at }}</div>
                     <div class="divider-content dc-botton"></div>
                     <div class="tags-news">
-                        <a href="/subjects" class="subjects">{{post.id_grid.id_subject}} - </a>
-                        <a href="/subjects" class="languagem-prog-news">{{post.id_prog_language}}</a>
+                        <a href="{% url 'tag-subjects' post.id_grid.id_subject.id %}" class="subjects"> {{post.id_grid.id_subject }} - </a>
+                        {% for lang in language %}
+                        {% if post.id_prog_language.id == lang.id %}
+                        <a href="{% url 'tag-language' lang.id %}" class="languagem-prog-news">{{ post.id_prog_language }}</a>
+                        {% endif %}
+                        {% endfor %}
                     </div>
                 </div>
             </article>

@@ -1,0 +1,21 @@
+<script>
+    function redirectLang() {
+        let selectElement = document.getElementById('select-language').value;
+        if (selectElement != 0) {
+            const url_jinja = "{% url 'tag-language' 1 %}";
+            const url = url_jinja.replace('1', selectElement);
+            window.location.href = url;
+        }
+    }
+
+    function redirectSub() {
+        let selectElement = document.getElementsByClassName('select-subjects');
+        for (let i = 0; i < selectElement.length; i++) {
+            if (selectElement[i].value != 0) {
+            const url_jinja = "{% url 'tag-subjects' 1 %}";
+            const url = url_jinja.replace('1', selectElement[i].value);
+            window.location.href = url;
+        }
+        }
+    }
+</script>

@@ -1,9 +1,11 @@
 from django.views.generic.list import ListView
 
 from devduck.apps.blog.models import Post
+from devduck.apps.blog.models import Grid
+from devduck.apps.blog.models import ProgLanguage
 
 
-class HomeView(ListView):
+class TagLanguageView(ListView):
 
     model = Post
     template_name = 'home/home.html'
@@ -12,11 +14,12 @@ class HomeView(ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['title'] = 'DevDuck'
+        language = ProgLanguage.objects.filter(id=self.kwargs['tag'])
+        context['title'] = f'Postagens em {language[0].description}'
         return context
 
     def get_queryset(self):
-        queryset = super().get_queryset()
+        queryset = Post.objects.filter(id_prog_language=self.kwargs['tag'])
         count = 0
 
         for obj in queryset:
@@ -26,7 +29,7 @@ class HomeView(ListView):
         return queryset
 
 
-class RecentView(ListView):
+class TagSubjectsView(ListView):
 
     model = Post
     template_name = 'home/home.html'
@@ -35,12 +38,13 @@ class RecentView(ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['title'] = 'Recentes - DevDuck'
+        grid = Grid.objects.filter(id_subject=self.kwargs['tag'])
+        context['title'] = f'Postagens de {grid[0].id_subject}'
         return context
 
     def get_queryset(self):
-        queryset = super().get_queryset()
-        queryset = queryset.order_by('-created_at')
+        queryset_grid = Grid.objects.filter(id=self.kwargs['tag'])
+        queryset = Post.objects.filter(id_grid=queryset_grid[0].id)
         count = 0
 
         for obj in queryset:
