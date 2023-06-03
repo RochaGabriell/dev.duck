@@ -1,0 +1,90 @@
+{% extends 'global/base.html' %}
+{% load static %}
+
+{% block title %} Guia Markdown - DevDuck {% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'global/css/docs/docs.css' %}">
+<link rel="stylesheet" href="{% static 'global/css/docs/editor_guide.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <h1 class="title">Guia básico de Markdown</h1>
+    <p> Markdown é uma linguagem de marcação popular e intuitiva que permite a formatação fácil de textos para a web.Com ela, é possível criar diversos elementos como títulos, listas, links, imagens e muito mais.</p>
+    <p>Confira abaixo um guia com todas as funcionalidades do Markdown disponíveis na plataforma.</p>
+
+    <h2 class="subtitle">Títulos</h2>
+    <p>Para criar títulos, adicione um ou mais sinais de hashtag (#) antes do texto do título. Quanto mais hashtags, menor o título.</p>
+    <p>Exemplo:</p>
+    <pre>
+<code># Título de nível 1
+## Título de nível 2
+### Título de nível 3</code>
+</pre>
+
+    <h2 class="subtitle">Texto em negrito e itálico</h2>
+    <p>Para deixar o texto em negrito, envolva-o com dois asteriscos (**). Para deixar o texto em itálico, envolva-o com um asterisco (*).</p>
+    <p>Exemplo:</p>
+    <pre>
+<code>**texto em negrito**
+*texto em itálico*</code>
+</pre>
+
+    <h2 class="subtitle">Listas</h2>
+    <p>Para criar uma lista não ordenada, use um asterisco (*) ou um sinal de menos (-) antes de cada item. Para criar uma lista ordenada, use um número seguido de um ponto (.).</p>
+    <p>Exemplo:</p>
+    <pre>
+<code>* Item 1
+* Item 2
+    * Item 2a
+    * Item 2b
+1. Item 1
+2. Item 2</code>
+</pre>
+
+    <h2 class="subtitle">Links</h2>
+    <p>Para criar um link, coloque o texto do link entre colchetes [] e a URL entre parênteses ().</p>
+    <p>Exemplo:</p>
+    <pre>
+<code>[Google](https://www.google.com/)</code>
+</pre>
+
+    <h2 class="subtitle">Imagens</h2>
+    <p>Para inserir uma imagem, use a mesma sintaxe de um link, mas adicione um ponto de exclamação (!) antes dos colchetes.</p>
+    <p>Exemplo:</p>
+    <pre>
+<code>![Pato fofo](https://www.example.com/pato.jpg)</code>
+</pre>
+
+    <h2 class="subtitle">Parágrafos</h2>
+    <p>Para criar um novo parágrafo, basta deixar uma linha em branco entre eles.</p>
+    <p>Exemplo:</p>
+    <pre>
+<code>Este é um parágrafo.
+
+Este é outro parágrafo.</code>
+</pre>
+
+    <h2 class="subtitle">Código</h2>
+    <p>Para formatar um trecho de código, envolva-o com um acento grave (`). Para formatar um bloco de código, envolva-o com três acentos graves (```).</p>
+    <p>Exemplo:</p>
+    <pre>
+<code>```    
+public class Simples {
+    public static void main(String[] args) {
+            System.out.print(“Gabriel”);
+            System.out.print(“Silva Moraes”); 
+    }
+}
+```</code>
+</pre>
+
+<p>
+    A biblioteca usada é a Showdown é um conversor de Javascript Markdown para HTML, baseado nos trabalhos originais de John Gruber. Para mais informações sobre a formatação da biblioteca <a href="http://demo.showdownjs.com/" class="link-showdownjs" target="_blank">showdownjs</a>.
+</p>
+
+</div>
+
+{% endblock %}
