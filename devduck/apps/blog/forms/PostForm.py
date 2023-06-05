@@ -36,6 +36,7 @@ class CreatePostForm(ModelForm):
 
     id_prog_language = forms.ModelChoiceField(
         queryset=ProgLanguage.objects.all(),
+        required=False,
         widget=forms.Select(attrs={
             'class': 'button-transaction select-subjects-bottom',
             'id': 'subjects-language',  
@@ -77,6 +78,7 @@ class UpdatePostForm(ModelForm):
 
     id_prog_language = forms.ModelChoiceField(
         queryset=ProgLanguage.objects.all(),
+        required=False,
         widget=forms.Select(attrs={
             'class': 'button-transaction select-subjects-bottom',
             'id': 'subjects-language',
