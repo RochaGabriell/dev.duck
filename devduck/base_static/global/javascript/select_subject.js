@@ -28,8 +28,6 @@ module_select.addEventListener('change', () => {
 });
 
 subjects_select.addEventListener("change", function () {
-    console.log(subjects_select.options[subjects_select.selectedIndex].innerText)
-    console.log(subjects_select.options[subjects_select.selectedIndex].innerText)
     if (djangoLista.includes(subjects_select.options[subjects_select.selectedIndex].innerText)) {
         language_select.style.display = "block";
     }

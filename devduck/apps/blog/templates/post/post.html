@@ -3,9 +3,10 @@
 {% block title %} Nova Postagem - DevDuck {% endblock %}
 
 {% block style %}
-<link rel="stylesheet" href="{% static 'global/css/new_post/new_post.css' %}"> {% endblock %}
+<link rel="stylesheet" href="{% static 'global/css/post/post.css' %}"> {% endblock %}
 
 {% block content %}
+
 <div class="container">
     <h1 class="heading-style">Publicar novo conteúdo</h1>
 
@@ -14,7 +15,7 @@
             {% csrf_token %}
 
             <div class="text-input-wrapper">
-                <input type="text" name="title" id="title" class="name-heading-input" placeholder="Título">
+                {{ form.title }}
             </div>
 
             <div class="box-form-post">
@@ -23,8 +24,7 @@
                     <div class="button-transaction" id="show">Visualizar</div>
                 </div>
 
-                <textarea name="content" id="markdown" cols="40" rows="25" class="post-form"
-                    placeholder="Escreva o conteúdo do seu post aqui..."></textarea>
+                {{ form.content }}
 
                 <div class="post-form" id="html"></div>
 
@@ -37,31 +37,32 @@
                             {% endfor %}
                         </select>
 
-                        <select class="button-transaction select-subjects-bottom" name="id_grid" id="subjects"
-                            style="display: none;">
-                            <option value="0" selected disabled>Matérias</option>
-                            {% for grid_subject in grid %}
-                            <option value="{{ grid_subject.id }}" id="{{ grid_subject.id_module.id }}">{{grid_subject.id_subject }}</option>
-                            {% endfor %}
-                        </select>
+                        {{ form.id_grid }}
 
-                        <select class="button-transaction select-subjects-bottom" name="id_prog_language"
-                            id="subjects-language" style="display: none;">
-                            <option value="0" selected disabled>Linguagens</option>
-                            {% for lang in language %}
-                            <option value="{{ lang.id }}">{{ lang }}</option>
-                            {% endfor %}
-                        </select>
+                        {{ form.id_prog_language }}
                     </div>
 
                     <div class="button-bottom-right">
+                        {% if id_post%}
+                        <a class="button-transaction button-delete" href="{% url 'delete_post' id_post %}">Deletar</a>
+                        {% else %}
                         <input class="button-transaction button-reset" type="reset" value="Limpar">
+                        {% endif %}
                         <input class="button-transaction button-submit" type="submit" value="Postar">
                     </div>
                 </div>
+                {% if form.errors %}
+                
+                <ul class="errorlist">
+                    {% for field in form %}
+                    {% if field.errors %}
+                    <li>{{ field.label }}: {{ field.errors }}</li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+                {% endif %}
         </form>
     </div>
-</div>
 </div>
 {% endblock %}
 

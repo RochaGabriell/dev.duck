@@ -1,0 +1,16 @@
+{% extends 'global/base.html' %}
+{% load static %}
+{% block title %} {{ object.title }} {% endblock %}
+
+{% block style %}{% endblock %}
+
+{% block content %}
+
+{{ object.title }} <br>
+{{ object.id_user.username }} <br>
+{{ object.id_prog_language }} <br>
+{{ object.id_grid }} <br>
+{{ object.content }} <br>
+{{ object.created_at|date }}
+
+{% endblock %}

@@ -1,2 +1,3 @@
 from .HomeView import *
-from .NewPostView import *
+from .PostView import *
+from .TagView import *

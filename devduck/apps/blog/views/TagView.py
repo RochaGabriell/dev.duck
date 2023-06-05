@@ -1,8 +1,6 @@
 from django.views.generic.list import ListView
 
-from devduck.apps.blog.models import Post
-from devduck.apps.blog.models import Grid
-from devduck.apps.blog.models import ProgLanguage
+from devduck.apps.blog.models import Post, Grid, ProgLanguage
 
 
 class TagLanguageView(ListView):
