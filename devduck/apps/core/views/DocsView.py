@@ -23,12 +23,16 @@ class EditorGuideView(View):
 class TermsView(View):
 
     def get(self, request):
-        return render(request, template_name='docs/terms.html')
+        return render(request, template_name='docs/terms.html', status=200)
 
 
-def handler404View(request, exception):
-    return render(request, 'errors/404.html', status=404)
+class Custom404View(View):
+    def get(self, request, exception=None):
+        context = {'error': '404'}
+        return render(request, 'errors/error.html', context=context, status=404)
 
 
-def handler500View(request):
-    return render(request, 'errors/500.html', status=500)
+class Custom500View(View):
+    def get(self, request):
+        context = {'error': '500'}
+        return render(request, 'errors/error.html', context=context, status=500)

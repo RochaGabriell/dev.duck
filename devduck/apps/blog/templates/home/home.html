@@ -4,7 +4,7 @@
 {% block title %} {{ title }} {% endblock %}
 
 {% block style %}
-<link rel="stylesheet" href="{% static 'global/css/home/home.css' %}">
+<link rel="stylesheet" href="{% static 'global/css/home/home.css' %}" type="text/css">
 {% endblock %}
 
 {% block content %}
@@ -30,7 +30,7 @@
                     -->
                 </div>
                 <div class="about-news">
-                    <div class="date-news">{{ post.created_at|date }}</div>
+                    <div class="date-news">{{ post.created_at|timesince }}</div>
                     <div class="divider-content dc-botton"></div>
                     <div class="tags-news">
                         <a href="{% url 'tag-subjects' post.id_grid.id_subject.id %}" class="subjects"> {{post.id_grid.id_subject }} - </a>

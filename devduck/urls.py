@@ -19,6 +19,7 @@ from django.urls import path, include, re_path
 from django.conf import settings
 from django.conf.urls.static import static
 from django.views.static import serve
+from devduck.apps.core.views.DocsView import Custom404View, Custom500View
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -32,5 +33,5 @@ urlpatterns = [
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
-handler404 = 'devduck.apps.core.views.DocsView.handler404View'
-handler500 = 'devduck.apps.core.views.DocsView.handler500View'
+handler404 = Custom404View.as_view()
+handler500 = Custom500View.as_view()

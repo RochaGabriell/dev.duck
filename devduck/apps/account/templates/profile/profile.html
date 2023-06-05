@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block style %}
-<link rel="stylesheet" href="{% static 'global/css/profile/profile.css' %}"> {% endblock %}
+<link rel="stylesheet" href="{% static 'global/css/profile/profile.css' %}" type="text/css"> {% endblock %}
 
 {% block title %} {{ user.username }} - DevDuck{% endblock %}
 
@@ -33,7 +33,7 @@
                     </div>
                     <div class="divider-content"></div>
                     <div class="title-news">
-                        <a href="">{{ post.title }}</a>
+                        <a href="{% url 'see_post' post.id_user.username post.id %}">{{ post.title }}</a>
                     </div>
                 </div>
                 <div class="rating-news">
@@ -43,7 +43,7 @@
                     -->
                 </div>
                 <div class="about-news">
-                    <div class="date-news">{{ post.created_at }}</div>
+                    <div class="date-news">{{ post.created_at|timesince }}</div>
                     <div class="divider-content dc-botton"></div>
                     <div class="tags-news">
                         <a href="{% url 'tag-subjects' post.id_grid.id_subject.id %}" class="subjects"> {{post.id_grid.id_subject }} - </a>
