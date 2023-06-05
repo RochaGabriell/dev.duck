@@ -1,4 +1,5 @@
 from django.views.generic.list import ListView
+from django.contrib import messages
 
 from devduck.apps.blog.models import Post, Grid, ProgLanguage
 
@@ -18,6 +19,11 @@ class TagLanguageView(ListView):
 
     def get_queryset(self):
         queryset = Post.objects.filter(id_prog_language=self.kwargs['tag'])
+
+        if queryset.count() == 0:
+            language = ProgLanguage.objects.filter(id=self.kwargs['tag'])
+            messages.error(self.request, f'Não há postagens da linguagem de programação {language[0].description}.')
+
         count = 0
 
         for obj in queryset:
@@ -41,9 +47,12 @@ class TagSubjectsView(ListView):
         return context
 
     def get_queryset(self):
-        queryset_grid = Grid.objects.filter(id=self.kwargs['tag'])
-        queryset = Post.objects.filter(id_grid=queryset_grid[0].id)
+        queryset = Post.objects.filter(id_grid=self.kwargs['tag'])
         count = 0
+
+        if queryset.count() == 0:
+            subject = Grid.objects.filter(id=self.kwargs['tag'])
+            messages.error(self.request, f'Não há postagens da disciplina de {subject[0].id_subject}.')
 
         for obj in queryset:
             count += 1
