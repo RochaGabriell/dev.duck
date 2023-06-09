@@ -4,7 +4,15 @@
 
 {% block style %}{% endblock %}
 
+
 {% block content %}
+
+{% if user == object.id_user %}
+<div class="button-bottom-right">
+    <a class="button-transaction button-delete" href="{% url 'delete_post' object.id %}"><button>Deletar</button></a>
+    <a class="button-transaction button-edit" href="{% url 'edit_post' object.id %}"><button>Editar</button></a>
+</div>
+{% endif %}
 
 {{ object.title }} <br>
 {{ object.id_user.username }} <br>
