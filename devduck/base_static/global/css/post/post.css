@@ -54,6 +54,7 @@ main {
     height: 30px;
     gap: 10px;
     padding: 0px 12px;
+    border-bottom: solid 1px #24292f;
 }
 
 .button-transaction {
@@ -68,36 +69,60 @@ main {
 }
 
 .post-form {
-    border-top: solid #24292f 1px;
-    border-bottom: solid #24292f 1px;
+    display: block;
     background-color: aliceblue;
     width: 100%;
     height: 335px;
     outline: none;
-    padding: 20px;
     resize: none;
-}
-/* temporário  */
-.post-form > ol, ol > li > ol {
-    display: block;
-    list-style-type: decimal;
-    padding-inline-start: 40px;
+    padding: 16px 4px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.post-form > ul, ul > li > ul {
-    display: block;
+.post-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.post-form p {
+    margin-bottom: 10px;
+}
+
+.post-form a {
+    color: #2f81f7;
+    text-decoration: none;
+}
+
+.post-form a:hover {
+    text-decoration: underline;
+}
+
+.post-form ul {
     list-style-type: disc;
-    padding-inline-start: 40px;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
 
-.post-form ul > li > ul {
-    list-style-type: circle;
+.post-form img, iframe {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
 }
 
-.post-form > p, pre {
+.post-form pre {
+    background-color: #f8f8f8;
+    padding: 10px;
+    overflow: auto;
+}
+
+.post-form code {
+    font-family: Consolas, Monaco, "Courier New", Courier, monospace;
+    font-size: 14px;
+    color: #333;
     white-space: pre-line;
-} 
-/* temporário */
+}
+
 .post-form::-webkit-scrollbar {
     background-color: transparent;
     width: 8px;
@@ -118,33 +143,30 @@ main {
     width: 100%;
 }
 
-#html > p >  img {
-    max-width: 100%;
-    height: auto;
-}
-
 .box-button-bottom {
     display: flex;
     flex-direction: column;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 12px;
+    padding: 2px 12px;
+    border-top: solid #24292f 1px;
 }
 
 .button-bottom-left {
     display: flex;
     justify-content: start;
     width: 100%;
-    gap: 10px;
+    margin-bottom: 4px;
+    gap: 15px;
 }
 
 .select-subjects-bottom {
     background-color: aliceblue;
     appearance: none;
     outline: none;
-    width: 100px;
-    max-width: 100px;
+    min-width: 100px;
+    max-width: 150px;
     text-align: start;
 }
 
@@ -155,22 +177,31 @@ main {
     gap: 10px;
 }
 
+.button-delete, .button-submit {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    border-radius: 6px;
+    padding: 0 6px;
+}
+
 .button-delete {
     background-color: #eb1d12;
-    border-radius: 6px;
-    padding: 6px;
     color: aliceblue;
 }
 
 .button-submit {
     background-color: #A8EB12;
-    border-radius: 6px;
-    padding: 6px;
 }
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 680px) {
     .heading-style {
         font-size: 22px;
+    }
+
+    .button-bottom-left {
+        flex-direction: column;
+        align-items: start;
     }
 }

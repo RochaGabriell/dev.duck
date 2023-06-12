@@ -31,20 +31,37 @@
                 <ul class="dropdown-content">
                     <li class="single_line line_link_top">
                         <div class="detail_user_dropdown">
+                            {% if user.is_superuser %}
+                            <img src="{% static 'global/img/admin.svg' %}" alt="Profile Image"
+                                class="detail_user_dropdown_img">
+                            {% elif perms.blog.add_post %}
+                            <img src="{% static 'global/img/programmer.svg' %}" alt="Profile Image"
+                                class="detail_user_dropdown_img">
+                            {% else %}
                             <img src="{% static 'global/img/svg_dropdown.svg' %}" alt="Profile Image"
                                 class="detail_user_dropdown_img">
+                            {% endif %}
                             <div class="detail_user_dropdown_text">
                                 <p class="detail_user_dropdown_name">{{ user.username }}</p>
                             </div>
                         </div>
                     </li>
                     <span class="line_divider"></span>
+                    {% if perms.blog.add_post or user.is_superuser %}
                     <a href="{% url 'profile' %}" class="single_line line_link_center">
                         <li>Minhas Postagens</li>
                     </a>
                     <a href="{% url 'new_post' %}" class="single_line line_link_center">
                         <li>Novo Conteúdo</li>
                     </a>
+                    {% else %}
+                    <a href="{% url 'profile' %}" class="single_line line_link_center">
+                        <li>Meu Perfil</li>
+                    </a>
+                    <a href="{% url 'new_post' %}" class="single_line line_link_center">
+                        <li>Virar um DuckDev</li>
+                    </a>
+                    {% endif %}
                     <a href="{% url 'home' %}" class="single_line line_link_center">
                         <li>Editar Perfil</li>
                     </a>

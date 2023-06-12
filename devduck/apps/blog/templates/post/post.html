@@ -30,16 +30,14 @@
 
                 <div class="box-button-bottom">
                     <div class="button-bottom-left">
-                        <select class="button-transaction select-subjects-bottom" name="" id="module">
-                            <option value="0" selected disabled>Módulos</option>
-                            {% for module in modules %}
-                            <option value="{{ module.id }}">{{ module }}</option>
-                            {% endfor %}
-                        </select>
-
-                        {{ form.id_grid }}
-
-                        {{ form.id_prog_language }}
+                        <div>
+                            <label for="id_grid">Disciplina: </label>
+                            {{ form.id_grid }}
+                        </div>
+                        <div>
+                            <label for="id_prog_language">Linguagem: </label>
+                            {{ form.id_prog_language }}
+                        </div>
                     </div>
 
                     <div class="button-bottom-right">

@@ -30,7 +30,6 @@ class CreatePostForm(ModelForm):
         widget=forms.Select(attrs={
             'class': 'button-transaction select-subjects-bottom',
             'id': 'subjects',
-            'style': 'display: none;',
         })
     )
 
@@ -39,8 +38,7 @@ class CreatePostForm(ModelForm):
         required=False,
         widget=forms.Select(attrs={
             'class': 'button-transaction select-subjects-bottom',
-            'id': 'subjects-language',  
-            'style': 'display: none;',
+            'id': 'subjects-language',
         })
     )
 

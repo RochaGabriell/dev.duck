@@ -22,7 +22,7 @@ class Grid(models.Model):
     updated_at = models.DateTimeField(_("atualizado em"), auto_now=True)
 
     def __str__(self) -> str:
-        return 'Módulo: {} | Disciplina: {}'.format(self.id_module, self.id_subject)
+        return f'{self.id_subject} | Modulo: {self.id_module}'
 
     class Meta:
         verbose_name = _("grade")
