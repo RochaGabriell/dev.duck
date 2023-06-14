@@ -1,0 +1,30 @@
+{% extends 'global/base.html' %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'global/css/login/cadastro.css' %}" type="text/css">
+{% endblock %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block content %}
+<form class="conteiner" method="post">
+    {% csrf_token %}
+    <div class="box-right">
+        <h1>Editar Perfil</h1>
+
+        <h4>Nome do Usuário:</h4>
+
+        {{ form.username }}
+
+        <h4>E-mail:</h4>
+
+        {{ form.email }}
+
+        <label for="password">Senha:</label>
+        <a href="">Utilize o fluxo de recuperação de senha →</a>
+
+        <div class="btn"><button type="submit">Salvar</button></div>
+    </div>
+</form>
+{% endblock %}

@@ -1,6 +1,11 @@
-from django.views.generic.detail import DetailView
+from django.http import HttpResponse
 from django.views.generic.list import ListView
+from django.views.generic.edit import UpdateView
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib import messages
+from django.urls import reverse_lazy
 
+from devduck.apps.account.forms.AuthForm import UserChangeForm
 from devduck.apps.account.models import User
 from devduck.apps.blog.models import Post
 
@@ -36,3 +41,17 @@ class ProfileView(ListView):
             obj.count = count
 
         return queryset
+
+class ProfileEditView(LoginRequiredMixin, UpdateView):
+
+    model = User
+    form_class = UserChangeForm
+    template_name = 'profile/editar.html'
+    success_url = reverse_lazy('profile')
+
+    def get_object(self):
+        return self.request.user
+
+    def form_valid(self, form: UserChangeForm) -> HttpResponse:
+        messages.success(self.request, 'Perfil atualizado com sucesso!')
+        return super().form_valid(form)

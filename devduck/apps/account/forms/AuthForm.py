@@ -20,9 +20,8 @@ class UserChangeForm(UserChangeForm):
 
     class Meta:
         model = User
-        fields = ["matriculation", "username", "email"]
+        fields = ["username", "email"]
         widgets = {
-            "matriculation": forms.TextInput(attrs={"class": "form-control"}),
             "username": forms.TextInput(attrs={"class": "form-control"}),
             "email": forms.EmailInput(attrs={"class": "form-control"}),
         }
