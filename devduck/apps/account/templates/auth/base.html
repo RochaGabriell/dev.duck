@@ -1,0 +1,36 @@
+{% extends 'global/base.html' %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'global/css/login/login.css' %}" type="text/css">
+{% endblock %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block content %}
+    <div class="box-left">
+        <h1>Seja bem-vindo de volta</h1>
+
+        <img src="{% static 'global/css/login/img/online-wishes-animate.svg' %}" alt="imagem">
+
+    </div>
+    <form class="conteiner" method="post">
+        {% csrf_token %}
+        <div class="box-right">
+            <h1>Login</h1>
+
+            <h4>Usuário:</h4>
+
+            <input type="text" name="username" placeholder="Usuário" id="id_username" required />
+
+            <h4>Senha:</h4>
+
+            <input id="input2" type="password" name="password" placeholder="Senha" required id="id_password" required />
+
+            <div class="btn"> <button type="submit">Login</button></div>
+
+            <a href="#">Esqueceu a senha?</a>
+            <a href="{% url 'register' %}">Cadastre-se</a>
+        </div>
+    </form>
+{% endblock %}

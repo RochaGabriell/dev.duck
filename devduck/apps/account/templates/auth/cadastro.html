@@ -1,0 +1,41 @@
+{% extends 'global/base.html' %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'global/css/login/cadastro.css' %}" type="text/css">
+{% endblock %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block content %}
+<form class="conteiner" method="post">
+    {% csrf_token %}
+    <div class="box-right">
+        <h1>Cadastro</h1>
+
+        <h4>Matricula:</h4>
+
+        <input id="input-lateral" type="text" name="matriculation" placeholder="Matricula" required />
+
+        <h4>Nome:</h4>
+
+        <input type="text" name="username" placeholder="Nome" required />
+
+
+        <h4>E-mail:</h4>
+
+        <input type="email" name="email" placeholder="E-mail" required />
+        <h4>Senha:</h4>
+
+        <input id="input2" type="password" name="password1" placeholder="Senha" required />
+        <h4>confirmar senha:</h4>
+        <input id="input2" type="password" name="password2" placeholder="Senha" required />
+
+        {% for error in input.errors %}
+        <p>{{ error }}</p>
+        {% endfor %}
+
+        <div class="btn"><button type="submit" >Cadastrar</button></div>
+    </div>
+</form>
+{% endblock %}

@@ -10,7 +10,7 @@ class HomeView(ListView):
     model = Post
     template_name = 'home/home.html'
     context_object_name = 'posts'
-    paginate_by = 10
+    paginate_by = 22
 
     def get_context_data(self, **kwargs: Any) -> Dict[str, Any]:
         context = super().get_context_data(**kwargs)
@@ -33,7 +33,7 @@ class RecentView(ListView):
     model = Post
     template_name = 'home/home.html'
     context_object_name = 'posts'
-    paginate_by = 10
+    paginate_by = 22
 
     def get_context_data(self, **kwargs: Any) -> Dict[str, Any]:
         context = super().get_context_data(**kwargs)

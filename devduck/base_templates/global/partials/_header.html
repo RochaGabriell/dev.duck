@@ -54,6 +54,11 @@
                     <a href="{% url 'new_post' %}" class="single_line line_link_center">
                         <li>Novo Conteúdo</li>
                     </a>
+                    {% if user.is_superuser %}
+                    <a href="{% url 'admin:index' %}" class="single_line line_link_center">
+                        <li>Solicitações</li>
+                    </a>
+                    {% endif %}
                     {% else %}
                     <a href="{% url 'profile' %}" class="single_line line_link_center">
                         <li>Meu Perfil</li>

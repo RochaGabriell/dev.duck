@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block style %}
-<link rel="stylesheet" href="{% static 'global/css/profile/profile.css' %}" type="text/css"> {% endblock %}
+<link rel="stylesheet" href="{% static 'global/css/home/home.css' %}" type="text/css"> {% endblock %}
 
 {% block title %} {{ user.username }} - DevDuck{% endblock %}
 
@@ -37,7 +37,10 @@
                     </div>
                 </div>
                 <div class="rating-news">
-                    <div class="rating">Likes: 13 - Dislike: 3</div>
+                    <div class="rating">
+                        <img src="{% static 'global/img/egg.svg' %}" alt="Imagem de like">
+                        <div>20{{ post.likes }}</div>
+                    </div>
                     <!--
                     <div class="comments">comments (comentários)</div>
                     -->
@@ -46,10 +49,14 @@
                     <div class="date-news">{{ post.created_at|timesince }}</div>
                     <div class="divider-content dc-botton"></div>
                     <div class="tags-news">
-                        <a href="{% url 'tag-subjects' post.id_grid.id_subject.id %}" class="subjects"> {{post.id_grid.id_subject }} - </a>
+                        <div class="subjects">
+                            <a href="{% url 'tag-subjects' post.id_grid.id_subject.id %}"> {{post.id_grid.id_subject }}</a>
+                        </div>
                         {% for lang in language %}
                         {% if post.id_prog_language.id == lang.id %}
-                        <a href="{% url 'tag-language' lang.id %}" class="languagem-prog-news">{{ post.id_prog_language }}</a>
+                        <div class="languagem-prog-news">
+                            <a href="{% url 'tag-language' lang.id %}" class="">- {{ post.id_prog_language }}</a>
+                        </div>
                         {% endif %}
                         {% endfor %}
                     </div>
