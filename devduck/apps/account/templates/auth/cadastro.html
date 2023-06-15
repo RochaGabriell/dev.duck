@@ -2,34 +2,40 @@
 {% load static %}
 
 {% block style %}
-<link rel="stylesheet" href="{% static 'global/css/login/cadastro.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'global/css/login/login.css' %}" type="text/css">
 {% endblock %}
 
 {% block title %} {{ title }} {% endblock %}
 
 {% block content %}
-<form class="conteiner" method="post">
+<div class="box-left">
+    <h1>Venha fazer parte do nosso time!</h1>
+
+    <img src="{% static 'global/css/login/img/blog-post-animate.svg' %}" alt="imagem">
+
+</div>
+<form class="conteiner cadas" method="post">
     {% csrf_token %}
-    <div class="box-right">
+    <div class="box-right Cadastro">
         <h1>Cadastro</h1>
 
-        <h4>Matricula:</h4>
+        <label>Matricula:</label>
 
-        <input id="input-lateral" type="text" name="matriculation" placeholder="Matricula" required />
+        <input  class="input-cadastro" id="input-lateral" type="text" name="matriculation" placeholder="Matricula" required />
 
-        <h4>Nome:</h4>
+        <label>Nome:</label>
 
-        <input type="text" name="username" placeholder="Nome" required />
+        <input class="input-cadastro" type="text" name="username" placeholder="Nome" required />
 
 
-        <h4>E-mail:</h4>
+        <label>E-mail:</label>
 
-        <input type="email" name="email" placeholder="E-mail" required />
-        <h4>Senha:</h4>
+        <input  class="input-cadastro" type="email" name="email" placeholder="E-mail" required />
+        <label>Senha:</label>
 
-        <input id="input2" type="password" name="password1" placeholder="Senha" required />
-        <h4>confirmar senha:</h4>
-        <input id="input2" type="password" name="password2" placeholder="Senha" required />
+        <input  class="input-cadastro"  type="password" name="password1" placeholder="Senha" required />
+        <label>Confirmar senha:</label>
+        <input  class="input-cadastro" id="input2" type="password" name="password2" placeholder="Senha" required />
 
         {% for error in input.errors %}
         <p>{{ error }}</p>
