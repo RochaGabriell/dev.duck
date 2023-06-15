@@ -14,11 +14,39 @@
 </div>
 {% endif %}
 
+{% if user.is_authenticated %}
+    {% if user in object.likes.all %}
+        <a href="#"><button class="button-like button-like-active">Like</button></a>
+        <img src="{% static 'global/img/egg.svg' %}" alt="Imagem de like">
+        <div>20{{ post.likes }}</div>
+    {% else %}
+        <a href="#"><button class="button-like">Like</button></a>
+        <img src="{% static 'global/img/egg.svg' %}" alt="Imagem de like">
+        <div>20{{ post.likes }}</div>
+    {% endif %}
+{% else %}
+    <a href="{% url 'login' %}"><button class="button-like">Like</button></a>
+{% endif %}
+
+<br>
+
 {{ object.title }} <br>
 {{ object.id_user.username }} <br>
 {{ object.id_prog_language }} <br>
 {{ object.id_grid }} <br>
-{{ object.content }} <br>
+<textarea name="content" id="markdown" cols="30" rows="10" style="display: none;">{{ object.content }}</textarea>
+<div id="html">
+</div>
 {{ object.created_at|date }}
 
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.4.0/showdown.min.js"></script>
+<script>
+    var markdown = document.getElementById("markdown").value;
+    var converter = new showdown.Converter();
+    var html = converter.makeHtml(markdown);
+    document.getElementById("html").innerHTML = html;
+</script>
 {% endblock %}
