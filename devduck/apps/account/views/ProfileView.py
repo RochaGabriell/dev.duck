@@ -46,6 +46,7 @@ class ProfileEditView(LoginRequiredMixin, UpdateView):
 
     model = User
     form_class = UserChangeForm
+    login_url = reverse_lazy('login')
     template_name = 'profile/editar.html'
     success_url = reverse_lazy('profile')
 
