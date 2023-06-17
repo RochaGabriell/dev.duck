@@ -142,12 +142,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-if DEBUG:
-    STATICFILES_DIRS = [
-        BASE_DIR / "devduck/base_static",
-    ]
-else:
-    STATIC_ROOT = BASE_DIR / "static" # collectstatic
+STATICFILES_DIRS = [
+    BASE_DIR / "devduck/base_static",
+]
+
+STATIC_ROOT = BASE_DIR / "static" # collectstatic
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
