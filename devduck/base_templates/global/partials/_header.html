@@ -56,6 +56,9 @@
                     </a>
                     {% if user.is_superuser %}
                     <a href="{% url 'admin:index' %}" class="single_line line_link_center">
+                        <li>Administração do Site</li>
+                    </a>
+                    <a href="{% url 'admin:index' %}" class="single_line line_link_center">
                         <li>Solicitações</li>
                     </a>
                     {% endif %}
