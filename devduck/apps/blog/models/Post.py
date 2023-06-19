@@ -49,5 +49,5 @@ class Post(models.Model):
         return f'Título: {self.title} | Autor: {self.id_user}'
 
     class Meta:
-        verbose_name = _("post")
-        verbose_name_plural = _("posts")
+        verbose_name = _("Postagem")
+        verbose_name_plural = _("Postagens")

@@ -17,7 +17,7 @@ class Rating(models.Model):
         on_delete=models.CASCADE,
         related_name="ratings",
     )
-    like = models.BooleanField(_("curtida"), default=False, blank=True)
+    like = models.BooleanField(_("curtida"), default=False)
     created_at = models.DateTimeField(_("criado em"), auto_now_add=True)
     updated_at = models.DateTimeField(_("atualizado em"), auto_now=True)
 
