@@ -26,6 +26,8 @@ class Post(models.Model):
         verbose_name=_("grade"),
         on_delete=models.CASCADE,
         related_name="posts",
+        null=False,
+        blank=False,
     )
     title = models.CharField(
         _("título"),
@@ -44,7 +46,7 @@ class Post(models.Model):
     updated_at = models.DateTimeField(_("atualizado em"), auto_now=True)
 
     def __str__(self) -> str:
-        return 'Criador: {} | Título: {}'.format(self.id_user, self.title)
+        return f'Título: {self.title} | Autor: {self.id_user}'
 
     class Meta:
         verbose_name = _("post")

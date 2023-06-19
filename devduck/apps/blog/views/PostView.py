@@ -1,17 +1,15 @@
 from typing import Any, Dict
 from django.db.models.query import QuerySet
 from django.forms.models import BaseModelForm
-from django.http import HttpResponse
-from django.http.request import HttpRequest
-from django.http.response import HttpResponse
+from django.http import HttpResponse, HttpRequest
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.views.generic.edit import CreateView, DeleteView, UpdateView
-from django.views.generic.detail import DetailView
+from django.http.response import HttpResponse
+from django.views.generic import CreateView, DeleteView, UpdateView, DetailView, View
 from django.shortcuts import redirect, get_object_or_404
 from django.contrib import messages
 from django.urls import reverse_lazy
 
-from devduck.apps.blog.models import Post
+from devduck.apps.blog.models import Post, Rating
 from devduck.apps.account.models import User
 from devduck.apps.blog.forms.PostForm import CreatePostForm, UpdatePostForm
 
@@ -77,7 +75,9 @@ class UpdatePostView(LoginRequiredMixin, UpdateView):
             return super().dispatch(request, *args, **kwargs)
 
     def get_success_url(self) -> str:
-        return reverse_lazy('see_post', kwargs={'username': self.object.id_user.username, 'pk': self.object.id})
+        username = self.object.id_user.username
+        pk = self.object.id
+        return reverse_lazy('see_post', kwargs={'username': username, 'pk': pk})
 
     def get_context_data(self, **kwargs: Any) -> Dict[str, Any]:
         context = super().get_context_data(**kwargs)
@@ -93,5 +93,33 @@ class SeePostView(DetailView):
     def get_queryset(self) -> QuerySet[Any]:
         queryset_user = get_object_or_404(User.objects.filter(username=self.kwargs['username']))
         queryset = Post.objects.filter(id=self.kwargs['pk'], id_user=queryset_user)
-
         return queryset
+    
+    def get_context_data(self, **kwargs: Any) -> Dict[str, Any]:
+        context = super().get_context_data(**kwargs)
+        context['like'] = Rating.objects.filter(id_post=self.kwargs['pk'], like=True).count()
+        return context
+    
+
+class LikePostView(LoginRequiredMixin, View):
+
+    def get(self, request: HttpRequest, *args: Any, **kwargs: Any) -> HttpResponse:
+
+        if Rating.objects.filter(id_post=self.kwargs['pk'], id_user_rated=request.user).exists():
+            obj_rating = get_object_or_404(Rating.objects.filter(id_post=self.kwargs['pk'], id_user_rated=request.user))
+
+            if obj_rating.like:
+                obj_rating.like = False
+            else:
+                obj_rating.like = True
+
+            obj_rating.save()
+
+        else:
+            obj_post = get_object_or_404(Post.objects.filter(id=self.kwargs['pk']))
+            new_rating = Rating.objects.create(id_post=obj_post, id_user_rated=request.user, like=True)
+            obj_rating = new_rating
+        
+        username = obj_rating.id_post.id_user.username
+        
+        return redirect('see_post', username=username, pk=self.kwargs['pk'])

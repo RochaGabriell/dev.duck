@@ -14,22 +14,10 @@
 </div>
 {% endif %}
 
-{% if user.is_authenticated %}
-    {% if user in object.likes.all %}
-        <a href="#"><button class="button-like button-like-active">Like</button></a>
-        <img src="{% static 'global/img/egg.svg' %}" alt="Imagem de like">
-        <div>20{{ post.likes }}</div>
-    {% else %}
-        <a href="#"><button class="button-like">Like</button></a>
-        <img src="{% static 'global/img/egg.svg' %}" alt="Imagem de like">
-        <div>20{{ post.likes }}</div>
-    {% endif %}
-{% else %}
-    <a href="{% url 'login' %}"><button class="button-like">Like</button></a>
-{% endif %}
+<!-- Formulário de like -->
+<a href="{% url 'like_post' object.id %}"><img src="{% static 'global/img/egg.svg' %}" alt="Imagem de like"> {{ like }}</a>
 
 <br>
-
 {{ object.title }} <br>
 {{ object.id_user.username }} <br>
 {{ object.id_prog_language }} <br>

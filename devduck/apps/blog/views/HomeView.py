@@ -2,7 +2,7 @@ from typing import Any, Dict
 from django.db.models.query import QuerySet
 from django.views.generic.list import ListView
 
-from devduck.apps.blog.models import Post
+from devduck.apps.blog.models import Post, Rating
 
 
 class HomeView(ListView):
@@ -24,6 +24,7 @@ class HomeView(ListView):
         for obj in queryset:
             count += 1
             obj.count = count
+            obj.rating = Rating.objects.filter(id_post=obj.id).count()
 
         return queryset
 
@@ -48,5 +49,6 @@ class RecentView(ListView):
         for obj in queryset:
             count += 1
             obj.count = count
+            obj.rating = Rating.objects.filter(id_post=obj.id).count()
 
         return queryset

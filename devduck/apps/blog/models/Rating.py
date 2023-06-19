@@ -17,16 +17,12 @@ class Rating(models.Model):
         on_delete=models.CASCADE,
         related_name="ratings",
     )
-    value = models.IntegerField(
-        _("nota"),
-        null=False,
-        blank=False,
-    )
+    like = models.BooleanField(_("curtida"), default=False, blank=True)
     created_at = models.DateTimeField(_("criado em"), auto_now_add=True)
     updated_at = models.DateTimeField(_("atualizado em"), auto_now=True)
 
     def __str__(self) -> str:
-        return 'Avaliador: {} | Postagem Avaliada: {}'.format(self.id_user_rated, self.id_post)
+        return f'Avaliador: {self.id_user_rated} | Postagem: {self.id_post}'
 
     class Meta:
         verbose_name = _("avaliação")
