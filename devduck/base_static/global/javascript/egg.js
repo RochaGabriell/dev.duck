@@ -10,5 +10,5 @@ function stopShakeAnimation() {
 
 setInterval(function () {
     startShakeAnimation();
-    setTimeout(stopShakeAnimation, 5000);
-}, 10000);
+    setTimeout(stopShakeAnimation, 10000);
+}, 13000);
