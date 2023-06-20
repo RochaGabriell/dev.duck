@@ -20,21 +20,15 @@ class HomeView(ListView):
 
     def get_queryset(self) -> QuerySet[Any]:
         queryset = super().get_queryset()
-        result = Rating.objects.values('id_post').annotate(ratingPost=Count('like')).filter(
-            like=True).order_by('-ratingPost')
-        count = 0
-
         posts_result = []
+        result = Rating.objects.values('id_post').annotate(ratingPost=Count('like')).filter(like=True).order_by('-ratingPost')[:30]
 
-        for obj in result:
-            for obj_post in queryset:
-                if obj['id_post'] == obj_post.id:
-                    obj_post.rating = obj['ratingPost']
-                    posts_result.append(obj_post)
-
-        for obj in posts_result:
-            count += 1
-            obj.count = count
+        for num, obj in enumerate(result, 1):
+            queryset.filter(id=obj['id_post'])
+            consult = queryset.get(id=obj['id_post'])
+            consult.rating = obj['ratingPost']
+            consult.count = num
+            posts_result.append(consult)
 
         return posts_result
 
@@ -52,13 +46,10 @@ class RecentView(ListView):
         return context
 
     def get_queryset(self) -> QuerySet[Any]:
-        queryset = super().get_queryset()
-        queryset = queryset.order_by('-created_at')
-        count = 0
+        queryset = super().get_queryset().order_by('-created_at')
 
-        for obj in queryset:
-            count += 1
-            obj.count = count
+        for num, obj in enumerate(queryset, 1):
+            obj.count = num
             obj.rating = Rating.objects.filter(id_post=obj.id, like=True).count()
 
         return queryset

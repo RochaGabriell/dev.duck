@@ -4,7 +4,6 @@
 
 {% block style %}{% endblock %}
 
-
 {% block content %}
 
 {% if user == object.id_user %}
@@ -14,20 +13,26 @@
 </div>
 {% endif %}
 
-<!-- Formulário de like -->
-<a href="{% url 'like_post' object.id %}"><img src="{% static 'global/img/egg.svg' %}" alt="Imagem de like"> {{ like }}</a>
+<article>
+    <a href="{% url 'like_post' object.id %}">
+        <img src="{% static 'global/img/egg.svg' %}" alt="Imagem de like"> {{ like }}
+    </a>
+</article>
 
-<br>
-{{ object.title }} <br>
-{{ object.id_user.username }} <br>
-{{ object.id_prog_language }} <br>
-{{ object.id_grid }} <br>
+<section>
+    <h1>{{ object.title }}</h1>
+    <p>Usuário: {{ object.id_user.username }}</p>
+    <p>Linguagem de Programação: {{ object.id_prog_language }}</p>
+    <p>Grade: {{ object.id_grid }}</p>
+    <p>Data de Criação: {{ object.created_at|date }}</p>
+</section>
+
 <textarea name="content" id="markdown" cols="30" rows="10" style="display: none;">{{ object.content }}</textarea>
-<div id="html">
-</div>
-{{ object.created_at|date }}
+
+<div id="html"></div>
 
 {% endblock %}
+
 
 {% block scripts %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.4.0/showdown.min.js"></script>
