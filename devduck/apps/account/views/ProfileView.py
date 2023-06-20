@@ -7,7 +7,7 @@ from django.urls import reverse_lazy
 
 from devduck.apps.account.forms.AuthForm import UserChangeForm
 from devduck.apps.account.models import User
-from devduck.apps.blog.models import Post
+from devduck.apps.blog.models import Post, Rating
 
 
 class ProfileView(ListView):
@@ -26,7 +26,6 @@ class ProfileView(ListView):
     def get_queryset(self):
         queryset = super().get_queryset()
         username = self.kwargs.get('username')
-        count = 0
 
         if username:
             user = User.objects.get(username=username)
@@ -36,9 +35,9 @@ class ProfileView(ListView):
         queryset = Post.objects.filter(id_user=user.id)
         queryset = queryset.order_by('-created_at')
 
-        for obj in queryset:
-            count += 1
-            obj.count = count
+        for num, obj in enumerate(queryset, 1):
+            obj.count = num
+            obj.rating = Rating.objects.filter(id_post=obj.id, like=True).count()
 
         return queryset
 

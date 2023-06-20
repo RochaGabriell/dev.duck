@@ -9,9 +9,9 @@
 {% block content %}
 <div class="container">
     {% if username %}
-    <h1>{{ username|upper }}</h1>
+    <h1 class="username">{{ username|upper }}</h1>
     {% else %}
-    <h1>{{user.username|upper}}</h1>
+    <h1 class="username">{{user.username|upper}}</h1>
     {% endif %}
 
     {% if messages %}
@@ -39,7 +39,7 @@
                 <div class="rating-news">
                     <div class="rating">
                         <img src="{% static 'global/img/egg.svg' %}" alt="Imagem de like">
-                        <div>20{{ post.likes }}</div>
+                        <div>{{ post.rating }}</div>
                     </div>
                     <!--
                     <div class="comments">comments (comentários)</div>
