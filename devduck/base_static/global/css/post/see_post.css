@@ -13,6 +13,8 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding: 10px 0;
+    border-bottom: 3px solid #333;
 }
 
 .about-post {
@@ -22,10 +24,28 @@
     grid-template-rows: repeat(3, auto);
 }
 
-.title-date {
+.author-date {
     display: flex;
+    justify-content: start;
+    align-items: center;
     width: 100%;
     gap: 10px;
+    font-size: 0.9rem;
+}
+
+.author-post {
+    background-color: #fbff44;
+    padding: 3px;
+    border-radius: 5px;
+    color: black;
+}
+
+.author-post:hover {
+    text-decoration: underline;
+}
+
+.date-post {
+    color: #999999;
 }
 
 .title-post {
@@ -36,13 +56,93 @@
 .tags-post {
     display: flex;
     gap: 10px;
+    font-size: 0.9rem;
+}
+
+.link-tag {
+    text-decoration: none;
+    color: black;
+}
+
+.link-tag:hover {
+    text-decoration: underline;
 }
 
 .post-desc-right {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: flex-end;
     width: 15%;
+    gap: 10px;
+}
+
+.button-bottom-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    gap: 10px;
+}
+
+.button-transaction {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    border-radius: 6px;
+    padding: 0 10px;
+    gap: 8px;
+}
+
+.button-transaction:hover {
+    background-color: #f1f1f1;
+}
+
+.button-transaction button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.button-delete button {
+    color: red;
+}
+
+.like-egg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+#egg-image {
+    display: flex;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+}
+
+#egg-effect {
+    width: 100%;
+    height: 100%;
+}
+
+.like {
+    font-size: 1rem;
+}
+
+.shake-animation {
+    animation: shake 1s infinite;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(-10deg); }
+    75% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
 }
 
 .post-form {

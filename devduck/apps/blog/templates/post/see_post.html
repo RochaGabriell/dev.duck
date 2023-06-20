@@ -10,8 +10,10 @@
 <div class="container">
     <article class="description">
         <section class="about-post">
-            <div class="title-date">
-                <a href="{% url 'profile' object.id_user.username %}" class="author-post" >{{ object.id_user.username|upper }}</a>
+            <div class="author-date">
+                <a href="{% url 'profile' object.id_user.username %}" class="author-post">
+                    {{object.id_user.username|upper }}
+                </a>
                 <div class="date-post"> {{ object.created_at|timesince }}</div>
             </div>
 
@@ -21,14 +23,14 @@
 
             <div class="tags-post">
                 <div class="subjects">
-                    <a href="{% url 'tag-subjects' object.id_grid.id %}"> {{ object.id_grid.id_subject }}</a>
+                    <a href="{% url 'tag-subjects' object.id_grid.id %}" class="link-tag"> {{ object.id_grid.id_subject }}</a>
                 </div>
                 <span>-</span>
                 <div class="languagem-prog-post">
                     {% for lang in language %}
                     {% if post.id_prog_language.id == lang.id %}
                     <div class="languagem-prog-post">
-                        <a href="{% url 'tag-language' lang.id %}" class="">{{ post.id_prog_language }}</a>
+                        <a href="{% url 'tag-language' lang.id %}" class="link-tag">{{ post.id_prog_language }}</a>
                     </div>
                     {% endif %}
                     {% endfor %}
@@ -39,15 +41,25 @@
         <section class="post-desc-right">
             {% if user == object.id_user %}
             <div class="button-bottom-right">
-                <a class="button-transaction button-delete"
-                    href="{% url 'delete_post' object.id %}"><button>Deletar</button></a>
-                <a class="button-transaction button-edit"
-                    href="{% url 'edit_post' object.id %}"><button>Editar</button></a>
+                <a class="button-transaction button-delete" href="{% url 'delete_post' object.id %}">
+                    <img src="{% static 'global/img/delete.svg' %}" alt="Imagem de deletar">
+                    <button>Deletar</button>
+                </a>
+                <a class="button-transaction button-edit" href="{% url 'edit_post' object.id %}">
+                    <img src="{% static 'global/img/edit.svg' %}" alt="Imagem de editar">
+                    <button>Editar</button>
+                </a>
             </div>
             {% endif %}
-            <a href="{% url 'like_post' object.id %}">
-                <img src="{% static 'global/img/egg.svg' %}" alt="Imagem de like"> {{ like }}
-            </a>
+            <div class="like-egg">
+                <a href="{% url 'like_post' object.id %}" id="egg-image">
+                    <img src="{% static 'global/img/egg.svg' %}" id="egg-effect" alt="Imagem de like">
+                </a>
+                <span class="like">{{ like }}</span>
+                <audio id="egg-crack-sound">
+                    <source src="{% static 'global/sound/duck.mp3' %}" type="audio/mpeg">
+                </audio>
+            </div>
         </section>
     </article>
 
@@ -59,10 +71,7 @@
 
 {% block scripts %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.4.0/showdown.min.js"></script>
-<script>
-    var markdown = document.getElementById("markdown").value;
-    var converter = new showdown.Converter();
-    var html = converter.makeHtml(markdown);
-    document.getElementById("html").innerHTML = html;
-</script>
+<script src="{% static 'global/javascript/see_post.js' %}"></script>
+<script src="{% static 'global/javascript/sound_effect.js' %}"></script>
+<script src="{% static 'global/javascript/egg.js' %}"></script>
 {% endblock %}
