@@ -14,6 +14,11 @@ main {
     margin-right: auto;
 }
 
+.username {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
 .content_posts {
     display: flex;
     flex-direction: column;

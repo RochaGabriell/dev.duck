@@ -98,15 +98,30 @@ main {
     text-decoration: underline;
 }
 
+.post-form ul,ol,dl {
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.6;
+    list-style-position: outside;
+    margin-bottom: 1.25rem;
+    margin-left: 1.1rem;
+}
+
 .post-form ul {
     list-style-type: disc;
     margin-left: 20px;
     margin-bottom: 10px;
 }
 
+.post-form ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
 .post-form img, iframe {
     max-width: 100%;
-    height: auto;
+    height: 80vh;
     margin-bottom: 10px;
 }
 
