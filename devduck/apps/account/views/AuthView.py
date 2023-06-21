@@ -7,7 +7,7 @@ from django.contrib.auth.views import LoginView, LogoutView
 from django.http import HttpResponse
 
 from devduck.apps.account.models import User
-from devduck.apps.account.forms.AuthForm import UserCreationForm, UserChangeForm
+from devduck.apps.account.forms.AuthForm import UserCreationForm
 
 
 class LoginView(LoginView):

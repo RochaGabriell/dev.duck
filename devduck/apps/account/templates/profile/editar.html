@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block style %}
-<link rel="stylesheet" href="{% static 'global/css/login/cadastro.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'global/css/login/login.css' %}" type="text/css">
 {% endblock %}
 
 {% block title %} {{ title }} {% endblock %}
@@ -13,16 +13,16 @@
     <div class="box-right">
         <h1>Editar Perfil</h1>
 
-        <h4>Nome do Usuário:</h4>
+        <label>Nome do Usuário:</label>
 
         {{ form.username }}
 
-        <h4>E-mail:</h4>
+        <label>E-mail:</label>
 
         {{ form.email }}
 
         <label for="password">Senha:</label>
-        <a href="">Utilize o fluxo de recuperação de senha →</a>
+        <a href="{% url 'password_reset' %}">Utilize o fluxo de recuperação de senha →</a>
 
         <div class="btn"><button type="submit">Salvar</button></div>
     </div>
