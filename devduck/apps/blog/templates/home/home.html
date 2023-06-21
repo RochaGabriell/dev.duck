@@ -33,10 +33,10 @@
                     </div>
                 </div>
                 <div class="rating-news">
-                    <div class="rating">
+                    <a href="{% url 'like_post' post.id %}" class="rating">
                         <img src="{% static 'global/img/egg.svg' %}" alt="Imagem de like">
                         <div>{{ post.rating }}</div>
-                    </div>
+                    </a>
                     <!--
                     <div class="comments">comments (comentários)</div>
                     -->
