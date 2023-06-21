@@ -27,7 +27,7 @@ urlpatterns = [
     path('accounts/', include('devduck.apps.account.urls.AuthUrls')),
     path('profile/', include('devduck.apps.account.urls.ProfileUrls')),
     path('docs/', include('devduck.apps.core.urls.DocsUrls')),
-    path('request_permission', include('devduck.apps.core.urls.PermissionUrls')),
+    path('request_permission/', include('devduck.apps.core.urls.PermissionUrls')),
     re_path(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
 ]
 
