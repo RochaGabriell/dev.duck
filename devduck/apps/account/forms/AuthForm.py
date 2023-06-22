@@ -15,6 +15,18 @@ class UserCreationForm(UserCreationForm):
             "email": forms.EmailInput(attrs={"class": "form-control"}),
         }
 
+    def clean_username(self) -> str:
+        username = self.cleaned_data["username"]
+        if not username.isalnum():
+            raise forms.ValidationError("Nome de Usuário não é alfanumérico")
+        return username
+
+    def clean_matriculation(self):
+        matriculation = self.cleaned_data["matriculation"]
+        if len(matriculation) != 15:
+            raise forms.ValidationError("Matrícula inválida")
+        return matriculation
+
 
 class UserChangeForm(UserChangeForm):
 

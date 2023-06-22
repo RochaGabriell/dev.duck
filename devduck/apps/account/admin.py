@@ -38,7 +38,6 @@ class UserAdmin(UserAdmin):
         ("Contato", {
             "fields": (
                 "email",
-                "token",
             )
         }),
         ("Permissões", {

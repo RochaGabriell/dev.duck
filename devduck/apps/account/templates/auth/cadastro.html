@@ -21,25 +21,46 @@
 
         <label>Matricula:</label>
 
-        <input  class="input-cadastro" id="input-lateral" type="text" name="matriculation" placeholder="Matricula" required />
+        <input  class="input-cadastro" id="input-lateral" type="text" name="matriculation" placeholder="Ex: 2222000TADS0021" required />
+        {% if form.errors %}
+        <div class="alert alert-danger" role="alert">
+            {{ form.errors.matriculation }}
+        </div>
+        {% endif %}
 
-        <label>Nome:</label>
+        <label>Nome de Usuário:</label>
 
-        <input class="input-cadastro" type="text" name="username" placeholder="Nome" required />
-
+        <input class="input-cadastro" type="text" name="username" placeholder="Ex: duckmaster" autocapitalize="none"
+        maxlength="40" required />
+        {% if form.errors %}
+        <div class="alert alert-danger" role="alert">
+            {{ form.errors.username }}
+        </div>
+        {% endif %}
 
         <label>E-mail:</label>
+        <input  class="input-cadastro" type="email" name="email" placeholder="Ex: duckmaster@gmail.com" required />
+        {% if form.errors %}
+        <div class="alert alert-danger" role="alert">
+            {{ form.errors.email }}
+        </div>
+        {% endif %}
 
-        <input  class="input-cadastro" type="email" name="email" placeholder="E-mail" required />
         <label>Senha:</label>
-
         <input  class="input-cadastro"  type="password" name="password1" placeholder="Senha" required />
+        {% if form.errors %}
+        <div class="alert alert-danger" role="alert">
+            {{ form.errors.password1 }}
+        </div>
+        {% endif %}
+
         <label>Confirmar senha:</label>
         <input  class="input-cadastro" id="input2" type="password" name="password2" placeholder="Senha" required />
-
-        {% for error in input.errors %}
-        <p>{{ error }}</p>
-        {% endfor %}
+        {% if form.errors %}
+        <div class="alert alert-danger" role="alert">
+            {{ form.errors.password2 }}
+        </div>
+        {% endif %}
 
         <div class="btn"><button type="submit" >Cadastrar</button></div>
     </div>

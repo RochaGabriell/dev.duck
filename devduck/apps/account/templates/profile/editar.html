@@ -17,9 +17,21 @@
 
         {{ form.username }}
 
+        {% if form.errors %}
+        <div class="alert alert-danger" role="alert">
+            {{ form.errors.username }}
+        </div>
+        {% endif %}
+
         <label>E-mail:</label>
 
         {{ form.email }}
+
+        {% if form.errors %}
+        <div class="alert alert-danger" role="alert">
+            {{ form.errors.email }}
+        </div>
+        {% endif %}
 
         <label for="password">Senha:</label>
         <a href="{% url 'password_reset' %}">Utilize o fluxo de recuperação de senha →</a>

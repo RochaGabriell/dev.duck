@@ -9,7 +9,7 @@ from devduck.apps.account.managers import CustomUserManager
 class User(AbstractBaseUser, PermissionsMixin):
     matriculation = models.CharField(
         _("matrícula"),
-        max_length=150,
+        max_length=15,
         null=False,
         blank=False,
         unique=True,
@@ -17,7 +17,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     )
     username = models.CharField(
         _("nome de usuário"),
-        max_length=150,
+        max_length=40,
         null=False,
         blank=False,
         unique=True,
@@ -43,7 +43,6 @@ class User(AbstractBaseUser, PermissionsMixin):
     is_active = models.BooleanField(_("Ativo"), default=True)
     date_joined = models.DateTimeField(_("data de entrada"), auto_now_add=True)
     date_changed = models.DateTimeField(_("data de alteração"), auto_now=True)
-    token = models.CharField(_("token"), max_length=150, blank=True, null=True)
 
     USERNAME_FIELD = "username"
     REQUIRED_FIELDS = ["matriculation", "email"]
