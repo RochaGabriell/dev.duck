@@ -159,12 +159,12 @@ LOGIN_REDIRECT_URL = 'home'
 LOGOUT_URL = 'logout'
 LOGOUT_REDIRECT_URL = 'home'
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'  # Apenas durante o desenvolvimento
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'  # Apenas durante o desenvolvimento
 
-# EMAIL_USE_TLS = True # Diz se será usada a criptografia TLS ou não no envio.
-# EMAIL_HOST = 'smtp.sendgrid.net' # host do seu provedor de e-mail
-# EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-# EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
-# EMAIL_PORT = 587 # porta que o provedor usará para fazer o enviodos e-mails
-# DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL') # e-mail padrão para servir de remetente quando não colocarmos um remetente em nossos e-mails.
-# EMAIL_USE_SSL = False # informa se será usada acriptografia SSL no envio.   
+EMAIL_USE_TLS = True # Diz se será usada a criptografia TLS ou não no envio.
+EMAIL_HOST = 'smtp.sendgrid.net' # host do seu provedor de e-mail
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+EMAIL_PORT = 587 # porta que o provedor usará para fazer o enviodos e-mails
+DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL') # e-mail padrão para servir de remetente quando não colocarmos um remetente em nossos e-mails.
+EMAIL_USE_SSL = False # informa se será usada acriptografia SSL no envio.   
