@@ -54,7 +54,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # third-party
-    # ...
+    'django_extensions',
     # local
     'devduck.apps.account',
     'devduck.apps.blog',

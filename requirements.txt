@@ -1,6 +1,9 @@
 asgiref==3.6.0
 dj-database-url==2.0.0
 Django==4.2.1
+django-extensions==3.2.3
+pydotplus==2.0.2
+pyparsing==3.1.0
 python-dotenv==1.0.0
 sqlparse==0.4.4
 tomli==2.0.1
