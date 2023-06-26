@@ -1,92 +1,98 @@
 {% extends 'global/base.html' %}
 {% load static %}
 
-{% block style %}{% endblock %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'global/css/request/list.css' %}">
+{% endblock %}
 
-{% block title %} {{ title }} {% endblock %}
+{% block title %} Lista de Solicitações {% endblock %}
 
 {% block content %}
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h1 class="text-center">Lista de Solicitações</h1>
-            <table class="table table-solicited">
-                <thead>
-                    <tr>
-                        <th>Status</th>
-                        <th>Nº Matrícula</th>
-                        <th>Nome de Usuário</th>
-                        <th>Descrição</th>
-                        <th>Data de Solicitação</th>
-                        <th>Opções</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for request in requests %}
-                    {% if request.is_approved != True %}
-                    <tr>
-                        <td>
-                            {% if request.is_approved == None %}
-                            <span class="badge badge-warning">Pendente</span>
-                            {% elif request.is_approved == True %}
-                            <span class="badge badge-success">Aprovado</span>
-                            {% else %}
-                            <span class="badge badge-danger">Desaprovado</span>
-                            {% endif %}
-                        </td>
-                        <td>{{ request.requesting_user }}</td>
-                        <td>{{ request.requesting_user.username }}</td>
-                        <td>{{ request.description }}</td>
-                        <td>{{ request.created_at|date:"d/m/Y" }}</td>
-                        <td>
-                            <a href="{% url 'approve_permission' request.id %}" class="btn btn-primary btn-sm">Aprovar</a>
-                            <a href="{% url 'disapprove_permission' request.id %}" class="btn btn-danger btn-sm">Desaprovar</a>
-                        </td>
-                    </tr>
-                    {% endif %}
-                    {% endfor %}
-                </tbody>
-            </table>
-            <h1 class="text-center">Lista de Solicitações Aprovadas</h1>
-            <table class="table table-approved">
-                <thead>
-                    <tr>
-                        <th>Status</th>
-                        <th>Nº Matrícula</th>
-                        <th>Nome de Usuário</th>
-                        <th>Descrição</th>
-                        <th>Data de Solicitação</th>
-                        <th>Opções</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for request in requests %}
-                    {% if request.is_approved == True %}
-                    <tr>
-                        <td>
-                            {% if request.is_approved == None %}
-                            <span class="badge badge-warning">Pendente</span>
-                            {% elif request.is_approved == True %}
-                            <span class="badge badge-success">Aprovado</span>
-                            {% else %}
-                            <span class="badge badge-danger">Desaprovado</span>
-                            {% endif %}
-                        </td>
-                        <td>{{ request.requesting_user }}</td>
-                        <td>{{ request.requesting_user.username }}</td>
-                        <td>{{ request.description }}</td>
-                        <td>{{ request.created_at|date:"d/m/Y" }}</td>
-                        <td>
-                            <a href="{% url 'approve_permission' request.id %}" class="btn btn-primary btn-sm">Aprovar</a>
-                            <a href="{% url 'disapprove_permission' request.id %}" class="btn btn-danger btn-sm">Desaprovar</a>
-                        </td>
-                    </tr>
-                    {% endif %}
-                    {% endfor %}
-                </tbody>
-            </table>
-        </div>
+<div class="col-md-12">
+    <div class="table-top">
+        <h1 class="text-center">Lista de Solicitações</h1>
+        <table class="table table-solicited">
+            <thead>
+                <tr>
+                    <th>Status</th>
+                    <th>Nº Matrícula</th>
+                    <th>Nome de Usuário</th>
+                    <th>Descrição</th>
+                    <th>Data de Solicitação</th>
+                    <th>Opções</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for request in requests %}
+                {% if request.is_approved != True %}
+                <tr>
+                    <td>
+                        {% if request.is_approved == None %}
+                        <span class="badge badge-warning">Pendente</span>
+                        {% elif request.is_approved == True %}
+                        <span class="badge badge-success">Aprovado</span>
+                        {% else %}
+                        <span class="badge badge-danger">Desaprovado</span>
+                        {% endif %}
+                    </td>
+                    <td>{{ request.requesting_user }}</td>
+                    <td>{{ request.requesting_user.username }}</td>
+                    <td class="text-description" data-toggle="tooltip" data-placement="top"
+                        title="{{ request.description }}">{{ request.description }}</td>
+                    <td>{{ request.created_at|date:"d/m/Y" }}</td>
+                    <td>
+                        <a href="{% url 'approve_permission' request.id %}" class="btn btn-primary btn-sm">Aprovar</a>
+                        <a href="{% url 'disapprove_permission' request.id %}"
+                            class="btn btn-danger btn-sm">Desaprovar</a>
+                    </td>
+                </tr>
+                {% endif %}
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div class="table-bottom">
+        <h1 class="text-center">Lista de Aprovadas</h1>
+        <table class="table table-approved">
+            <thead>
+                <tr>
+                    <th>Status</th>
+                    <th>Nº Matrícula</th>
+                    <th>Nome de Usuário</th>
+                    <th>Descrição</th>
+                    <th>Data de Solicitação</th>
+                    <th>Opções</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for request in requests %}
+                {% if request.is_approved == True %}
+                <tr>
+                    <td>
+                        {% if request.is_approved == None %}
+                        <span class="badge badge-warning">Pendente</span>
+                        {% elif request.is_approved == True %}
+                        <span class="badge badge-success">Aprovado</span>
+                        {% else %}
+                        <span class="badge badge-danger">Desaprovado</span>
+                        {% endif %}
+                    </td>
+                    <td>{{ request.requesting_user }}</td>
+                    <td>{{ request.requesting_user.username }}</td>
+                    <td class="text-description" data-toggle="tooltip" data-placement="top"
+                        title="{{ request.description }}">{{ request.description }}</td>
+                    <td>{{ request.created_at|date:"d/m/Y" }}</td>
+                    <td>
+                        <a href="{% url 'approve_permission' request.id %}" class="btn btn-primary btn-sm">Aprovar</a>
+                        <a href="{% url 'disapprove_permission' request.id %}"
+                            class="btn btn-danger btn-sm">Desaprovar</a>
+                    </td>
+                </tr>
+                {% endif %}
+                {% endfor %}
+            </tbody>
+        </table>
     </div>
 </div>
 
