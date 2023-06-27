@@ -39,11 +39,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = get_secret('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["devduck.up.railway.app"]
+ALLOWED_HOSTS = ["*"]
 
-CSRF_TRUSTED_ORIGINS = ["https://devduck.up.railway.app/"]
+# CSRF_TRUSTED_ORIGINS = ["https://devduck.up.railway.app/"]
 
 # Application definition
 
