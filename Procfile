@@ -1,1 +1,1 @@
-web: gunicorn devduck.wsgi --log-file
+web: gunicorn devduck.wsgi --log-file -
