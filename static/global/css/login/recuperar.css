@@ -1,0 +1,177 @@
+
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner{
+    background-color: #f5f1f1 ;
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    height: 60%;
+    box-shadow: 5px 5px 5px 5px rgb(31, 23, 23);
+    border-radius: 20px;
+}
+
+.box-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    
+
+}
+
+
+.box-right > h1{
+    margin-top: -40px;
+    text-decoration:wavy;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    width: 90%;
+
+}
+
+.box-right > h4{
+    position: static;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.box-right > input{
+
+    justify-content: flex-start;
+    padding-left: 5px;
+    width:53vw;
+    height: 8vh;
+    border:1px solid black;
+    border-radius: 5px;
+    font-variant-position:sub;
+    font-size: large;
+    font-style:italic;
+    color: rgb(97, 97, 95);
+    background-color: transparent;
+
+    
+}
+#input2{
+    margin-bottom: 35px;
+}
+.btn{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.btn > a{
+    width: 100px;
+    height: 40px;
+    display: flex;
+    border:1px solid black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    color: #000;
+    margin-top: 10px;
+
+}
+.btn > a:hover{
+    background-color: rgb(207, 183, 151);;
+  }
+
+.btn > button{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: antiquewhite;
+    border:1px solid black;
+    color: black;
+    margin-top: 10px;
+    width: 100px;
+    height:40px;
+    margin-left: 10%;
+    font-size: larger;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 100%;
+    margin-bottom: 10px;
+}
+.btn > button:hover{
+    background-color: rgb(207, 183, 151);;
+  }
+
+@media only screen and (max-width:912px){
+    .box-right > h1{
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    .conteiner{
+        height: 55vh;
+    }
+
+    .box-right > h4{
+        font-size: 20px;
+    }
+    .btn{
+        
+        justify-content: center;
+    }
+    .btn > a{
+        width: 100px;
+        margin-right: 20px;
+    }
+    .btn > button{
+        margin-left: 0;
+        width: 100px;
+        
+    }
+}
+
+
+@media only screen and (max-width:768px) {
+
+    .conteiner{
+        height: auto;
+    }
+    
+    
+    .box-right > h1{
+        display: flex;
+        font-size:30px;
+    }
+    
+    .btn{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 20%;
+    }
+
+    .box-right > input{
+        margin-top: 10px;
+    }
+
+    .btn > button{
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+        height: 90px;
+    } 
+    .btn > a{
+        margin-left: 18px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        height: 90px;
+    } 
+}

@@ -1,0 +1,29 @@
+main {
+    height: auto;
+}
+
+.container {
+    margin: 5% auto;
+}
+
+.container > pre {
+    background-color: #1b2026;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 20px;
+}
+
+.container > pre > code{
+    white-space: pre-line;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.link-showdownjs {
+    color: yellow;
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        margin: 0px;
+    }
+}

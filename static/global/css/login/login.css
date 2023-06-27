@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner{
+    background-color:#1d92f821 ;
+    display: flex;
+
+    justify-content: center;
+    width: 40%;
+    height: 80%;
+    border-radius: 20px;
+    margin-right: 70px;
+}
+
+.box-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-right > h1{
+    text-decoration:wavy;
+    display: flex;
+    justify-content: center ;
+    margin-top: 30px;
+    font-size: 40px;
+
+}
+
+.box-right > label{
+    margin-left: 3px;
+    margin-top: 5px;
+    margin-bottom:5px;
+}
+
+.box-right > input{
+
+    justify-content: flex-start;
+    padding-left: 5px;
+    width:33vw;
+    height: 3rem;
+    border:1px solid black;
+    border-radius: 10px;
+    font-variant-position:sub;
+    font-size: large;
+    font-style:italic;
+    color: black;
+    background-color: transparent;
+    margin-bottom: 3px;
+}
+#input2{
+    margin-bottom: 20px;
+}
+
+.box-right > a{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-bottom: 10px;
+    color:rgb(20, 23, 220);
+}
+
+.box-right ul {
+    margin: 10px 0;
+    width: 33vw;
+    padding-left: 20px;
+}
+
+.box-right li{
+    width: 100%;
+    font-size: 0.9rem;
+    white-space: normal;
+}
+
+.btn{
+  width: 100%;
+  height: 13vh;
+  display: flex;
+  justify-content:center ;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.btn > button{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: rgb(74, 74, 75);
+    border:1px solid rgba(0, 0, 0, 0.479);
+    color: black;
+    width: 15vw;
+    height:2.5rem;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn > button:hover{
+  background-color: rgba(45, 45, 46, 0.904);
+}
+
+.box-left{
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    margin-right: 200px;
+}
+
+.box-left.foto{
+  width: 45%;
+}
+
+
+.input-cadastro{
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+.box-right.Cadastro{
+  display: flex;
+  flex-direction: column;
+  height:fit-content;
+}
+.box-right.Cadastro > input{
+  height:2.8rem;
+  margin: 0;
+}
+
+.box-right.Cadastro > h1{
+  margin-top: 0px;
+  font-size: 33px;
+}
+.conteiner.cadas{
+  width: 45%;
+  height: 100%;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+
+
+.box-left > h1{
+  padding-left: 10px;
+  font-size: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@media only screen and (max-width:916px){
+    .box-left{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        width: 20rem;
+        margin: 4px;
+        margin-bottom: 2%;
+        font-size: 15px;
+    
+    }
+   
+    
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        padding: 150px 0;
+       flex-direction: column;
+    }
+   
+    .conteiner{
+        display: flex;
+        justify-content: center;
+        width: 25rem;
+        height: 28rem;
+        margin-left: 40px;
+        margin-bottom: 2%;
+    }
+    .conteiner.cadas{
+      margin-top: 10%;
+      height: fit-content;
+     }
+     .Cadastro{
+      height: fit-content;
+     }
+     .box-right{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center ;
+     }
+     .box-right li {
+      margin-left: 15%;
+      width: 100%;
+      font-size: 0.9rem;
+      white-space: normal;
+      }
+
+     .box-right > input{
+      width: 80%;
+      padding: 10px;
+     }
+     .box-right ul {
+      width: 80%;
+    } 
+     .box-right > label{
+      width: 80%;
+      padding-left: 5px;
+      margin-bottom: 10px;
+     }
+
+    .box-left > h1 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    .Cadastro>.btn{
+      display: flex;
+      justify-content: center;
+    
+    }
+
+    .box-right.Cadastro > h1 {
+      margin-bottom: 20px;
+    }
+    .cadas{
+      height: 80%;
+    }
+}
+    
+@media only screen and (max-width:750px){
+  main > .box-left{
+    display: none;
+  }
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding: 50px 0;
+  }
+
+  .conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;  
+    width: 85%;
+    height: fit-content;
+    
+  }
+  .conteiner.cadas{
+    width: 85%;
+   
+  }
+  .box-right.Cadastro{
+    margin-top: 10%;
+  }
+  .box-right{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .box-right > h1{
+    margin-top: -0px;
+    margin-bottom: 40px;
+  }
+  .box-right > label{
+    width: 80%;
+    padding-left: 5px;
+    margin-bottom: 10px;
+  }
+
+  .box-right > input{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+  }
+  .conteiner.cadas{
+    height: fit-content;
+  }
+  .btn{
+    height:8rem ;
+    align-items:center;
+  }
+  .btn > button{
+    width: 8rem;
+    height: 3rem;
+
+  };
+
+    
+}
+
