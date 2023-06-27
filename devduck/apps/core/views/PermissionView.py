@@ -61,8 +61,7 @@ class ApproveRequestPermissionView(LoginRequiredMixin, View):
         request_permission.save()
 
         self.grant_permissions(request_permission.requesting_user)
-
-        messages.success(request, 'Permissão aprovada!')
+        
         return redirect('permission_list')
     
 
@@ -81,5 +80,4 @@ class DisapproveRequestPermissionView(LoginRequiredMixin, View):
 
         self.remove_permissions(request_permission.requesting_user)
 
-        messages.success(request, 'Permissão reprovada!')
         return redirect('permission_list')
