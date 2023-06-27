@@ -43,7 +43,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ["https://devduck.up.railway.app"]
 
-CSRF_TRUSTED_ORIGINS = ["devduck.up.railway.app"]
+CSRF_TRUSTED_ORIGINS = ["https://devduck.up.railway.app"]
 
 # Application definition
 
