@@ -180,6 +180,8 @@ header {
     background-color: aliceblue;
     border-radius: 8px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    z-index: 999;
+    position: sticky;
 }
 
 .line_divider {
