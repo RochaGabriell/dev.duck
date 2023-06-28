@@ -40,16 +40,16 @@ class TagSubjectsView(ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        grid = Grid.objects.filter(id_subject=self.kwargs['tag'])
-        context['title'] = f'Postagens de {grid[0].id_subject}'
+        grid = Grid.objects.get(id=self.kwargs['tag'])
+        context['title'] = f'Postagens de {grid.id_subject}'
         return context
 
     def get_queryset(self):
         queryset = Post.objects.filter(id_grid=self.kwargs['tag'])
 
         if queryset.count() == 0:
-            subject = Grid.objects.filter(id=self.kwargs['tag'])
-            messages.error(self.request, f'Não há postagens da disciplina de {subject[0].id_subject}.')
+            grid = Grid.objects.get(id=self.kwargs['tag'])
+            messages.error(self.request, f'Não há postagens da disciplina de {grid.id_subject}.')
 
         for num, obj in enumerate(queryset, 1):
             obj.count = num
