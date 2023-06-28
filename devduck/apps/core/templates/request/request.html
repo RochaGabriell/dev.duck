@@ -1,26 +1,36 @@
 {% extends 'global/base.html' %}
 {% load static %}
 
-{% block style %}{% endblock %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'global/css/request/request.css' %}">
+{% endblock %}
 
 {% block title %} {{ title }} {% endblock %}
 
 {% block content %}
 
 <div class="right_login">
-    <form method="post">
+    <div class="text-title">
+        <h1>
+            Por que você quer ser um DevDuck?
+        </h1>
+        <h2>
+            Conte-nos um pouco sobre seus motivos para querer ser um DevDuck. Aqui você pode nos contar sobre suas
+            experiências, seus projetos, seus sonhos e tudo mais que achar relevante.
+        </h2>
+    </div>
+    <form method="post" class="form-request">
         {% csrf_token %}
-        <h1>{{ title }}</h1>
         {% for input in form %}
-        <div class="loginfield">
-            {{ input.label }}
+        <div class="field">
             {{ input }}
             {% for error in input.errors %}
             <p>{{ error }}</p>
             {% endfor %}
         </div>
         {% endfor %}
-        <button type="submit">Enviar</button>
+        <p class="text-danger"><strong>Atenção:</strong> Você só pode enviar uma solicitação.</p>
+        <button type="submit" class="btn-submit">Enviar</button>
     </form>
 </div>
 {% endblock %}
