@@ -23,9 +23,6 @@ class LoginView(LoginView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = 'Login'
-        context['button_link'] = 'register'
-        context['button'] = 'Cadastre-se'
-        context['action'] = 'login'
         return context
 
     def form_valid(self, form) -> HttpResponse:
@@ -52,9 +49,6 @@ class RegisterView(CreateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = 'Cadastre-se'
-        context['button_link'] = 'login'
-        context['button'] = 'Login'
-        context['action'] = 'register'
         return context
 
     def form_valid(self, form: UserCreationForm) -> HttpResponse:
