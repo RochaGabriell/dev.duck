@@ -36,6 +36,7 @@ class RequestPermissionView(LoginRequiredMixin, CreateView):
 
     def form_valid(self, form):
         form.instance.requesting_user = self.request.user
+        messages.success(self.request, 'Sua solicitação de permissão foi enviada com sucesso! Aguarde a aprovação do administrador.')
         return super().form_valid(form)
     
 
@@ -44,7 +45,7 @@ class ListRequestPermissionView(LoginRequiredMixin, ListView):
     model = RequestPermission
     template_name = 'request/list.html'
     context_object_name = 'requests'
-    paginate_by = 10
+    # paginate_by = 10
 
 
 class ApproveRequestPermissionView(LoginRequiredMixin, View):
