@@ -3,7 +3,9 @@
 {% block title %} Nova Postagem - DevDuck {% endblock %}
 
 {% block style %}
-<link rel="stylesheet" href="{% static 'global/css/post/post.css' %}" type="text/css"> {% endblock %}
+<link rel="stylesheet" href="{% static 'global/css/post/post.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'global/css/post/post_delete.css' %}" type="text/css"> 
+{% endblock %}
 
 {% block content %}
 
@@ -42,7 +44,7 @@
 
                     <div class="button-bottom-right">
                         {% if id_post %}
-                        <a class="button-transaction button-delete" href="{% url 'delete_post' id_post %}">Deletar</a>
+                        <button type="button" class="button-transaction button-delete" id="deleteButton">Deletar</button>
                         {% else %}
                         <input class="button-transaction button-reset" type="reset" value="Limpar">
                         {% endif %}
@@ -50,7 +52,7 @@
                     </div>
                 </div>
                 {% if form.errors %}
-                
+
                 <ul class="errorlist">
                     {% for field in form %}
                     {% if field.errors %}
@@ -61,10 +63,12 @@
                 {% endif %}
         </form>
     </div>
+    {% include 'post/__modal_delete.html' %}
 </div>
 {% endblock %}
 
 {% block scripts %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.4.0/showdown.min.js"></script>
 <script src="{% static 'global/javascript/showdown.js' %}"></script>
+<script src="{% static 'global/javascript/post_delete.js' %}"></script>
 {% endblock %}

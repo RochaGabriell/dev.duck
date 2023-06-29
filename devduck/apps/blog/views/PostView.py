@@ -42,8 +42,7 @@ class NewPostView(LoginRequiredMixin, CreateView):
 class DeletePostView(LoginRequiredMixin, DeleteView):
 
     model = Post
-    template_name = 'post/post_delete.html'
-    success_url = reverse_lazy('home')
+    success_url = reverse_lazy('profile')
 
     def dispatch(self, request: HttpRequest, *args: Any, **kwargs: Any) -> HttpResponse:
         # Verifica se o usuário tem permissão para excluir a postagem ou se é o dono da postagem

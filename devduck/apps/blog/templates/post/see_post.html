@@ -3,7 +3,9 @@
 {% block title %} {{ object.title }} {% endblock %}
 
 {% block style %}
-<link rel="stylesheet" href="{% static 'global/css/post/see_post.css' %}" type="text/css"> {% endblock %}
+<link rel="stylesheet" href="{% static 'global/css/post/see_post.css' %}" type="text/css"> 
+<link rel="stylesheet" href="{% static 'global/css/post/post_delete.css' %}" type="text/css"> 
+{% endblock %}
 
 {% block content %}
 
@@ -41,10 +43,10 @@
         <section class="post-desc-right">
             {% if user == object.id_user %}
             <div class="button-bottom-right">
-                <a class="button-transaction button-delete" href="{% url 'delete_post' object.id %}">
+                <div class="button-transaction button-delete" id="deleteButton">
                     <img src="{% static 'global/img/delete.svg' %}" alt="Imagem de deletar">
                     <button>Deletar</button>
-                </a>
+                </div>
                 <a class="button-transaction button-edit" href="{% url 'edit_post' object.id %}">
                     <img src="{% static 'global/img/edit.svg' %}" alt="Imagem de editar">
                     <button>Editar</button>
@@ -65,6 +67,8 @@
 
     <textarea name="content" id="markdown" cols="30" rows="10" style="display: none;">{{ object.content }}</textarea>
     <div class="post-form" id="html"></div>
+
+    {% include 'post/__modal_delete.html' %}
 </div>
 
 {% endblock %}
@@ -74,4 +78,5 @@
 <script src="{% static 'global/javascript/see_post.js' %}"></script>
 <script src="{% static 'global/javascript/sound_effect.js' %}"></script>
 <script src="{% static 'global/javascript/egg.js' %}"></script>
+<script src="{% static 'global/javascript/post_delete.js' %}"></script>
 {% endblock %}
