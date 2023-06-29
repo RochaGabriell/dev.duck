@@ -24,9 +24,10 @@ class UserCreationForm(UserCreationForm):
 
     def clean_matriculation(self):
         matriculation = self.cleaned_data["matriculation"]
-        if len(matriculation) != 15:
-            raise forms.ValidationError("Matrícula inválida")
-        return matriculation
+        if len(matriculation) == 15 or len(matriculation) == 7:
+            return matriculation
+        
+        raise forms.ValidationError("Matrícula inválida")
 
 
 class UserChangeForm(UserChangeForm):
