@@ -63,7 +63,9 @@
                 {% endif %}
         </form>
     </div>
+    {% if id_post %}
     {% include 'post/__modal_delete.html' %}
+    {% endif %}
 </div>
 {% endblock %}
 
