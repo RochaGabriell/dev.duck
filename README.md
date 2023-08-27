@@ -9,7 +9,6 @@
   <a href="#-Começando">Começando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-Pré-requisitos">Pré-requisitos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-Instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-Carregando Dados do Banco">Carregando Dados do Banco</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-Construído com">Construído com</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-Licença">Licença</a>
 </p>
@@ -121,14 +120,7 @@ http://localhost:8000/
 Observações:
 
 - Para derrubar todos os serviços, basta utilizar as teclas `CTRL+C`, que é o padrão dos terminais para matar processos.
-
-## Carregando Dados do Banco
-
-Para iniciar com dados iniciais ou de backup em nosso banco de dados, você pode usar o comando a seguir:
-
-```bash
-./manage.py loaddata db_backups/db.json
-```
+- Para iniciar com dados iniciais ou de backup em nosso banco de dados, você pode usar o comando a seguir: ```./manage.py loaddata db_backups/db.json ```
 
 ## 🔍 Funcionalidades
 
