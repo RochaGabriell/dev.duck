@@ -3,33 +3,7 @@
     "model": "admin.logentry",
     "pk": 1,
     "fields": {
-      "action_time": "2023-05-08T13:16:21.610Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "2",
-      "object_repr": "2022121TADS0015",
-      "action_flag": 3,
-      "change_message": ""
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 2,
-    "fields": {
-      "action_time": "2023-05-08T13:17:12.180Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "3",
-      "object_repr": "2022121TADS0015",
-      "action_flag": 3,
-      "change_message": ""
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 3,
-    "fields": {
-      "action_time": "2023-05-13T21:03:51.767Z",
+      "action_time": "2023-06-28T04:15:59.974Z",
       "user": 1,
       "content_type": 7,
       "object_id": "1",
@@ -40,13 +14,39 @@
   },
   {
     "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2023-06-28T12:36:43.345Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Matemática Computacional | Modulo: Módulo I",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2023-06-28T12:36:57.412Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Atividades Linguísticas | Modulo: Módulo I",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
     "pk": 4,
     "fields": {
-      "action_time": "2023-05-13T21:03:57.509Z",
+      "action_time": "2023-06-28T12:37:16.117Z",
       "user": 1,
-      "content_type": 13,
-      "object_id": "1",
-      "object_repr": "Módulo I",
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Inglês Técnico | Modulo: Módulo I",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -55,11 +55,11 @@
     "model": "admin.logentry",
     "pk": 5,
     "fields": {
-      "action_time": "2023-05-13T21:04:05.590Z",
+      "action_time": "2023-06-28T12:37:36.323Z",
       "user": 1,
-      "content_type": 11,
-      "object_id": "1",
-      "object_repr": "Algoritmos",
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "Algoritmos e Programação | Modulo: Módulo I",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -68,11 +68,11 @@
     "model": "admin.logentry",
     "pk": 6,
     "fields": {
-      "action_time": "2023-05-13T21:04:07.058Z",
+      "action_time": "2023-06-28T12:37:55.230Z",
       "user": 1,
       "content_type": 8,
-      "object_id": "1",
-      "object_repr": "Módulo: Módulo I | Disciplina: Algoritmos",
+      "object_id": "5",
+      "object_repr": "Introdução a Computação | Modulo: Módulo I",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -81,11 +81,11 @@
     "model": "admin.logentry",
     "pk": 7,
     "fields": {
-      "action_time": "2023-05-13T21:04:30.826Z",
+      "action_time": "2023-06-28T12:39:21.201Z",
       "user": 1,
-      "content_type": 10,
-      "object_id": "1",
-      "object_repr": "Python",
+      "content_type": 8,
+      "object_id": "6",
+      "object_repr": "Metodologia Científica | Modulo: Módulo II",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -94,11 +94,11 @@
     "model": "admin.logentry",
     "pk": 8,
     "fields": {
-      "action_time": "2023-05-13T21:04:33.555Z",
+      "action_time": "2023-06-28T12:39:51.750Z",
       "user": 1,
-      "content_type": 9,
-      "object_id": "1",
-      "object_repr": "Criador: 2022121tads0020 | Título: Teste",
+      "content_type": 8,
+      "object_id": "7",
+      "object_repr": "Programação Orientada a Objetos | Modulo: Módulo II",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -107,63 +107,63 @@
     "model": "admin.logentry",
     "pk": 9,
     "fields": {
-      "action_time": "2023-05-13T23:36:34.939Z",
+      "action_time": "2023-06-28T12:40:01.410Z",
       "user": 1,
-      "content_type": 10,
-      "object_id": "2",
-      "object_repr": "Java",
-      "action_flag": 3,
-      "change_message": ""
+      "content_type": 8,
+      "object_id": "8",
+      "object_repr": "Banco de Dados I | Modulo: Módulo II",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
     }
   },
   {
     "model": "admin.logentry",
     "pk": 10,
     "fields": {
-      "action_time": "2023-05-13T23:37:51.013Z",
+      "action_time": "2023-06-28T12:40:12.000Z",
       "user": 1,
-      "content_type": 9,
-      "object_id": "1",
-      "object_repr": "Criador: 2022121tads0020 | Título: Teste",
-      "action_flag": 3,
-      "change_message": ""
+      "content_type": 8,
+      "object_id": "9",
+      "object_repr": "Engenharia de Software I | Modulo: Módulo II",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
     }
   },
   {
     "model": "admin.logentry",
     "pk": 11,
     "fields": {
-      "action_time": "2023-05-13T23:38:09.076Z",
+      "action_time": "2023-06-28T12:40:21.617Z",
       "user": 1,
-      "content_type": 11,
-      "object_id": "1",
-      "object_repr": "Algoritmos",
-      "action_flag": 3,
-      "change_message": ""
+      "content_type": 8,
+      "object_id": "10",
+      "object_repr": "Estrutura de Dados I | Modulo: Módulo II",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
     }
   },
   {
     "model": "admin.logentry",
     "pk": 12,
     "fields": {
-      "action_time": "2023-05-13T23:38:39.037Z",
+      "action_time": "2023-06-28T12:40:27.801Z",
       "user": 1,
-      "content_type": 13,
-      "object_id": "1",
-      "object_repr": "Módulo I",
-      "action_flag": 3,
-      "change_message": ""
+      "content_type": 8,
+      "object_id": "11",
+      "object_repr": "Estátisca | Modulo: Módulo II",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
     }
   },
   {
     "model": "admin.logentry",
     "pk": 13,
     "fields": {
-      "action_time": "2023-05-13T23:41:35.071Z",
+      "action_time": "2023-06-28T12:41:21.866Z",
       "user": 1,
-      "content_type": 13,
-      "object_id": "2",
-      "object_repr": "Módulo I",
+      "content_type": 8,
+      "object_id": "12",
+      "object_repr": "Banco de Dados II | Modulo: Módulo III",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -172,11 +172,11 @@
     "model": "admin.logentry",
     "pk": 14,
     "fields": {
-      "action_time": "2023-05-13T23:41:39.751Z",
+      "action_time": "2023-06-28T12:41:44.138Z",
       "user": 1,
-      "content_type": 13,
-      "object_id": "3",
-      "object_repr": "Módulo II",
+      "content_type": 8,
+      "object_id": "13",
+      "object_repr": "Arquitetura de Computadores | Modulo: Módulo III",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -185,11 +185,11 @@
     "model": "admin.logentry",
     "pk": 15,
     "fields": {
-      "action_time": "2023-05-13T23:41:44.727Z",
+      "action_time": "2023-06-28T12:41:57.376Z",
       "user": 1,
-      "content_type": 13,
-      "object_id": "4",
-      "object_repr": "Módulo III",
+      "content_type": 8,
+      "object_id": "14",
+      "object_repr": "Sistemas Operacionais | Modulo: Módulo III",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -198,11 +198,11 @@
     "model": "admin.logentry",
     "pk": 16,
     "fields": {
-      "action_time": "2023-05-13T23:41:52.369Z",
+      "action_time": "2023-06-28T12:42:06.965Z",
       "user": 1,
-      "content_type": 13,
-      "object_id": "5",
-      "object_repr": "Módulo Iv",
+      "content_type": 8,
+      "object_id": "15",
+      "object_repr": "Estrutura de Dados II | Modulo: Módulo III",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -211,11 +211,11 @@
     "model": "admin.logentry",
     "pk": 17,
     "fields": {
-      "action_time": "2023-05-13T23:41:59.920Z",
+      "action_time": "2023-06-28T12:42:42.197Z",
       "user": 1,
-      "content_type": 13,
-      "object_id": "6",
-      "object_repr": "Módulo V",
+      "content_type": 8,
+      "object_id": "16",
+      "object_repr": "Programação para Internet I | Modulo: Módulo III",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -224,11 +224,11 @@
     "model": "admin.logentry",
     "pk": 18,
     "fields": {
-      "action_time": "2023-05-13T23:42:06.685Z",
+      "action_time": "2023-06-28T12:42:58.557Z",
       "user": 1,
-      "content_type": 13,
-      "object_id": "7",
-      "object_repr": "Módulo VI",
+      "content_type": 8,
+      "object_id": "17",
+      "object_repr": "Engenharia de Software II | Modulo: Módulo III",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -237,11 +237,11 @@
     "model": "admin.logentry",
     "pk": 19,
     "fields": {
-      "action_time": "2023-05-14T04:16:25.263Z",
+      "action_time": "2023-06-28T12:43:07.232Z",
       "user": 1,
       "content_type": 8,
-      "object_id": "2",
-      "object_repr": "Módulo: Módulo I | Disciplina: Atividades Linguísticas",
+      "object_id": "18",
+      "object_repr": "Projeto Integrador I | Modulo: Módulo III",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -250,11 +250,11 @@
     "model": "admin.logentry",
     "pk": 20,
     "fields": {
-      "action_time": "2023-05-14T04:16:30.859Z",
+      "action_time": "2023-06-28T12:43:57.496Z",
       "user": 1,
       "content_type": 8,
-      "object_id": "3",
-      "object_repr": "Módulo: Módulo I | Disciplina: Matemática Computacional",
+      "object_id": "19",
+      "object_repr": "Engenharia de Software III | Modulo: Módulo IV",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -263,11 +263,11 @@
     "model": "admin.logentry",
     "pk": 21,
     "fields": {
-      "action_time": "2023-05-14T04:16:36.613Z",
+      "action_time": "2023-06-28T12:44:06.421Z",
       "user": 1,
       "content_type": 8,
-      "object_id": "4",
-      "object_repr": "Módulo: Módulo I | Disciplina: Inglês Técnico",
+      "object_id": "20",
+      "object_repr": "Redes de Computadores | Modulo: Módulo IV",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -276,11 +276,11 @@
     "model": "admin.logentry",
     "pk": 22,
     "fields": {
-      "action_time": "2023-05-14T04:16:41.791Z",
+      "action_time": "2023-06-28T12:44:21.558Z",
       "user": 1,
       "content_type": 8,
-      "object_id": "5",
-      "object_repr": "Módulo: Módulo I | Disciplina: Introdução a Programação",
+      "object_id": "21",
+      "object_repr": "Analise e Projeto de Sistemas | Modulo: Módulo IV",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -289,11 +289,11 @@
     "model": "admin.logentry",
     "pk": 23,
     "fields": {
-      "action_time": "2023-05-14T04:16:58.530Z",
+      "action_time": "2023-06-28T12:44:36.787Z",
       "user": 1,
       "content_type": 8,
-      "object_id": "6",
-      "object_repr": "Módulo: Módulo I | Disciplina: Lógica de Programação",
+      "object_id": "22",
+      "object_repr": "Introdução a Administração | Modulo: Módulo IV",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -302,63 +302,63 @@
     "model": "admin.logentry",
     "pk": 24,
     "fields": {
-      "action_time": "2023-05-14T04:17:21.734Z",
+      "action_time": "2023-06-28T12:45:13.238Z",
       "user": 1,
-      "content_type": 11,
-      "object_id": "5",
-      "object_repr": "Introdução a Computação",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"Descri\\u00e7\\u00e3o\"]}}]"
+      "content_type": 8,
+      "object_id": "23",
+      "object_repr": "Programação para Internet II | Modulo: Módulo IV",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
     }
   },
   {
     "model": "admin.logentry",
     "pk": 25,
     "fields": {
-      "action_time": "2023-05-14T04:17:25.086Z",
+      "action_time": "2023-06-28T12:45:31.601Z",
       "user": 1,
       "content_type": 8,
-      "object_id": "5",
-      "object_repr": "Módulo: Módulo I | Disciplina: Introdução a Computação",
-      "action_flag": 2,
-      "change_message": "[]"
+      "object_id": "24",
+      "object_repr": "Programação para Internet II | Modulo: Módulo IV",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
     }
   },
   {
     "model": "admin.logentry",
     "pk": 26,
     "fields": {
-      "action_time": "2023-05-14T04:17:49.552Z",
+      "action_time": "2023-06-28T12:45:59.958Z",
       "user": 1,
-      "content_type": 11,
-      "object_id": "6",
-      "object_repr": "Algoritmo e Programação",
+      "content_type": 8,
+      "object_id": "24",
+      "object_repr": "Projeto Integrador II | Modulo: Módulo IV",
       "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"Descri\\u00e7\\u00e3o\"]}}]"
+      "change_message": "[{\"changed\": {\"fields\": [\"Disciplina\"]}}]"
     }
   },
   {
     "model": "admin.logentry",
     "pk": 27,
     "fields": {
-      "action_time": "2023-05-14T04:17:51.558Z",
+      "action_time": "2023-06-28T12:48:51.712Z",
       "user": 1,
       "content_type": 8,
-      "object_id": "6",
-      "object_repr": "Módulo: Módulo I | Disciplina: Algoritmo e Programação",
-      "action_flag": 2,
-      "change_message": "[]"
+      "object_id": "25",
+      "object_repr": "Interação Humano Computador | Modulo: Módulo V",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
     }
   },
   {
     "model": "admin.logentry",
     "pk": 28,
     "fields": {
-      "action_time": "2023-05-14T04:39:00.676Z",
+      "action_time": "2023-06-28T12:49:13.673Z",
       "user": 1,
       "content_type": 8,
-      "object_id": "7",
-      "object_repr": "Módulo: Módulo II | Disciplina: Metodologia Científica",
+      "object_id": "26",
+      "object_repr": "Tópicos Especiais em Programação | Modulo: Módulo V",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -367,11 +367,11 @@
     "model": "admin.logentry",
     "pk": 29,
     "fields": {
-      "action_time": "2023-05-14T04:39:07.972Z",
+      "action_time": "2023-06-28T12:49:41.701Z",
       "user": 1,
       "content_type": 8,
-      "object_id": "8",
-      "object_repr": "Módulo: Módulo II | Disciplina: Programação Orientada a Objetos",
+      "object_id": "27",
+      "object_repr": "Programação para Dispositivos Móveis | Modulo: Módulo V",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -380,11 +380,11 @@
     "model": "admin.logentry",
     "pk": 30,
     "fields": {
-      "action_time": "2023-05-14T04:39:13.314Z",
+      "action_time": "2023-06-28T12:49:52.174Z",
       "user": 1,
       "content_type": 8,
-      "object_id": "9",
-      "object_repr": "Módulo: Módulo II | Disciplina: Banco de Dados I",
+      "object_id": "28",
+      "object_repr": "Programação para Dispositivos Móveis | Modulo: Módulo V",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -393,11 +393,11 @@
     "model": "admin.logentry",
     "pk": 31,
     "fields": {
-      "action_time": "2023-05-14T04:39:23.273Z",
+      "action_time": "2023-06-28T12:50:32.534Z",
       "user": 1,
       "content_type": 8,
-      "object_id": "10",
-      "object_repr": "Módulo: Módulo II | Disciplina: Engenharia de Software I",
+      "object_id": "29",
+      "object_repr": "Engenharia de Software IV | Modulo: Módulo V",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -406,11 +406,11 @@
     "model": "admin.logentry",
     "pk": 32,
     "fields": {
-      "action_time": "2023-05-14T04:39:31.407Z",
+      "action_time": "2023-06-28T12:50:41.650Z",
       "user": 1,
       "content_type": 8,
-      "object_id": "11",
-      "object_repr": "Módulo: Módulo II | Disciplina: Estrutura de Dados I",
+      "object_id": "30",
+      "object_repr": "Projeto Integrador III | Modulo: Módulo V",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -419,11 +419,11 @@
     "model": "admin.logentry",
     "pk": 33,
     "fields": {
-      "action_time": "2023-05-14T04:39:35.739Z",
+      "action_time": "2023-06-28T12:51:24.109Z",
       "user": 1,
       "content_type": 8,
-      "object_id": "12",
-      "object_repr": "Módulo: Módulo II | Disciplina: Estátisca",
+      "object_id": "31",
+      "object_repr": "Elaboração de Projetos de Pesquisa | Modulo: Módulo V",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -432,11 +432,11 @@
     "model": "admin.logentry",
     "pk": 34,
     "fields": {
-      "action_time": "2023-05-14T04:47:31.566Z",
+      "action_time": "2023-06-28T12:51:31.605Z",
       "user": 1,
       "content_type": 8,
-      "object_id": "13",
-      "object_repr": "Módulo: Módulo III | Disciplina: Banco de Dados II",
+      "object_id": "32",
+      "object_repr": "Segurança da Informação | Modulo: Módulo VI",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -445,11 +445,11 @@
     "model": "admin.logentry",
     "pk": 35,
     "fields": {
-      "action_time": "2023-05-14T04:47:37.665Z",
+      "action_time": "2023-06-28T12:52:04.977Z",
       "user": 1,
       "content_type": 8,
-      "object_id": "14",
-      "object_repr": "Módulo: Módulo III | Disciplina: Arquitetura de Computadores",
+      "object_id": "33",
+      "object_repr": "Empreendedorismo e Inovação | Modulo: Módulo VI",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -458,11 +458,11 @@
     "model": "admin.logentry",
     "pk": 36,
     "fields": {
-      "action_time": "2023-05-14T04:47:46.366Z",
+      "action_time": "2023-06-28T12:52:22.939Z",
       "user": 1,
       "content_type": 8,
-      "object_id": "15",
-      "object_repr": "Módulo: Módulo III | Disciplina: Sistemas Operacionais",
+      "object_id": "34",
+      "object_repr": "Tópicos Especiais em Sistema de Informação | Modulo: Módulo VI",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -471,11 +471,11 @@
     "model": "admin.logentry",
     "pk": 37,
     "fields": {
-      "action_time": "2023-05-14T04:47:54.858Z",
+      "action_time": "2023-06-28T12:52:30.203Z",
       "user": 1,
       "content_type": 8,
-      "object_id": "16",
-      "object_repr": "Módulo: Módulo III | Disciplina: Estrutura de Dados II",
+      "object_id": "35",
+      "object_repr": "Lesgislação Aplciada a Tecnologia da Informação | Modulo: Módulo VI",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -484,11 +484,11 @@
     "model": "admin.logentry",
     "pk": 38,
     "fields": {
-      "action_time": "2023-05-14T04:48:01.289Z",
+      "action_time": "2023-06-28T12:52:36.103Z",
       "user": 1,
       "content_type": 8,
-      "object_id": "17",
-      "object_repr": "Módulo: Módulo III | Disciplina: Programação para Internet I",
+      "object_id": "36",
+      "object_repr": "Ética e Responsabilidade Socioambiental | Modulo: Módulo VI",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -497,11 +497,11 @@
     "model": "admin.logentry",
     "pk": 39,
     "fields": {
-      "action_time": "2023-05-14T04:48:08.342Z",
+      "action_time": "2023-06-28T12:52:45.369Z",
       "user": 1,
       "content_type": 8,
-      "object_id": "18",
-      "object_repr": "Módulo: Módulo III | Disciplina: Engenharia de Software II",
+      "object_id": "37",
+      "object_repr": "Trabalho de Conclusão de Curso | Modulo: Módulo VI",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -510,11 +510,11 @@
     "model": "admin.logentry",
     "pk": 40,
     "fields": {
-      "action_time": "2023-05-14T04:48:13.977Z",
+      "action_time": "2023-06-28T12:53:15.561Z",
       "user": 1,
-      "content_type": 8,
-      "object_id": "19",
-      "object_repr": "Módulo: Módulo III | Disciplina: Projeto Integrador I",
+      "content_type": 13,
+      "object_id": "7",
+      "object_repr": "Outros",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -523,11 +523,11 @@
     "model": "admin.logentry",
     "pk": 41,
     "fields": {
-      "action_time": "2023-05-14T04:50:24.730Z",
+      "action_time": "2023-06-28T12:53:34.031Z",
       "user": 1,
-      "content_type": 8,
-      "object_id": "20",
-      "object_repr": "Módulo: Módulo Iv | Disciplina: Engenharia de Software III",
+      "content_type": 11,
+      "object_id": "37",
+      "object_repr": "Outros",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -536,234 +536,13 @@
     "model": "admin.logentry",
     "pk": 42,
     "fields": {
-      "action_time": "2023-05-14T04:50:32.107Z",
+      "action_time": "2023-06-28T12:53:35.925Z",
       "user": 1,
       "content_type": 8,
-      "object_id": "21",
-      "object_repr": "Módulo: Módulo Iv | Disciplina: Redes de Computadores",
+      "object_id": "38",
+      "object_repr": "Outros | Modulo: Outros",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 43,
-    "fields": {
-      "action_time": "2023-05-14T04:50:52.423Z",
-      "user": 1,
-      "content_type": 8,
-      "object_id": "22",
-      "object_repr": "Módulo: Módulo Iv | Disciplina: Analise e Projeto de Sistemas",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 44,
-    "fields": {
-      "action_time": "2023-05-14T04:51:21.792Z",
-      "user": 1,
-      "content_type": 8,
-      "object_id": "23",
-      "object_repr": "Módulo: Módulo Iv | Disciplina: Introdução a Administração",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 45,
-    "fields": {
-      "action_time": "2023-05-14T04:51:35.507Z",
-      "user": 1,
-      "content_type": 8,
-      "object_id": "24",
-      "object_repr": "Módulo: Módulo Iv | Disciplina: Programação para Internet II",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 46,
-    "fields": {
-      "action_time": "2023-05-14T04:51:49.113Z",
-      "user": 1,
-      "content_type": 8,
-      "object_id": "25",
-      "object_repr": "Módulo: Módulo Iv | Disciplina: Projeto Integrador II",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 47,
-    "fields": {
-      "action_time": "2023-05-14T04:53:02.589Z",
-      "user": 1,
-      "content_type": 8,
-      "object_id": "26",
-      "object_repr": "Módulo: Módulo V | Disciplina: Interação Humano Computador",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 48,
-    "fields": {
-      "action_time": "2023-05-14T04:53:17.441Z",
-      "user": 1,
-      "content_type": 8,
-      "object_id": "27",
-      "object_repr": "Módulo: Módulo V | Disciplina: Tópicos Especiais em Programação",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 49,
-    "fields": {
-      "action_time": "2023-05-14T04:53:36.279Z",
-      "user": 1,
-      "content_type": 8,
-      "object_id": "28",
-      "object_repr": "Módulo: Módulo V | Disciplina: Programação para Dispositivos Móveis",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 50,
-    "fields": {
-      "action_time": "2023-05-14T04:53:43.539Z",
-      "user": 1,
-      "content_type": 8,
-      "object_id": "29",
-      "object_repr": "Módulo: Módulo V | Disciplina: Engenharia de Software IV",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 51,
-    "fields": {
-      "action_time": "2023-05-14T04:53:55.024Z",
-      "user": 1,
-      "content_type": 8,
-      "object_id": "30",
-      "object_repr": "Módulo: Módulo V | Disciplina: Projeto Integrador III",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 52,
-    "fields": {
-      "action_time": "2023-05-14T04:54:03.851Z",
-      "user": 1,
-      "content_type": 8,
-      "object_id": "31",
-      "object_repr": "Módulo: Módulo V | Disciplina: Elaboração de Projetos de Pesquisa",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 53,
-    "fields": {
-      "action_time": "2023-05-14T04:54:24.564Z",
-      "user": 1,
-      "content_type": 8,
-      "object_id": "32",
-      "object_repr": "Módulo: Módulo VI | Disciplina: Segurança da Informação",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 54,
-    "fields": {
-      "action_time": "2023-05-14T04:54:36.881Z",
-      "user": 1,
-      "content_type": 8,
-      "object_id": "33",
-      "object_repr": "Módulo: Módulo VI | Disciplina: Empreendedorismo e Inovação",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 55,
-    "fields": {
-      "action_time": "2023-05-14T04:54:43.372Z",
-      "user": 1,
-      "content_type": 8,
-      "object_id": "34",
-      "object_repr": "Módulo: Módulo VI | Disciplina: Tópicos Especiais em Sistema de Informação",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 56,
-    "fields": {
-      "action_time": "2023-05-14T04:54:54.018Z",
-      "user": 1,
-      "content_type": 8,
-      "object_id": "35",
-      "object_repr": "Módulo: Módulo VI | Disciplina: Lesgislação Aplciada a Tecnologia da Informação",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 57,
-    "fields": {
-      "action_time": "2023-05-14T04:55:03.571Z",
-      "user": 1,
-      "content_type": 8,
-      "object_id": "36",
-      "object_repr": "Módulo: Módulo VI | Disciplina: Ética e Responsabilidade Socioambiental",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 58,
-    "fields": {
-      "action_time": "2023-05-14T04:55:12.627Z",
-      "user": 1,
-      "content_type": 8,
-      "object_id": "37",
-      "object_repr": "Módulo: Módulo VI | Disciplina: Trabalho de Conclusão de Curso",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 59,
-    "fields": {
-      "action_time": "2023-05-14T05:19:23.274Z",
-      "user": 1,
-      "content_type": 13,
-      "object_id": "5",
-      "object_repr": "Módulo IV",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"Descri\\u00e7\\u00e3o\"]}}]"
     }
   },
   {
@@ -1058,7 +837,7 @@
     "model": "auth.permission",
     "pk": 33,
     "fields": {
-      "name": "Can add post",
+      "name": "Can add Postagem",
       "content_type": 9,
       "codename": "add_post"
     }
@@ -1067,7 +846,7 @@
     "model": "auth.permission",
     "pk": 34,
     "fields": {
-      "name": "Can change post",
+      "name": "Can change Postagem",
       "content_type": 9,
       "codename": "change_post"
     }
@@ -1076,7 +855,7 @@
     "model": "auth.permission",
     "pk": 35,
     "fields": {
-      "name": "Can delete post",
+      "name": "Can delete Postagem",
       "content_type": 9,
       "codename": "delete_post"
     }
@@ -1085,7 +864,7 @@
     "model": "auth.permission",
     "pk": 36,
     "fields": {
-      "name": "Can view post",
+      "name": "Can view Postagem",
       "content_type": 9,
       "codename": "view_post"
     }
@@ -1235,6 +1014,42 @@
     }
   },
   {
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+      "name": "Can add Solicitação de permissão",
+      "content_type": 14,
+      "codename": "add_requestpermission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+      "name": "Can change Solicitação de permissão",
+      "content_type": 14,
+      "codename": "change_requestpermission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+      "name": "Can delete Solicitação de permissão",
+      "content_type": 14,
+      "codename": "delete_requestpermission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+      "name": "Can view Solicitação de permissão",
+      "content_type": 14,
+      "codename": "view_requestpermission"
+    }
+  },
+  {
     "model": "contenttypes.contenttype",
     "pk": 1,
     "fields": { "app_label": "admin", "model": "logentry" }
@@ -1300,76 +1115,148 @@
     "fields": { "app_label": "blog", "model": "module" }
   },
   {
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": { "app_label": "core", "model": "requestpermission" }
+  },
+  {
     "model": "sessions.session",
-    "pk": "3t61hprbshgy4citdyfq27y0c8o18y1p",
+    "pk": "170tkeuph6ftngvdo9bbgzaomqczpmou",
     "fields": {
-      "session_data": ".eJxVjMEOwiAQRP-FsyEguIBH7_0GsmUXqRpISnsy_rtt0oMe5jLvzbxFxHUpce08x4nEVWhx-u1GTE-uO6AH1nuTqdVlnka5K_KgXQ6N-HU73L-Dgr1sa5cTnAEwKAholCcNlJVlbTWyN36LRgdkbL4Ej8YGDaACMzmLzirx-QLHQTb1:1q5WC7:l4UVO0utgTdOKnM1TvBEaldYcNaDEjl31StEvsgbH-c",
-      "expire_date": "2023-06-17T18:41:43.067Z"
+      "session_data": ".eJxVjDkOwjAQRe_iGlnxMl4o6TlDNOOxcQDZUpYKcXeIlALa_977LzHittZxW_I8TizOQonT70aYHrntgO_Ybl2m3tZ5Irkr8qCLvHbOz8vh_h1UXOq3JpvAO_IGC1sAFZVFF4InMMrEIRCHyKDRxTJErSFnTYbIsy4WkjPi_QHKdDdQ:1qOdbP:xpCNGOZombLnlOHJQgxUPXS82l3XvDm846Oio9aoq28",
+      "expire_date": "2023-08-09T12:26:51.605Z"
     }
   },
   {
     "model": "sessions.session",
-    "pk": "57lgjr9z4ijdsbnddc6ish2g63vh8hzy",
+    "pk": "18v8mxyk42i1coqezy3xytgow4vomj61",
     "fields": {
-      "session_data": ".eJxVjMEOwiAQRP-FsyEguIBH7_0GsmUXqRpISnsy_rtt0oMe5jLvzbxFxHUpce08x4nEVWhx-u1GTE-uO6AH1nuTqdVlnka5K_KgXQ6N-HU73L-Dgr1sa5cTnAEwKAholCcNlJVlbTWyN36LRgdkbL4Ej8YGDaACMzmLzirx-QLHQTb1:1q1wH7:xszIwGf_w8yni9nLtyykk_eJvc36_vXLF8QX6KjcgHo",
-      "expire_date": "2023-06-07T21:44:05.822Z"
+      "session_data": ".eJxVjEEOwiAQAP_C2RAqdBc8evcNZIFFqgaS0p6MfzckPeh1ZjJv4Wnfit87r35J4iK0OP2yQPHJdYj0oHpvMra6rUuQI5GH7fLWEr-uR_s3KNTL2OZZW7SQdbRgkHECdsEBZqWyURwwcjijYUBEl4gt0JQjs7M4Z0Dx-QLVZzfm:1qEd1I:xsa8hPGB9VQ5BZ_-jziqBe1O_C0SY5MoAjla1AZlm0Q",
+      "expire_date": "2023-07-12T21:48:12.778Z"
     }
   },
   {
     "model": "sessions.session",
-    "pk": "lq28d64f0pk7xmvwk43kdototdxgksa6",
+    "pk": "7a4uzymo8sk42cdhp0uk762s62uv20xi",
     "fields": {
-      "session_data": ".eJxVjMEOwiAQRP-FsyEguIBH7_0GsmUXqRpISnsy_rtt0oMe5jLvzbxFxHUpce08x4nEVWhx-u1GTE-uO6AH1nuTqdVlnka5K_KgXQ6N-HU73L-Dgr1sa5cTnAEwKAholCcNlJVlbTWyN36LRgdkbL4Ej8YGDaACMzmLzirx-QLHQTb1:1pytFA:ifwr8SIFvNLfexSZzXmW7XxlbZWM2i_YZOw0p-gnZww",
-      "expire_date": "2023-05-30T11:53:28.110Z"
+      "session_data": ".eJxVjDkOwjAQRe_iGlnxMl4o6TlDNOOxcQDZUpYKcXeIlALa_977LzHittZxW_I8TizOQonT70aYHrntgO_Ybl2m3tZ5Irkr8qCLvHbOz8vh_h1UXOq3JpvAO_IGC1sAFZVFF4InMMrEIRCHyKDRxTJErSFnTYbIsy4WkjPi_QHKdDdQ:1qaH6G:Xq3e6I732uywFYix4qebItyzoNB6vQewrMevRYQ8A4I",
+      "expire_date": "2023-09-10T14:50:48.278Z"
     }
   },
   {
     "model": "sessions.session",
-    "pk": "rcugnvfpy3xp837eq2jercbu0r2ttehy",
+    "pk": "cfunmjsgknue5yy87nuxsdpm2bqk556o",
     "fields": {
-      "session_data": "e30:1pzHD0:pdVd76IRJFgfwAifkxr3P-2zr7G8evLNclst9vXmv-4",
-      "expire_date": "2023-05-31T13:28:50.807Z"
+      "session_data": ".eJxVjDkOwjAQRe_iGlnxMl4o6TlDNOOxcQDZUpYKcXeIlALa_977LzHittZxW_I8TizOQonT70aYHrntgO_Ybl2m3tZ5Irkr8qCLvHbOz8vh_h1UXOq3JpvAO_IGC1sAFZVFF4InMMrEIRCHyKDRxTJErSFnTYbIsy4WkjPi_QHKdDdQ:1qEZ1I:UfyRvdRYq_Mfbx0V3tQs_tlNXIX4ui6CEoQ8LleCiBc",
+      "expire_date": "2023-07-12T17:31:56.136Z"
     }
   },
   {
     "model": "sessions.session",
-    "pk": "rti15f854bclts0n1pefnybnx6p91ybl",
+    "pk": "f34e1vt4pghljiksi1kplnx7za3s9h1j",
     "fields": {
-      "session_data": ".eJxVjLEOAiEQRP-F2hCWBeUs7f0GwrIgpwaS464y_ruSXKHlzHszL-HDtha_9bT4mcVZHMXht6MQH6kOwPdQb03GVtdlJjkUudMur43T87K7fwcl9PJdK40xIWhGnTCd1IQTKEMKDEeHNhKSRgNEoF3mrKMdKbOFDNmBFe8PxQE3TA:1pz4As:d2PIPOuigrKfZxvM98pvx0oPbzqo5JsxAWZlaqKaI_I",
-      "expire_date": "2023-05-30T23:33:46.783Z"
+      "session_data": ".eJxVjDsOwjAQBe_iGln-xR9K-pzBWnvXOIAcKU4qxN1JpBTQvpl5bxZhW2vcOi1xQnZljl1-twT5Se0A-IB2n3me27pMiR8KP2nn44z0up3u30GFXvdaaiV32xYbXDK6iEBWGW1MRgPkc7KDKMEHkcm7JFRGbxIQgtADkpLs8wXjtTgu:1qHZCM:eeAOFb-8-lCubyDmV8Sxft4T5LStX3mV0vc0QFFKslw",
+      "expire_date": "2023-07-21T00:19:46.727Z"
     }
   },
   {
     "model": "sessions.session",
-    "pk": "v76ax6saahf50jsoexor6vsj1unr1kge",
+    "pk": "ppsmrpjubjvvlxd4e09zn5p5q6yj04qs",
     "fields": {
-      "session_data": "e30:1pzHBh:ap5GzdIXDFqELB3U1t9WYBVYdS3r_ezDGpHnSX-Aa7E",
-      "expire_date": "2023-05-31T13:27:29.942Z"
+      "session_data": ".eJxVjDkOwjAQRe_iGlnxMl4o6TlDNOOxcQDZUpYKcXeIlALa_977LzHittZxW_I8TizOQonT70aYHrntgO_Ybl2m3tZ5Irkr8qCLvHbOz8vh_h1UXOq3JpvAO_IGC1sAFZVFF4InMMrEIRCHyKDRxTJErSFnTYbIsy4WkjPi_QHKdDdQ:1qELlY:e_mTLgQcWM3SUdBYNnGqaHLcVe3lwAEeQN4Q_o--b0Q",
+      "expire_date": "2023-07-12T03:22:48.682Z"
     }
   },
   {
     "model": "sessions.session",
-    "pk": "wg1zi5uunlbhv6mo77h9rjj5rkuhogk9",
+    "pk": "r2vwnlcc2ch46sb9o96hz9ve07kwgq4o",
     "fields": {
-      "session_data": ".eJxVjMEOwiAQRP-FsyEguIBH7_0GsmUXqRpISnsy_rtt0oMe5jLvzbxFxHUpce08x4nEVWhx-u1GTE-uO6AH1nuTqdVlnka5K_KgXQ6N-HU73L-Dgr1sa5cTnAEwKAholCcNlJVlbTWyN36LRgdkbL4Ej8YGDaACMzmLzirx-QLHQTb1:1pyuja:XL6fJmesSB0B0t0xpnPjIQe3I4D7ep0a_M0Y4UA5eKA",
-      "expire_date": "2023-05-30T13:28:58.640Z"
+      "session_data": ".eJxVjDkOwjAQRe_iGlnxMl4o6TlDNOOxcQDZUpYKcXeIlALa_977LzHittZxW_I8TizOQonT70aYHrntgO_Ybl2m3tZ5Irkr8qCLvHbOz8vh_h1UXOq3JpvAO_IGC1sAFZVFF4InMMrEIRCHyKDRxTJErSFnTYbIsy4WkjPi_QHKdDdQ:1qJGZD:G0XO_W22uL0iTBlRYc9TQStaKANDzwxrfAfVpdDuruQ",
+      "expire_date": "2023-07-25T16:50:23.200Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "rfcz0pai2kjoy3c5huivfvbyvgok75os",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2pBOJcC4dO8ZCDMDUjWQlHbVeHdt0oVu_3vvbyrEdSlh7WkOk6iLMur0u1HkZ6o7kEes96a51WWeSO-KPmjXtybpdT3cv4MSe_nWA41orTuPmcgiJiuEggDZs_Ei5JxFl0xGxxAzeGF2ni2ABwRjBvX-AOU0N50:1qEz38:buqyV05n2WSkn8g4Hs27ATHwh9ezoufZT8xox7ChZA0",
+      "expire_date": "2023-07-13T21:19:34.868Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "wate7rt7iiy21xdp1dwwef8sy5061jx6",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2hCYAi0u3XsGMsCMVA0kpV0Z765NutDtf-_9lwi4rSVsnZYwZ3EWIE6_W8T0oLqDfMd6azK1ui5zlLsiD9rltWV6Xg7376BgL996YKOM58EwaFJZW4VkLbHFiVxmR5pGUD67wQMCawMKaEyRlQHrpiTeH90zN5s:1qEcrX:DiBWdlfWS3pjjClu5flbaTsmDWlbC1x2UyR0_Kuim8c",
+      "expire_date": "2023-07-12T21:38:07.928Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "zpeot32f6ouzhldr90yhqcon6emow9y5",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2hAEShmX7nsGMjBTqRpISrsy3l1JutDte-__lwi4bznsjdewkLgIJ06_LGJ6cOmC7lhuVaZatnWJsifysE1Olfh5Pdq_g4wt9zU5Y0gNgC5BUgRnT1_gERMY41iPNIMFz0OMQHbW4PzowSZSnnVE8f4A7zw4LQ:1qHZ68:ubsaxRg1D-fr055R-o-ZZs0kxf5eFnlJRc617ihdTNM",
+      "expire_date": "2023-07-21T00:13:20.874Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "zwqvjki5h5crre8dvww2h471spatmfj4",
+    "fields": {
+      "session_data": ".eJxVjDkOwjAQRe_iGlnxMl4o6TlDNOOxcQDZUpYKcXeIlALa_977LzHittZxW_I8TizOQonT70aYHrntgO_Ybl2m3tZ5Irkr8qCLvHbOz8vh_h1UXOq3JpvAO_IGC1sAFZVFF4InMMrEIRCHyKDRxTJErSFnTYbIsy4WkjPi_QHKdDdQ:1qEqsE:E_o_vgsYiGzX7qZvH5tDwp8JDZMekFA6OBciz6vPOqM",
+      "expire_date": "2023-07-13T12:35:46.510Z"
     }
   },
   {
     "model": "account.user",
     "pk": 1,
     "fields": {
-      "password": "pbkdf2_sha256$600000$QGD98HrDn9BzQ02jvZiFyC$+JDncs5fCjypTrXpBAr1HQRdOPU3P+NXD9TB4P93M3Q=",
-      "last_login": "2023-06-03T18:41:42.942Z",
-      "matriculation": "2022121tads0020",
-      "username": "rochagabriel",
+      "password": "pbkdf2_sha256$600000$p4uzaeIge7yJXIrz4a88Eo$Cbpjc8PdZdDCUvBdsTlRB9WtACy5kxqg2iS2F+Ake+I=",
+      "last_login": "2023-08-27T14:50:48.008Z",
+      "matriculation": "2022121TADS0020",
+      "username": "rochagabriell",
       "email": "rochagabriell.dev@gmail.com",
       "is_staff": true,
       "is_superuser": true,
       "is_active": true,
-      "date_joined": "2023-05-08T12:34:48.527Z",
-      "date_changed": "2023-05-08T12:34:48.527Z",
-      "token": null,
+      "date_joined": "2023-06-28T02:58:34.681Z",
+      "date_changed": "2023-06-28T03:11:19.408Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "account.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$BLz68i13iB7LtnAOuQktfT$aij1JrLZx/vYfPF/GfnqaGxypomMPQ+RRAWu1gcHj/U=",
+      "last_login": "2023-06-28T21:38:07.910Z",
+      "matriculation": "2022121tads0015",
+      "username": "marcosamaral",
+      "email": "marcosdoamaral2002@gmail.com",
+      "is_staff": false,
+      "is_superuser": false,
+      "is_active": true,
+      "date_joined": "2023-06-28T21:37:35.401Z",
+      "date_changed": "2023-06-28T21:37:35.401Z",
+      "groups": [],
+      "user_permissions": [33, 34, 35]
+    }
+  },
+  {
+    "model": "account.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$uUC4mh6jye2a2B68d2qamd$7x+A0Wi8D/3Xc+fGQTj7kZWlQ7sGVwQ2KuqqbLwn+0k=",
+      "last_login": "2023-06-28T21:48:12.762Z",
+      "matriculation": "2022121TADS0004",
+      "username": "testedeploy",
+      "email": "testedeploy@gmail.com",
+      "is_staff": false,
+      "is_superuser": false,
+      "is_active": true,
+      "date_joined": "2023-06-28T21:47:54.293Z",
+      "date_changed": "2023-06-28T21:47:54.293Z",
       "groups": [],
       "user_permissions": []
     }
@@ -1378,76 +1265,72 @@
     "model": "account.user",
     "pk": 4,
     "fields": {
-      "password": "pbkdf2_sha256$600000$470aVuHmVWs6B7G57KsJYu$1tVWkYmbscmHUIh8S5YRCLvAPVcLKBkTeLXg+KcdxRM=",
-      "last_login": "2023-05-16T15:30:40.127Z",
-      "matriculation": "2022121TADS0026",
-      "username": "Estevão",
-      "email": "jajac47360@jrvps.com",
+      "password": "pbkdf2_sha256$600000$92VuRXD7laNE7TrsPnDi3k$+Po/sXDI3nnZ6B1A3urnh2GYubzjQxnSBFC9vVm/Zhs=",
+      "last_login": "2023-06-29T21:19:34.848Z",
+      "matriculation": "1111111",
+      "username": "eutino",
+      "email": "eutinojunior@yahoo.com.br",
       "is_staff": false,
       "is_superuser": false,
       "is_active": true,
-      "date_joined": "2023-05-13T21:21:09.835Z",
-      "date_changed": "2023-05-13T21:21:09.835Z",
-      "token": null,
+      "date_joined": "2023-06-29T21:19:21.943Z",
+      "date_changed": "2023-06-29T21:24:12.418Z",
       "groups": [],
-      "user_permissions": []
+      "user_permissions": [33, 34, 35]
     }
   },
   {
     "model": "account.user",
     "pk": 5,
     "fields": {
-      "password": "pbkdf2_sha256$600000$O5MqSCvYZkzztAPIrbn6dd$Za4uWgJy3j5HmD6h8J9TnSqFzlh8KDmDzSIGcrx8THw=",
-      "last_login": "2023-05-17T13:33:48.204Z",
-      "matriculation": "2022121TADS0001",
-      "username": "Lele",
-      "email": "2022121TADS0001@gmail.com",
+      "password": "pbkdf2_sha256$600000$I1v6x5fZSADXg3YyV96jQm$5tVk6iH7Z8QnehRYYwllfuIRREoXggWPkGLLsqiOvaE=",
+      "last_login": "2023-06-30T17:51:29.351Z",
+      "matriculation": "2020121TADS0017",
+      "username": "francisco",
+      "email": "cacor.2020121tads0017@aluno.ifpi.edu.br",
       "is_staff": false,
       "is_superuser": false,
       "is_active": true,
-      "date_joined": "2023-05-16T22:10:45.797Z",
-      "date_changed": "2023-05-16T22:10:45.797Z",
-      "token": null,
+      "date_joined": "2023-06-30T17:51:12.820Z",
+      "date_changed": "2023-06-30T17:51:12.820Z",
       "groups": [],
-      "user_permissions": []
+      "user_permissions": [33, 34, 35]
     }
   },
   {
     "model": "account.user",
     "pk": 6,
     "fields": {
-      "password": "pbkdf2_sha256$600000$i9oGzxGdVEUmCmX7bPyUGv$vi3PKdB2aQvnMiFt9ju1Dci0ORaFq0T/UYNt7LgrPr0=",
-      "last_login": "2023-05-16T23:33:46.587Z",
-      "matriculation": "99999",
-      "username": "wellington",
-      "email": "wellingtonasc38@gmail.com",
+      "password": "pbkdf2_sha256$600000$EKGMZQzDnlzcxtHypZwsNv$+w/NSDIczLxJ9WXtg2KngdqYPuFwux4iOrZFUVkZB6g=",
+      "last_login": "2023-07-07T00:13:20.856Z",
+      "matriculation": "2021121TADS0010",
+      "username": "vinicius",
+      "email": "vinicius@gmail.com",
       "is_staff": false,
       "is_superuser": false,
       "is_active": true,
-      "date_joined": "2023-05-16T23:33:35.125Z",
-      "date_changed": "2023-05-16T23:33:35.125Z",
-      "token": null,
+      "date_joined": "2023-07-07T00:12:51.816Z",
+      "date_changed": "2023-07-07T00:12:51.816Z",
       "groups": [],
-      "user_permissions": []
+      "user_permissions": [33, 34, 35]
     }
   },
   {
     "model": "account.user",
     "pk": 7,
     "fields": {
-      "password": "pbkdf2_sha256$600000$NKbsXCE02ZgHlRun3iFP0y$VtviQA1AOmMTw2ovvk/dleebPMa36YRC3UAC2FFPuu4=",
-      "last_login": "2023-06-01T22:24:46.631Z",
-      "matriculation": "2022121TADS0015",
-      "username": "marcos",
-      "email": "marcosdoamaral2002@gmail.com",
+      "password": "pbkdf2_sha256$600000$rQNdLZBIeJESoisZ8xfRZK$K3pgizeBVHgjEUAeb92iInGmXpXKT/jU/AibTjqBQ/A=",
+      "last_login": "2023-07-07T00:19:46.708Z",
+      "matriculation": "2021121tads0031",
+      "username": "uenderson",
+      "email": "uenderson@gmail.com",
       "is_staff": false,
       "is_superuser": false,
       "is_active": true,
-      "date_joined": "2023-05-17T21:41:11.144Z",
-      "date_changed": "2023-05-17T21:41:11.144Z",
-      "token": null,
+      "date_joined": "2023-07-07T00:18:54.054Z",
+      "date_changed": "2023-07-07T00:18:54.054Z",
       "groups": [],
-      "user_permissions": []
+      "user_permissions": [33, 34, 35]
     }
   },
   {
@@ -1455,95 +1338,114 @@
     "pk": 1,
     "fields": {
       "description": "Análise e Desenvolvimento de Sistemas",
-      "created_at": "2023-05-13T21:03:51.765Z",
-      "updated_at": "2023-05-13T21:03:51.765Z"
+      "created_at": "2023-06-28T04:15:59.667Z",
+      "updated_at": "2023-06-28T04:15:59.667Z"
+    }
+  },
+  {
+    "model": "blog.module",
+    "pk": 1,
+    "fields": {
+      "description": "Módulo I",
+      "id_course": 1,
+      "created_at": "2023-06-28T04:19:05.319Z",
+      "updated_at": "2023-06-28T04:19:05.319Z"
     }
   },
   {
     "model": "blog.module",
     "pk": 2,
     "fields": {
-      "description": "Módulo I",
+      "description": "Módulo II",
       "id_course": 1,
-      "created_at": "2023-05-13T23:41:35.069Z",
-      "updated_at": "2023-05-13T23:41:35.069Z"
+      "created_at": "2023-06-28T04:19:05.934Z",
+      "updated_at": "2023-06-28T04:19:05.934Z"
     }
   },
   {
     "model": "blog.module",
     "pk": 3,
     "fields": {
-      "description": "Módulo II",
+      "description": "Módulo III",
       "id_course": 1,
-      "created_at": "2023-05-13T23:41:39.750Z",
-      "updated_at": "2023-05-13T23:41:39.750Z"
+      "created_at": "2023-06-28T04:19:06.399Z",
+      "updated_at": "2023-06-28T04:19:06.399Z"
     }
   },
   {
     "model": "blog.module",
     "pk": 4,
     "fields": {
-      "description": "Módulo III",
+      "description": "Módulo IV",
       "id_course": 1,
-      "created_at": "2023-05-13T23:41:44.726Z",
-      "updated_at": "2023-05-13T23:41:44.726Z"
+      "created_at": "2023-06-28T04:19:06.868Z",
+      "updated_at": "2023-06-28T04:19:06.868Z"
     }
   },
   {
     "model": "blog.module",
     "pk": 5,
     "fields": {
-      "description": "Módulo IV",
+      "description": "Módulo V",
       "id_course": 1,
-      "created_at": "2023-05-13T23:41:52.368Z",
-      "updated_at": "2023-05-14T05:19:23.273Z"
+      "created_at": "2023-06-28T04:19:07.316Z",
+      "updated_at": "2023-06-28T04:19:07.316Z"
     }
   },
   {
     "model": "blog.module",
     "pk": 6,
     "fields": {
-      "description": "Módulo V",
+      "description": "Módulo VI",
       "id_course": 1,
-      "created_at": "2023-05-13T23:41:59.920Z",
-      "updated_at": "2023-05-13T23:41:59.920Z"
+      "created_at": "2023-06-28T04:19:07.880Z",
+      "updated_at": "2023-06-28T04:19:07.880Z"
     }
   },
   {
     "model": "blog.module",
     "pk": 7,
     "fields": {
-      "description": "Módulo VI",
+      "description": "Outros",
       "id_course": 1,
-      "created_at": "2023-05-13T23:42:06.684Z",
-      "updated_at": "2023-05-13T23:42:06.684Z"
+      "created_at": "2023-06-28T12:53:15.545Z",
+      "updated_at": "2023-06-28T12:53:15.545Z"
+    }
+  },
+  {
+    "model": "blog.subjects",
+    "pk": 1,
+    "fields": {
+      "description": "Matemática Computacional",
+      "created_at": "2023-06-28T04:18:55.284Z",
+      "updated_at": "2023-06-28T04:18:55.284Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 2,
     "fields": {
-      "description": "Matemática Computacional",
-      "created_at": "2023-05-13T23:37:22.750Z",
-      "updated_at": "2023-05-13T23:37:22.750Z"
+      "description": "Atividades Linguísticas",
+      "created_at": "2023-06-28T04:18:55.591Z",
+      "updated_at": "2023-06-28T04:18:55.591Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 3,
     "fields": {
-      "description": "Atividades Linguísticas",
-      "created_at": "2023-05-13T23:37:22.979Z",
-      "updated_at": "2023-05-13T23:37:22.979Z"
+      "description": "Inglês Técnico",
+      "created_at": "2023-06-28T04:18:55.899Z",
+      "updated_at": "2023-06-28T04:18:55.899Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 4,
     "fields": {
-      "description": "Inglês Técnico",
-      "created_at": "2023-05-13T23:37:23.186Z",
-      "updated_at": "2023-05-13T23:37:23.186Z"
+      "description": "Algoritmos e Programação",
+      "created_at": "2023-06-28T04:18:56.205Z",
+      "updated_at": "2023-06-28T04:18:56.205Z"
     }
   },
   {
@@ -1551,336 +1453,346 @@
     "pk": 5,
     "fields": {
       "description": "Introdução a Computação",
-      "created_at": "2023-05-13T23:37:23.393Z",
-      "updated_at": "2023-05-14T04:17:21.732Z"
+      "created_at": "2023-06-28T04:18:56.513Z",
+      "updated_at": "2023-06-28T04:18:56.513Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 6,
     "fields": {
-      "description": "Algoritmo e Programação",
-      "created_at": "2023-05-13T23:37:23.656Z",
-      "updated_at": "2023-05-14T04:17:49.474Z"
+      "description": "Metodologia Científica",
+      "created_at": "2023-06-28T04:18:56.731Z",
+      "updated_at": "2023-06-28T04:18:56.731Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 7,
     "fields": {
-      "description": "Metodologia Científica",
-      "created_at": "2023-05-13T23:37:23.863Z",
-      "updated_at": "2023-05-13T23:37:23.863Z"
+      "description": "Programação Orientada a Objetos",
+      "created_at": "2023-06-28T04:18:56.947Z",
+      "updated_at": "2023-06-28T04:18:56.947Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 8,
     "fields": {
-      "description": "Programação Orientada a Objetos",
-      "created_at": "2023-05-13T23:37:24.081Z",
-      "updated_at": "2023-05-13T23:37:24.081Z"
+      "description": "Banco de Dados I",
+      "created_at": "2023-06-28T04:18:57.164Z",
+      "updated_at": "2023-06-28T04:18:57.164Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 9,
     "fields": {
-      "description": "Banco de Dados I",
-      "created_at": "2023-05-13T23:37:24.289Z",
-      "updated_at": "2023-05-13T23:37:24.289Z"
+      "description": "Engenharia de Software I",
+      "created_at": "2023-06-28T04:18:57.382Z",
+      "updated_at": "2023-06-28T04:18:57.382Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 10,
     "fields": {
-      "description": "Engenharia de Software I",
-      "created_at": "2023-05-13T23:37:24.496Z",
-      "updated_at": "2023-05-13T23:37:24.496Z"
+      "description": "Estrutura de Dados I",
+      "created_at": "2023-06-28T04:18:57.599Z",
+      "updated_at": "2023-06-28T04:18:57.599Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 11,
     "fields": {
-      "description": "Estrutura de Dados I",
-      "created_at": "2023-05-13T23:37:24.759Z",
-      "updated_at": "2023-05-13T23:37:24.759Z"
+      "description": "Estátisca",
+      "created_at": "2023-06-28T04:18:57.844Z",
+      "updated_at": "2023-06-28T04:18:57.844Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 12,
     "fields": {
-      "description": "Estátisca",
-      "created_at": "2023-05-13T23:37:24.966Z",
-      "updated_at": "2023-05-13T23:37:24.966Z"
+      "description": "Banco de Dados II",
+      "created_at": "2023-06-28T04:18:58.151Z",
+      "updated_at": "2023-06-28T04:18:58.151Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 13,
     "fields": {
-      "description": "Banco de Dados II",
-      "created_at": "2023-05-13T23:37:25.173Z",
-      "updated_at": "2023-05-13T23:37:25.173Z"
+      "description": "Arquitetura de Computadores",
+      "created_at": "2023-06-28T04:18:58.458Z",
+      "updated_at": "2023-06-28T04:18:58.458Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 14,
     "fields": {
-      "description": "Arquitetura de Computadores",
-      "created_at": "2023-05-13T23:37:25.381Z",
-      "updated_at": "2023-05-13T23:37:25.381Z"
+      "description": "Sistemas Operacionais",
+      "created_at": "2023-06-28T04:18:58.766Z",
+      "updated_at": "2023-06-28T04:18:58.766Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 15,
     "fields": {
-      "description": "Sistemas Operacionais",
-      "created_at": "2023-05-13T23:37:25.632Z",
-      "updated_at": "2023-05-13T23:37:25.632Z"
+      "description": "Estrutura de Dados II",
+      "created_at": "2023-06-28T04:18:59.073Z",
+      "updated_at": "2023-06-28T04:18:59.073Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 16,
     "fields": {
-      "description": "Estrutura de Dados II",
-      "created_at": "2023-05-13T23:37:25.840Z",
-      "updated_at": "2023-05-13T23:37:25.840Z"
+      "description": "Programação para Internet I",
+      "created_at": "2023-06-28T04:18:59.380Z",
+      "updated_at": "2023-06-28T04:18:59.380Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 17,
     "fields": {
-      "description": "Programação para Internet I",
-      "created_at": "2023-05-13T23:37:26.047Z",
-      "updated_at": "2023-05-13T23:37:26.047Z"
+      "description": "Engenharia de Software II",
+      "created_at": "2023-06-28T04:18:59.597Z",
+      "updated_at": "2023-06-28T04:18:59.597Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 18,
     "fields": {
-      "description": "Engenharia de Software II",
-      "created_at": "2023-05-13T23:37:26.495Z",
-      "updated_at": "2023-05-13T23:37:26.495Z"
+      "description": "Projeto Integrador I",
+      "created_at": "2023-06-28T04:18:59.818Z",
+      "updated_at": "2023-06-28T04:18:59.818Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 19,
     "fields": {
-      "description": "Projeto Integrador I",
-      "created_at": "2023-05-13T23:37:27.069Z",
-      "updated_at": "2023-05-13T23:37:27.069Z"
+      "description": "Engenharia de Software III",
+      "created_at": "2023-06-28T04:19:00.036Z",
+      "updated_at": "2023-06-28T04:19:00.036Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 20,
     "fields": {
-      "description": "Engenharia de Software III",
-      "created_at": "2023-05-13T23:37:27.529Z",
-      "updated_at": "2023-05-13T23:37:27.529Z"
+      "description": "Redes de Computadores",
+      "created_at": "2023-06-28T04:19:00.255Z",
+      "updated_at": "2023-06-28T04:19:00.255Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 21,
     "fields": {
-      "description": "Redes de Computadores",
-      "created_at": "2023-05-13T23:37:28.282Z",
-      "updated_at": "2023-05-13T23:37:28.282Z"
+      "description": "Analise e Projeto de Sistemas",
+      "created_at": "2023-06-28T04:19:00.472Z",
+      "updated_at": "2023-06-28T04:19:00.472Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 22,
     "fields": {
-      "description": "Analise e Projeto de Sistemas",
-      "created_at": "2023-05-13T23:37:29.072Z",
-      "updated_at": "2023-05-13T23:37:29.072Z"
+      "description": "Introdução a Administração",
+      "created_at": "2023-06-28T04:19:00.705Z",
+      "updated_at": "2023-06-28T04:19:00.705Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 23,
     "fields": {
-      "description": "Introdução a Administração",
-      "created_at": "2023-05-13T23:37:29.322Z",
-      "updated_at": "2023-05-13T23:37:29.322Z"
+      "description": "Programação para Internet II",
+      "created_at": "2023-06-28T04:19:01.018Z",
+      "updated_at": "2023-06-28T04:19:01.018Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 24,
     "fields": {
-      "description": "Programação para Internet II",
-      "created_at": "2023-05-13T23:37:29.654Z",
-      "updated_at": "2023-05-13T23:37:29.654Z"
+      "description": "Projeto Integrador II",
+      "created_at": "2023-06-28T04:19:01.325Z",
+      "updated_at": "2023-06-28T04:19:01.325Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 25,
     "fields": {
-      "description": "Projeto Integrador II",
-      "created_at": "2023-05-13T23:37:30.039Z",
-      "updated_at": "2023-05-13T23:37:30.039Z"
+      "description": "Interação Humano Computador",
+      "created_at": "2023-06-28T04:19:01.633Z",
+      "updated_at": "2023-06-28T04:19:01.633Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 26,
     "fields": {
-      "description": "Interação Humano Computador",
-      "created_at": "2023-05-13T23:37:30.237Z",
-      "updated_at": "2023-05-13T23:37:30.237Z"
+      "description": "Tópicos Especiais em Programação",
+      "created_at": "2023-06-28T04:19:01.939Z",
+      "updated_at": "2023-06-28T04:19:01.939Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 27,
     "fields": {
-      "description": "Tópicos Especiais em Programação",
-      "created_at": "2023-05-13T23:37:30.445Z",
-      "updated_at": "2023-05-13T23:37:30.445Z"
+      "description": "Programação para Dispositivos Móveis",
+      "created_at": "2023-06-28T04:19:02.158Z",
+      "updated_at": "2023-06-28T04:19:02.158Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 28,
     "fields": {
-      "description": "Programação para Dispositivos Móveis",
-      "created_at": "2023-05-13T23:37:30.663Z",
-      "updated_at": "2023-05-13T23:37:30.663Z"
+      "description": "Engenharia de Software IV",
+      "created_at": "2023-06-28T04:19:02.452Z",
+      "updated_at": "2023-06-28T04:19:02.452Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 29,
     "fields": {
-      "description": "Engenharia de Software IV",
-      "created_at": "2023-05-13T23:37:30.870Z",
-      "updated_at": "2023-05-13T23:37:30.870Z"
+      "description": "Projeto Integrador III",
+      "created_at": "2023-06-28T04:19:02.759Z",
+      "updated_at": "2023-06-28T04:19:02.759Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 30,
     "fields": {
-      "description": "Projeto Integrador III",
-      "created_at": "2023-05-13T23:37:31.077Z",
-      "updated_at": "2023-05-13T23:37:31.077Z"
+      "description": "Elaboração de Projetos de Pesquisa",
+      "created_at": "2023-06-28T04:19:03.066Z",
+      "updated_at": "2023-06-28T04:19:03.066Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 31,
     "fields": {
-      "description": "Elaboração de Projetos de Pesquisa",
-      "created_at": "2023-05-13T23:37:31.284Z",
-      "updated_at": "2023-05-13T23:37:31.284Z"
+      "description": "Segurança da Informação",
+      "created_at": "2023-06-28T04:19:03.284Z",
+      "updated_at": "2023-06-28T04:19:03.284Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 32,
     "fields": {
-      "description": "Segurança da Informação",
-      "created_at": "2023-05-13T23:37:31.492Z",
-      "updated_at": "2023-05-13T23:37:31.492Z"
+      "description": "Empreendedorismo e Inovação",
+      "created_at": "2023-06-28T04:19:03.502Z",
+      "updated_at": "2023-06-28T04:19:03.502Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 33,
     "fields": {
-      "description": "Empreendedorismo e Inovação",
-      "created_at": "2023-05-13T23:37:31.743Z",
-      "updated_at": "2023-05-13T23:37:31.743Z"
+      "description": "Tópicos Especiais em Sistema de Informação",
+      "created_at": "2023-06-28T04:19:03.783Z",
+      "updated_at": "2023-06-28T04:19:03.783Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 34,
     "fields": {
-      "description": "Tópicos Especiais em Sistema de Informação",
-      "created_at": "2023-05-13T23:37:31.995Z",
-      "updated_at": "2023-05-13T23:37:31.995Z"
+      "description": "Lesgislação Aplciada a Tecnologia da Informação",
+      "created_at": "2023-06-28T04:19:04.090Z",
+      "updated_at": "2023-06-28T04:19:04.090Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 35,
     "fields": {
-      "description": "Lesgislação Aplciada a Tecnologia da Informação",
-      "created_at": "2023-05-13T23:37:32.327Z",
-      "updated_at": "2023-05-13T23:37:32.327Z"
+      "description": "Ética e Responsabilidade Socioambiental",
+      "created_at": "2023-06-28T04:19:04.398Z",
+      "updated_at": "2023-06-28T04:19:04.398Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 36,
     "fields": {
-      "description": "Ética e Responsabilidade Socioambiental",
-      "created_at": "2023-05-13T23:37:32.534Z",
-      "updated_at": "2023-05-13T23:37:32.534Z"
+      "description": "Trabalho de Conclusão de Curso",
+      "created_at": "2023-06-28T04:19:04.705Z",
+      "updated_at": "2023-06-28T04:19:04.705Z"
     }
   },
   {
     "model": "blog.subjects",
     "pk": 37,
     "fields": {
-      "description": "Trabalho de Conclusão de Curso",
-      "created_at": "2023-05-13T23:37:32.742Z",
-      "updated_at": "2023-05-13T23:37:32.742Z"
+      "description": "Outros",
+      "created_at": "2023-06-28T12:53:34.013Z",
+      "updated_at": "2023-06-28T12:53:34.013Z"
+    }
+  },
+  {
+    "model": "blog.grid",
+    "pk": 1,
+    "fields": {
+      "id_module": 1,
+      "id_subject": 1,
+      "created_at": "2023-06-28T12:36:43.330Z",
+      "updated_at": "2023-06-28T12:36:43.330Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 2,
     "fields": {
-      "id_module": 2,
-      "id_subject": 3,
-      "created_at": "2023-05-14T04:16:24.830Z",
-      "updated_at": "2023-05-14T04:16:24.830Z"
+      "id_module": 1,
+      "id_subject": 2,
+      "created_at": "2023-06-28T12:36:57.397Z",
+      "updated_at": "2023-06-28T12:36:57.397Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 3,
     "fields": {
-      "id_module": 2,
-      "id_subject": 2,
-      "created_at": "2023-05-14T04:16:30.857Z",
-      "updated_at": "2023-05-14T04:16:30.857Z"
+      "id_module": 1,
+      "id_subject": 3,
+      "created_at": "2023-06-28T12:37:16.100Z",
+      "updated_at": "2023-06-28T12:37:16.100Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 4,
     "fields": {
-      "id_module": 2,
+      "id_module": 1,
       "id_subject": 4,
-      "created_at": "2023-05-14T04:16:36.612Z",
-      "updated_at": "2023-05-14T04:16:36.612Z"
+      "created_at": "2023-06-28T12:37:36.307Z",
+      "updated_at": "2023-06-28T12:37:36.307Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 5,
     "fields": {
-      "id_module": 2,
+      "id_module": 1,
       "id_subject": 5,
-      "created_at": "2023-05-14T04:16:41.790Z",
-      "updated_at": "2023-05-14T04:17:25.084Z"
+      "created_at": "2023-06-28T12:37:55.215Z",
+      "updated_at": "2023-06-28T12:37:55.215Z"
     }
   },
   {
@@ -1889,58 +1801,58 @@
     "fields": {
       "id_module": 2,
       "id_subject": 6,
-      "created_at": "2023-05-14T04:16:58.528Z",
-      "updated_at": "2023-05-14T04:17:51.457Z"
+      "created_at": "2023-06-28T12:39:21.178Z",
+      "updated_at": "2023-06-28T12:39:21.178Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 7,
     "fields": {
-      "id_module": 3,
+      "id_module": 2,
       "id_subject": 7,
-      "created_at": "2023-05-14T04:39:00.674Z",
-      "updated_at": "2023-05-14T04:39:00.674Z"
+      "created_at": "2023-06-28T12:39:51.735Z",
+      "updated_at": "2023-06-28T12:39:51.735Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 8,
     "fields": {
-      "id_module": 3,
+      "id_module": 2,
       "id_subject": 8,
-      "created_at": "2023-05-14T04:39:07.970Z",
-      "updated_at": "2023-05-14T04:39:07.970Z"
+      "created_at": "2023-06-28T12:40:01.394Z",
+      "updated_at": "2023-06-28T12:40:01.394Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 9,
     "fields": {
-      "id_module": 3,
+      "id_module": 2,
       "id_subject": 9,
-      "created_at": "2023-05-14T04:39:13.312Z",
-      "updated_at": "2023-05-14T04:39:13.312Z"
+      "created_at": "2023-06-28T12:40:11.985Z",
+      "updated_at": "2023-06-28T12:40:11.985Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 10,
     "fields": {
-      "id_module": 3,
+      "id_module": 2,
       "id_subject": 10,
-      "created_at": "2023-05-14T04:39:23.272Z",
-      "updated_at": "2023-05-14T04:39:23.272Z"
+      "created_at": "2023-06-28T12:40:21.601Z",
+      "updated_at": "2023-06-28T12:40:21.601Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 11,
     "fields": {
-      "id_module": 3,
+      "id_module": 2,
       "id_subject": 11,
-      "created_at": "2023-05-14T04:39:31.405Z",
-      "updated_at": "2023-05-14T04:39:31.405Z"
+      "created_at": "2023-06-28T12:40:27.784Z",
+      "updated_at": "2023-06-28T12:40:27.784Z"
     }
   },
   {
@@ -1949,68 +1861,68 @@
     "fields": {
       "id_module": 3,
       "id_subject": 12,
-      "created_at": "2023-05-14T04:39:35.737Z",
-      "updated_at": "2023-05-14T04:39:35.737Z"
+      "created_at": "2023-06-28T12:41:21.851Z",
+      "updated_at": "2023-06-28T12:41:21.851Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 13,
     "fields": {
-      "id_module": 4,
+      "id_module": 3,
       "id_subject": 13,
-      "created_at": "2023-05-14T04:47:31.565Z",
-      "updated_at": "2023-05-14T04:47:31.565Z"
+      "created_at": "2023-06-28T12:41:44.123Z",
+      "updated_at": "2023-06-28T12:41:44.123Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 14,
     "fields": {
-      "id_module": 4,
+      "id_module": 3,
       "id_subject": 14,
-      "created_at": "2023-05-14T04:47:37.663Z",
-      "updated_at": "2023-05-14T04:47:37.663Z"
+      "created_at": "2023-06-28T12:41:57.361Z",
+      "updated_at": "2023-06-28T12:41:57.361Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 15,
     "fields": {
-      "id_module": 4,
+      "id_module": 3,
       "id_subject": 15,
-      "created_at": "2023-05-14T04:47:46.364Z",
-      "updated_at": "2023-05-14T04:47:46.364Z"
+      "created_at": "2023-06-28T12:42:06.950Z",
+      "updated_at": "2023-06-28T12:42:06.950Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 16,
     "fields": {
-      "id_module": 4,
+      "id_module": 3,
       "id_subject": 16,
-      "created_at": "2023-05-14T04:47:54.855Z",
-      "updated_at": "2023-05-14T04:47:54.856Z"
+      "created_at": "2023-06-28T12:42:42.181Z",
+      "updated_at": "2023-06-28T12:42:42.181Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 17,
     "fields": {
-      "id_module": 4,
+      "id_module": 3,
       "id_subject": 17,
-      "created_at": "2023-05-14T04:48:01.288Z",
-      "updated_at": "2023-05-14T04:48:01.288Z"
+      "created_at": "2023-06-28T12:42:58.542Z",
+      "updated_at": "2023-06-28T12:42:58.542Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 18,
     "fields": {
-      "id_module": 4,
+      "id_module": 3,
       "id_subject": 18,
-      "created_at": "2023-05-14T04:48:08.340Z",
-      "updated_at": "2023-05-14T04:48:08.340Z"
+      "created_at": "2023-06-28T12:43:07.217Z",
+      "updated_at": "2023-06-28T12:43:07.217Z"
     }
   },
   {
@@ -2019,58 +1931,58 @@
     "fields": {
       "id_module": 4,
       "id_subject": 19,
-      "created_at": "2023-05-14T04:48:13.976Z",
-      "updated_at": "2023-05-14T04:48:13.976Z"
+      "created_at": "2023-06-28T12:43:57.480Z",
+      "updated_at": "2023-06-28T12:43:57.480Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 20,
     "fields": {
-      "id_module": 5,
+      "id_module": 4,
       "id_subject": 20,
-      "created_at": "2023-05-14T04:50:24.729Z",
-      "updated_at": "2023-05-14T04:50:24.729Z"
+      "created_at": "2023-06-28T12:44:06.405Z",
+      "updated_at": "2023-06-28T12:44:06.405Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 21,
     "fields": {
-      "id_module": 5,
+      "id_module": 4,
       "id_subject": 21,
-      "created_at": "2023-05-14T04:50:32.105Z",
-      "updated_at": "2023-05-14T04:50:32.105Z"
+      "created_at": "2023-06-28T12:44:21.537Z",
+      "updated_at": "2023-06-28T12:44:21.537Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 22,
     "fields": {
-      "id_module": 5,
+      "id_module": 4,
       "id_subject": 22,
-      "created_at": "2023-05-14T04:50:52.421Z",
-      "updated_at": "2023-05-14T04:50:52.421Z"
+      "created_at": "2023-06-28T12:44:36.772Z",
+      "updated_at": "2023-06-28T12:44:36.772Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 23,
     "fields": {
-      "id_module": 5,
+      "id_module": 4,
       "id_subject": 23,
-      "created_at": "2023-05-14T04:51:21.791Z",
-      "updated_at": "2023-05-14T04:51:21.791Z"
+      "created_at": "2023-06-28T12:45:13.224Z",
+      "updated_at": "2023-06-28T12:45:13.224Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 24,
     "fields": {
-      "id_module": 5,
+      "id_module": 4,
       "id_subject": 24,
-      "created_at": "2023-05-14T04:51:35.505Z",
-      "updated_at": "2023-05-14T04:51:35.505Z"
+      "created_at": "2023-06-28T12:45:31.501Z",
+      "updated_at": "2023-06-28T12:45:59.943Z"
     }
   },
   {
@@ -2079,128 +1991,138 @@
     "fields": {
       "id_module": 5,
       "id_subject": 25,
-      "created_at": "2023-05-14T04:51:49.112Z",
-      "updated_at": "2023-05-14T04:51:49.112Z"
+      "created_at": "2023-06-28T12:48:51.694Z",
+      "updated_at": "2023-06-28T12:48:51.694Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 26,
     "fields": {
-      "id_module": 6,
+      "id_module": 5,
       "id_subject": 26,
-      "created_at": "2023-05-14T04:53:02.587Z",
-      "updated_at": "2023-05-14T04:53:02.587Z"
+      "created_at": "2023-06-28T12:49:13.657Z",
+      "updated_at": "2023-06-28T12:49:13.657Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 27,
     "fields": {
-      "id_module": 6,
+      "id_module": 5,
       "id_subject": 27,
-      "created_at": "2023-05-14T04:53:17.440Z",
-      "updated_at": "2023-05-14T04:53:17.440Z"
+      "created_at": "2023-06-28T12:49:41.639Z",
+      "updated_at": "2023-06-28T12:49:41.639Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 28,
     "fields": {
-      "id_module": 6,
-      "id_subject": 28,
-      "created_at": "2023-05-14T04:53:36.276Z",
-      "updated_at": "2023-05-14T04:53:36.277Z"
+      "id_module": 5,
+      "id_subject": 27,
+      "created_at": "2023-06-28T12:49:52.160Z",
+      "updated_at": "2023-06-28T12:49:52.160Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 29,
     "fields": {
-      "id_module": 6,
-      "id_subject": 29,
-      "created_at": "2023-05-14T04:53:43.537Z",
-      "updated_at": "2023-05-14T04:53:43.537Z"
+      "id_module": 5,
+      "id_subject": 28,
+      "created_at": "2023-06-28T12:50:32.520Z",
+      "updated_at": "2023-06-28T12:50:32.520Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 30,
     "fields": {
-      "id_module": 6,
-      "id_subject": 30,
-      "created_at": "2023-05-14T04:53:55.023Z",
-      "updated_at": "2023-05-14T04:53:55.023Z"
+      "id_module": 5,
+      "id_subject": 29,
+      "created_at": "2023-06-28T12:50:41.634Z",
+      "updated_at": "2023-06-28T12:50:41.634Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 31,
     "fields": {
-      "id_module": 6,
-      "id_subject": 31,
-      "created_at": "2023-05-14T04:54:03.849Z",
-      "updated_at": "2023-05-14T04:54:03.849Z"
+      "id_module": 5,
+      "id_subject": 30,
+      "created_at": "2023-06-28T12:51:24.095Z",
+      "updated_at": "2023-06-28T12:51:24.095Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 32,
     "fields": {
-      "id_module": 7,
-      "id_subject": 32,
-      "created_at": "2023-05-14T04:54:24.562Z",
-      "updated_at": "2023-05-14T04:54:24.562Z"
+      "id_module": 6,
+      "id_subject": 31,
+      "created_at": "2023-06-28T12:51:31.503Z",
+      "updated_at": "2023-06-28T12:51:31.503Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 33,
     "fields": {
-      "id_module": 7,
-      "id_subject": 33,
-      "created_at": "2023-05-14T04:54:36.879Z",
-      "updated_at": "2023-05-14T04:54:36.879Z"
+      "id_module": 6,
+      "id_subject": 32,
+      "created_at": "2023-06-28T12:52:04.963Z",
+      "updated_at": "2023-06-28T12:52:04.963Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 34,
     "fields": {
-      "id_module": 7,
-      "id_subject": 34,
-      "created_at": "2023-05-14T04:54:43.369Z",
-      "updated_at": "2023-05-14T04:54:43.369Z"
+      "id_module": 6,
+      "id_subject": 33,
+      "created_at": "2023-06-28T12:52:22.925Z",
+      "updated_at": "2023-06-28T12:52:22.925Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 35,
     "fields": {
-      "id_module": 7,
-      "id_subject": 35,
-      "created_at": "2023-05-14T04:54:54.016Z",
-      "updated_at": "2023-05-14T04:54:54.016Z"
+      "id_module": 6,
+      "id_subject": 34,
+      "created_at": "2023-06-28T12:52:30.188Z",
+      "updated_at": "2023-06-28T12:52:30.188Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 36,
     "fields": {
-      "id_module": 7,
-      "id_subject": 36,
-      "created_at": "2023-05-14T04:55:03.569Z",
-      "updated_at": "2023-05-14T04:55:03.569Z"
+      "id_module": 6,
+      "id_subject": 35,
+      "created_at": "2023-06-28T12:52:36.089Z",
+      "updated_at": "2023-06-28T12:52:36.089Z"
     }
   },
   {
     "model": "blog.grid",
     "pk": 37,
     "fields": {
+      "id_module": 6,
+      "id_subject": 36,
+      "created_at": "2023-06-28T12:52:45.343Z",
+      "updated_at": "2023-06-28T12:52:45.343Z"
+    }
+  },
+  {
+    "model": "blog.grid",
+    "pk": 38,
+    "fields": {
       "id_module": 7,
       "id_subject": 37,
-      "created_at": "2023-05-14T04:55:12.625Z",
-      "updated_at": "2023-05-14T04:55:12.625Z"
+      "created_at": "2023-06-28T12:53:35.907Z",
+      "updated_at": "2023-06-28T12:53:35.907Z"
     }
   },
   {
@@ -2208,26 +2130,35 @@
     "pk": 1,
     "fields": {
       "description": "Python",
-      "created_at": "2023-05-13T21:04:30.825Z",
-      "updated_at": "2023-05-13T21:04:30.825Z"
+      "created_at": "2023-06-28T04:13:24.526Z",
+      "updated_at": "2023-06-28T04:13:24.526Z"
+    }
+  },
+  {
+    "model": "blog.proglanguage",
+    "pk": 2,
+    "fields": {
+      "description": "Java",
+      "created_at": "2023-06-28T04:13:24.747Z",
+      "updated_at": "2023-06-28T04:13:24.747Z"
     }
   },
   {
     "model": "blog.proglanguage",
     "pk": 3,
     "fields": {
-      "description": "Java",
-      "created_at": "2023-05-13T23:36:41.977Z",
-      "updated_at": "2023-05-13T23:36:41.977Z"
+      "description": "JavaScript",
+      "created_at": "2023-06-28T04:13:25.042Z",
+      "updated_at": "2023-06-28T04:13:25.042Z"
     }
   },
   {
     "model": "blog.proglanguage",
     "pk": 4,
     "fields": {
-      "description": "C",
-      "created_at": "2023-05-13T23:36:42.417Z",
-      "updated_at": "2023-05-13T23:36:42.418Z"
+      "description": "C#",
+      "created_at": "2023-06-28T04:13:25.349Z",
+      "updated_at": "2023-06-28T04:13:25.349Z"
     }
   },
   {
@@ -2235,143 +2166,75 @@
     "pk": 5,
     "fields": {
       "description": "C++",
-      "created_at": "2023-05-13T23:36:42.625Z",
-      "updated_at": "2023-05-13T23:36:42.625Z"
+      "created_at": "2023-06-28T04:13:25.656Z",
+      "updated_at": "2023-06-28T04:13:25.656Z"
     }
   },
   {
     "model": "blog.proglanguage",
     "pk": 6,
     "fields": {
-      "description": "C#",
-      "created_at": "2023-05-13T23:36:42.979Z",
-      "updated_at": "2023-05-13T23:36:42.979Z"
+      "description": "Ruby",
+      "created_at": "2023-06-28T04:13:25.964Z",
+      "updated_at": "2023-06-28T04:13:25.964Z"
     }
   },
   {
     "model": "blog.proglanguage",
     "pk": 7,
     "fields": {
-      "description": "JavaScript",
-      "created_at": "2023-05-13T23:36:43.219Z",
-      "updated_at": "2023-05-13T23:36:43.220Z"
+      "description": "Go",
+      "created_at": "2023-06-28T04:13:26.271Z",
+      "updated_at": "2023-06-28T04:13:26.271Z"
     }
   },
   {
     "model": "blog.proglanguage",
     "pk": 8,
     "fields": {
-      "description": "PHP",
-      "created_at": "2023-05-13T23:36:43.427Z",
-      "updated_at": "2023-05-13T23:36:43.427Z"
+      "description": "Rust",
+      "created_at": "2023-06-28T04:13:26.491Z",
+      "updated_at": "2023-06-28T04:13:26.492Z"
     }
   },
   {
     "model": "blog.proglanguage",
     "pk": 9,
     "fields": {
-      "description": "Ruby",
-      "created_at": "2023-05-13T23:36:43.779Z",
-      "updated_at": "2023-05-13T23:36:43.779Z"
+      "description": "PHP",
+      "created_at": "2023-06-28T04:13:26.783Z",
+      "updated_at": "2023-06-28T04:13:26.783Z"
     }
   },
   {
     "model": "blog.proglanguage",
     "pk": 10,
     "fields": {
-      "description": "R",
-      "created_at": "2023-05-13T23:36:44.041Z",
-      "updated_at": "2023-05-13T23:36:44.041Z"
+      "description": "TypeScript",
+      "created_at": "2023-06-28T04:13:27.090Z",
+      "updated_at": "2023-06-28T04:13:27.090Z"
     }
   },
   {
     "model": "blog.proglanguage",
     "pk": 11,
     "fields": {
-      "description": "Go",
-      "created_at": "2023-05-13T23:36:44.248Z",
-      "updated_at": "2023-05-13T23:36:44.248Z"
-    }
-  },
-  {
-    "model": "blog.proglanguage",
-    "pk": 12,
-    "fields": {
-      "description": "Swift",
-      "created_at": "2023-05-13T23:36:44.444Z",
-      "updated_at": "2023-05-13T23:36:44.445Z"
-    }
-  },
-  {
-    "model": "blog.proglanguage",
-    "pk": 13,
-    "fields": {
-      "description": "Kotlin",
-      "created_at": "2023-05-13T23:36:44.708Z",
-      "updated_at": "2023-05-13T23:36:44.708Z"
-    }
-  },
-  {
-    "model": "blog.proglanguage",
-    "pk": 14,
-    "fields": {
-      "description": "TypeScript",
-      "created_at": "2023-05-13T23:36:45.144Z",
-      "updated_at": "2023-05-13T23:36:45.144Z"
-    }
-  },
-  {
-    "model": "blog.proglanguage",
-    "pk": 15,
-    "fields": {
-      "description": "Scala",
-      "created_at": "2023-05-13T23:36:45.380Z",
-      "updated_at": "2023-05-13T23:36:45.380Z"
-    }
-  },
-  {
-    "model": "blog.proglanguage",
-    "pk": 16,
-    "fields": {
-      "description": "Rust",
-      "created_at": "2023-05-13T23:36:45.890Z",
-      "updated_at": "2023-05-13T23:36:45.890Z"
-    }
-  },
-  {
-    "model": "blog.proglanguage",
-    "pk": 17,
-    "fields": {
-      "description": "Dart",
-      "created_at": "2023-05-13T23:36:46.066Z",
-      "updated_at": "2023-05-13T23:36:46.066Z"
-    }
-  },
-  {
-    "model": "blog.proglanguage",
-    "pk": 18,
-    "fields": {
       "description": "Elixir",
-      "created_at": "2023-05-13T23:36:46.509Z",
-      "updated_at": "2023-05-13T23:36:46.509Z"
+      "created_at": "2023-06-28T04:13:27.398Z",
+      "updated_at": "2023-06-28T04:13:27.398Z"
     }
   },
   {
-    "model": "blog.proglanguage",
-    "pk": 19,
+    "model": "blog.post",
+    "pk": 1,
     "fields": {
-      "description": "Matlab",
-      "created_at": "2023-05-13T23:36:47.084Z",
-      "updated_at": "2023-05-13T23:36:47.084Z"
-    }
-  },
-  {
-    "model": "blog.proglanguage",
-    "pk": 20,
-    "fields": {
-      "description": "SQL",
-      "created_at": "2023-05-13T23:36:47.680Z",
-      "updated_at": "2023-05-13T23:36:47.680Z"
+      "id_user": 1,
+      "id_prog_language": null,
+      "id_grid": 38,
+      "title": "Dev.Duck?",
+      "content": "## Bem-vindo(a) ao Dev.Duck!\r\n\r\nVocê está prestes a entrar em um ambiente acadêmico colaborativo e empolgante, criado especialmente para os estudantes do curso de Análise e Desenvolvimento de Sistemas (ADS) do IFPI - campus Corrente. Se você está acessando o Dev.Duck pela primeira vez, prepare-se para uma experiência única de compartilhamento de conhecimentos e aprendizado conjunto.\r\n\r\nO Dev.Duck foi desenvolvido com o objetivo de proporcionar aos estudantes uma plataforma aberta e simples, onde eles podem publicar seus conhecimentos e experiências relacionados às matérias de suas grades curriculares. Aqui, você encontrará uma diversidade de informações e recursos complementares que irão enriquecer sua jornada acadêmica.\r\n\r\nNosso objetivo é facilitar o acesso a materiais interessantes e dinâmicos, que vão além dos tradicionais livros e artigos, e incentivar a troca de conhecimentos entre os estudantes. Queremos criar um ambiente onde você possa compartilhar suas descobertas e aprender uns com os outros.\r\n\r\nAo explorar o Dev.Duck, você encontrará uma variedade de conteúdos, desde links para matérias complementares até anotações e resumos das aulas. Nossa plataforma permite filtrar as informações por matéria do curso, facilitando a localização de conteúdos relevantes para os seus estudos.\r\n\r\nLembre-se de que o Dev.Duck não busca substituir os recursos oferecidos pela instituição acadêmica, como os materiais fornecidos pelos professores ou a biblioteca do campus Corrente. Em vez disso, estamos aqui para complementar esses recursos, fornecendo uma plataforma interativa e colaborativa para que você possa expandir seu conhecimento de maneira mais direcionada e envolvente.\r\n\r\nEstamos empolgados em tê-lo(a) a bordo nesta jornada de aprendizado compartilhado. Explore o Dev.Duck, faça novas descobertas, compartilhe seus próprios insights e junte-se à comunidade de estudantes comprometidos em criar um ambiente acadêmico mais dinâmico e interativo.\r\n\r\nVamos começar essa jornada juntos!\r\n\r\n_Equipe Dev.Duck_",
+      "created_at": "2023-06-28T13:36:14.361Z",
+      "updated_at": "2023-07-06T13:50:57.697Z"
     }
   },
   {
@@ -2379,12 +2242,12 @@
     "pk": 2,
     "fields": {
       "id_user": 1,
-      "id_prog_language": 3,
-      "id_grid": 17,
-      "title": "Teste",
-      "content": "# Teste\r\n## Teste\r\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/knG1hOA0ghU\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
-      "created_at": "2023-05-15T16:47:55.978Z",
-      "updated_at": "2023-05-15T16:47:55.979Z"
+      "id_prog_language": 9,
+      "id_grid": 16,
+      "title": "Instalando o PHP no Linux",
+      "content": "# Introdução ao PHP\r\n\r\nO PHP (Hypertext Preprocessor) é uma linguagem de programação amplamente utilizada para o desenvolvimento de aplicativos web. Ela foi criada originalmente por Rasmus Lerdorf em 1994 e, desde então, tem se tornado uma das linguagens mais populares para desenvolvimento web devido à sua simplicidade e flexibilidade.\r\n\r\nO PHP é uma linguagem de script do lado do servidor, o que significa que o código PHP é executado no servidor web e o resultado é enviado ao navegador do usuário. Isso permite a criação de páginas dinâmicas que podem interagir com bancos de dados, processar formulários, gerar conteúdo dinâmico e muito mais.\r\n\r\nNeste artigo, vamos explorar como instalar o PHP em um ambiente Linux com Ubuntu.\r\n\r\n# Como instalar o PHP no Linux Ubuntu\r\n\r\nAqui está um guia passo a passo para a instalação do PHP 8 em um ambiente Linux com Ubuntu:\r\n\r\n## Preparando o ambiente Linux\r\n\r\nAntes de instalar o PHP, vamos atualizar as dependências e repositórios do sistema executando o seguinte comando no terminal:\r\n\r\n```bash\r\nsudo apt update\r\n```\r\n\r\nEm seguida, vamos instalar o pacote `software-properties-common` para habilitar a instalação e configuração de outros repositórios no sistema:\r\n\r\n```bash\r\nsudo apt install software-properties-common -y\r\n```\r\n\r\n## Adicionando o repositório do Ondřej Surý\r\n\r\nO Ondřej Surý é o responsável por disponibilizar e manter os pacotes oficiais do PHP para Ubuntu e Debian. Vamos adicionar o repositório dele e instalar o PHP 8 executando o seguinte comando:\r\n\r\n```bash\r\nsudo apt install php8.0\r\n```\r\n\r\n## Instalando extensões do PHP\r\n\r\nAgora que o PHP está instalado, podemos instalar extensões adicionais que podem ser necessárias para o desenvolvimento. Para listar as extensões disponíveis, execute o seguinte comando:\r\n\r\n```bash\r\nsudo apt search php8.0-*\r\n```\r\n\r\nAqui estão alguns exemplos de extensões populares que você pode instalar:\r\n\r\n- Extensão cURL:\r\n  ```bash\r\n  sudo apt install php-curl\r\n  ```\r\n\r\n- Extensão GD (gráficos):\r\n\r\n  ```\r\n  sudo apt install php-gd\r\n  ```\r\n\r\n- Extensão de manipulação de strings multibyte:\r\n\r\n  ```\r\n  sudo apt install php-mbstring\r\n  ```\r\n\r\n- Extensão para conexão com banco de dados MySQL:\r\n\r\n  ```\r\n  sudo apt install php-mysql\r\n  ```\r\n\r\nVocê pode instalar outras extensões conforme suas necessidades, pesquisando-as usando o comando `apt search php8.0-*`.\r\n\r\n## Testando o PHP\r\n\r\nPara verificar se o PHP foi instalado corretamente, você pode executar o seguinte comando no terminal:\r\n\r\n```\r\nphp --version\r\n```\r\n\r\nIsso exibirá a versão do PHP instalada no seu sistema.\r\n\r\nAlém disso, você pode criar um arquivo `index.php` com o seguinte conteúdo:\r\n\r\n```php\r\n<?php\r\nphpinfo();\r\n?>\r\n```\r\n\r\nEm seguida, você pode iniciar um servidor PHP embutido executando o seguinte comando no terminal:\r\n\r\n```\r\nphp -S localhost:8000\r\n```\r\n\r\nIsso iniciará um servidor local na porta 8000 e você poderá\r\n\r\n acessar o arquivo `index.php` no navegador usando o endereço `http://localhost:8000`.\r\n\r\n## Alternando entre versões do PHP\r\n\r\nSe você tiver várias versões do PHP instaladas em sua máquina e quiser escolher uma versão principal, você pode usar o seguinte comando para selecionar a versão desejada:\r\n\r\n```\r\nsudo update-alternatives --config php\r\n```\r\n\r\nIsso exibirá uma lista das versões do PHP instaladas e permitirá que você escolha a versão que deseja definir como padrão.\r\n\r\nVocê também pode definir um alias para o comando `php` para alternar facilmente entre as versões do PHP. Para fazer isso, você pode adicionar o seguinte comando ao seu arquivo de perfil de shell (por exemplo, `.bashrc` ou `.zshrc`):\r\n\r\n```\r\nalias php=\"/usr/bin/php8.0\"\r\n```\r\n\r\nLembre-se de substituir `/usr/bin/php8.0` pelo caminho da instalação do PHP desejada.\r\n\r\n# Conclusão\r\n\r\nNeste artigo, vimos como instalar o PHP 8 em um ambiente Linux com Ubuntu. Agora você está pronto para começar a desenvolver aplicativos web poderosos usando PHP. Explore a documentação oficial do PHP para aprender mais sobre a linguagem e suas possibilidades.\r\n\r\nHappy coding!",
+      "created_at": "2023-06-28T14:14:45.643Z",
+      "updated_at": "2023-06-28T14:14:45.643Z"
     }
   },
   {
@@ -2392,12 +2255,12 @@
     "pk": 3,
     "fields": {
       "id_user": 1,
-      "id_prog_language": 17,
-      "id_grid": 34,
-      "title": "dasdsad",
-      "content": "asdasdasddasd",
-      "created_at": "2023-05-15T17:23:36.118Z",
-      "updated_at": "2023-05-15T17:23:36.118Z"
+      "id_prog_language": null,
+      "id_grid": 3,
+      "title": "Aprenda Inglês de Forma Divertida e Eficaz com a Ajuda do ChatGPT!",
+      "content": "![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwebresources.mq.edu.au%2Fthisweek%2Fwp-content%2Fuploads%2F2023%2F02%2FCHATGPT_TW_1920X867.jpg&f=1&nofb=1&ipt=0d781bdd76fbf16f5638c350809824d9f11b65bd85594872325b2b1b81755ab1&ipo=images)\r\n## Introdução:\r\nAprender inglês é um objetivo comum para muitas pessoas ao redor do mundo. É uma habilidade valiosa que pode abrir portas em termos de oportunidades acadêmicas, profissionais e de comunicação global. Vamos explorar como você pode aprimorar suas habilidades em inglês de forma divertida e eficaz com a ajuda do ChatGPT, um modelo de linguagem desenvolvido pela OpenAI.\r\n\r\n1. Conversação interativa:\r\n\r\n  Uma das melhores maneiras de praticar e aprimorar o seu inglês é por meio da conversação. Com o ChatGPT, você pode realizar simulações de conversas em inglês. Basta iniciar uma conversa com o modelo e se engajar em diálogos sobre diversos tópicos. O ChatGPT fornecerá respostas em inglês natural e você poderá praticar suas habilidades de compreensão auditiva e expressão oral.\r\n\r\n2. Correção gramatical e de vocabulário:\r\n\r\n  O ChatGPT também pode ajudar a melhorar sua gramática e ampliar seu vocabulário. Ao escrever frases ou parágrafos em inglês para o ChatGPT, o modelo pode fornecer sugestões de correção e oferecer sinônimos para enriquecer seu texto. Essa interação contínua com o modelo ajudará você a se familiarizar com diferentes estruturas gramaticais e a aprender novas palavras.\r\n\r\n3. Dicas de estudo e materiais de apoio:\r\n\r\n  O ChatGPT pode ser uma excelente fonte de dicas de estudo e recomendações de materiais de apoio para aprender inglês. Você pode fazer perguntas ao modelo sobre estratégias de estudo, recursos online, livros recomendados e até mesmo filmes e séries em inglês que ajudarão no seu aprendizado. O ChatGPT está sempre disponível para fornecer orientações personalizadas com base nas suas necessidades e interesses específicos.\r\n\r\n4. Prática de compreensão de leitura:\r\n\r\n  Além de conversação e escrita, é fundamental desenvolver habilidades de compreensão de leitura em inglês. O ChatGPT pode ajudar você a praticar essa habilidade. Peça ao modelo para explicar conceitos complexos em inglês ou compartilhe trechos de textos em inglês que você está estudando. O ChatGPT pode fornecer explicações claras e exemplos adicionais para ajudar a consolidar seu entendimento.\r\n\r\n5. Jogos de palavras e exercícios interativos:\r\n\r\n  Para tornar o aprendizado do inglês ainda mais divertido, você pode utilizar o ChatGPT para jogar jogos de palavras e realizar exercícios interativos. Peça ao modelo para sugerir palavras em inglês com base em dicas que você fornecer. Você também pode criar perguntas de múltipla escolha sobre gramática, vocabulário e cultura geral e desafiar o ChatGPT a responder corretamente. Essa abordagem lúdica tornará o processo de aprendizado mais envolvente.\r\n\r\n## Atue como um professor e aperfeiçoador de inglês falado:\r\n\r\nUma forma interessante de praticar o inglês falado é interagir com o ChatGPT como se fosse um professor. Você pode falar com o modelo em inglês e pedir que ele responda também em inglês para que você pratique a sua habilidade de fala. O ChatGPT pode apontar e corrigir erros de conjugação, ortografia, gramática e outros que você cometer, tornando-se uma ferramenta valiosa para aprimorar suas habilidades linguísticas. Caso você solicite, o ChatGPT pode traduzir suas respostas para o português.\r\n\r\n```\r\nAtue como um professor e aperfeiçoador de inglês falado. Falarei com você em inglês e você me responderá em inglês para praticar o meu inglês falado. Traduza suas respostas para o português apenas se eu pedir.\r\n\r\nEu quero que você:\r\n- Mantenha sua resposta organizada, limitando a resposta a 100 palavras.\r\n- Aponte e corrija todos os erros de conjugação, ortografia, gramática e outros que eu cometer, isso é o mais importante.\r\n- Faça-me uma pergunta na sua resposta.\r\n\r\nSuas perguntas devem sempre ser em inglês e você deve usar o português apenas para explicar meus erros.\r\n\r\nAgora vamos começar a praticar, você pode me fazer uma pergunta primeiro.\r\n```\r\n\r\nAo estabelecer essas diretrizes para a interação, você incentiva o ChatGPT a manter suas respostas organizadas e limitadas a 100 palavras. Além disso, você solicita que o modelo aponte e corrija todos os erros de conjugação, ortografia, gramática e outros que você cometer, garantindo uma abordagem focada no aprendizado.\r\n\r\nAlém disso, o ChatGPT deve incluir uma pergunta em inglês em sua resposta, o que cria uma oportunidade adicional para você praticar suas habilidades de compreensão. Com essas diretrizes claras, o ChatGPT pode se tornar um recurso valioso para aprimorar suas habilidades de conversação em inglês. \r\n\r\n## Conclusão:\r\nO aprendizado do inglês pode ser uma jornada desafiadora, mas com a ajuda do ChatGPT, você pode torná-la divertida e eficaz. Aproveite a conversação interativa, a correção gramatical, as dicas de estudo, os materiais de apoio, a prática de compreensão de leitura e os jogos de palavras para aprimorar suas habilidades em inglês. Lembre-se de que a prática constante e a exposição ao idioma são fundamentais para alcançar a fluência. Então, comece a explorar as diversas possibilidades de aprendizado com o ChatGPT e embarque na jornada de dominar o inglês!",
+      "created_at": "2023-06-28T14:35:27.116Z",
+      "updated_at": "2023-06-28T14:35:27.116Z"
     }
   },
   {
@@ -2405,155 +2268,243 @@
     "pk": 4,
     "fields": {
       "id_user": 1,
-      "id_prog_language": 4,
-      "id_grid": 16,
-      "title": "Árvores: O Começo de TUDO",
-      "content": "_Este é o final da minha Trilogia de Estruturas de Dados e Algoritmos e finalmente vou conseguir falar sobre o mais importante na matéria: árvores! Vamos de BSTs a AVLs, passando por Red Black Trees e muito mais! Se você nunca estudou sobre isso, ou não tinha entendido quando estudou, esta é sua chance!_\r\n<iframe width=\"100%\" height=\"515\" src=\"https://www.youtube.com/embed/9GdesxWtOgs\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
-      "created_at": "2023-05-15T17:30:10.775Z",
-      "updated_at": "2023-05-15T17:30:10.775Z"
-    }
-  },
-  {
-    "model": "blog.post",
-    "pk": 5,
-    "fields": {
-      "id_user": 1,
-      "id_prog_language": 17,
-      "id_grid": 24,
-      "title": "qwrwqerew",
-      "content": "ddwqdew",
-      "created_at": "2023-05-15T17:44:46.610Z",
-      "updated_at": "2023-05-15T17:44:46.610Z"
-    }
-  },
-  {
-    "model": "blog.post",
-    "pk": 6,
-    "fields": {
-      "id_user": 1,
-      "id_prog_language": 18,
-      "id_grid": 28,
-      "title": "fwfqwefwefqwef",
-      "content": "qwefweqfweqfew",
-      "created_at": "2023-05-15T17:45:24.535Z",
-      "updated_at": "2023-05-15T17:45:24.535Z"
+      "id_prog_language": 1,
+      "id_grid": 4,
+      "title": "Python: Uma Introdução às suas Funções Básicas",
+      "content": "__Python é uma das linguagens de programação mais populares e amplamente utilizadas no mundo atualmente. É conhecida por sua sintaxe simples e legibilidade, o que a torna uma excelente opção para iniciantes na programação. Neste artigo, vamos explorar os conceitos básicos de Python e suas principais funções.__\r\n\r\n## O que é Python?\r\n\r\nPython é uma linguagem de programação interpretada, de alto nível e multiplataforma. Ela foi criada por Guido van Rossum e lançada pela primeira vez em 1991. Desde então, Python tem ganhado popularidade rapidamente devido à sua simplicidade e flexibilidade.\r\n\r\nUma das principais características do Python é a sua filosofia de \"legibilidade do código\", que enfatiza a importância de um código limpo e fácil de entender. Isso torna Python uma escolha ideal para desenvolvedores que desejam escrever programas claros e concisos.\r\n\r\n## Funções Básicas do Python\r\n\r\n### 1. Variáveis e Tipos de Dados\r\n\r\nEm Python, você pode declarar uma variável atribuindo um valor a ela. O tipo de dado da variável é inferido automaticamente pelo interpretador.\r\n\r\n```python\r\n# Exemplo de variáveis\r\nidade = 25\r\nnome = \"João\"\r\nsalario = 1500.50\r\n```\r\n\r\nPython suporta diversos tipos de dados, incluindo inteiros (`int`), números de ponto flutuante (`float`), strings (`str`), booleanos (`bool`), listas (`list`), tuplas (`tuple`), dicionários (`dict`), entre outros.\r\n\r\n### 2. Estruturas de Controle\r\n\r\nPython possui várias estruturas de controle para manipular o fluxo do programa. Alguns exemplos comuns são:\r\n\r\n- **Estrutura if/else**:\r\n\r\n```python\r\nif idade >= 18:\r\n    print(\"Você é maior de idade!\")\r\nelse:\r\n    print(\"Você é menor de idade!\")\r\n```\r\n\r\n- **Estrutura for** (para percorrer uma sequência):\r\n\r\n```python\r\nnomes = [\"Ana\", \"Maria\", \"João\"]\r\nfor nome in nomes:\r\n    print(nome)\r\n```\r\n\r\n- **Estrutura while** (para repetir um bloco de código enquanto uma condição for verdadeira):\r\n\r\n```python\r\ncontador = 0\r\nwhile contador < 5:\r\n    print(contador)\r\n    contador += 1\r\n```\r\n\r\n### 3. Funções\r\n\r\nAs funções permitem agrupar um conjunto de instruções em um bloco reutilizável. Em Python, você pode definir suas próprias funções usando a palavra-chave `def`. Aqui está um exemplo:\r\n\r\n```python\r\ndef saudacao(nome):\r\n    print(f\"Olá, {nome}!\")\r\n\r\n# Chamando a função\r\nsaudacao(\"Ana\")  # Output: Olá, Ana!\r\n```\r\n\r\n### 4. Módulos e Bibliotecas\r\n\r\nPython possui uma ampla biblioteca padrão que fornece muitas funcionalidades adicionais. Para usar essas funcionalidades, você precisa importar os módulos correspondentes em seu código.\r\n\r\n```python\r\n# Importando o módulo math\r\nimport math\r\n\r\n# Usando a função sqrt do módulo math\r\nraiz_quadrada = math.sqrt(16)\r\nprint(raiz_quadrada)  # Output: 4.0\r\n```\r\n\r\n### 5. Entrada e Saída\r\n\r\n de Dados\r\n\r\nPython fornece funções para interagir com o usuário. A função `input()` permite receber uma entrada do usuário, enquanto a função `print()` é usada para exibir informações na tela.\r\n\r\n```python\r\n# Recebendo uma entrada do usuário\r\nnome = input(\"Digite seu nome: \")\r\n\r\n# Exibindo uma mensagem\r\nprint(f\"Olá, {nome}!\")\r\n```\r\n\r\n## Conclusão\r\n\r\nPython é uma linguagem poderosa e versátil, que oferece uma ampla gama de funcionalidades para desenvolvedores de todos os níveis. Neste artigo, abordamos os conceitos básicos de Python, incluindo variáveis, estruturas de controle, funções, módulos e entrada/saída de dados. Esses são apenas os fundamentos, mas Python possui muitos recursos avançados e é amplamente utilizado em áreas como desenvolvimento web, ciência de dados, inteligência artificial e automação de tarefas. Portanto, se você está interessado em aprender a programar, Python é uma ótima escolha para começar!",
+      "created_at": "2023-06-28T18:07:15.233Z",
+      "updated_at": "2023-07-06T13:20:05.976Z"
     }
   },
   {
     "model": "blog.post",
     "pk": 7,
     "fields": {
-      "id_user": 1,
-      "id_prog_language": null,
-      "id_grid": 19,
-      "title": "rwqerwerqerqwe",
-      "content": "# werqwerweqrwqerwqe",
-      "created_at": "2023-05-15T17:49:39.031Z",
-      "updated_at": "2023-05-15T17:49:39.031Z"
+      "id_user": 6,
+      "id_prog_language": 1,
+      "id_grid": 31,
+      "title": "Introdução a elaboração de projeto de pesquisa",
+      "content": "## 📚 Postagem sobre projeto de pesquisa com base em Wazlawick 📚\r\n\r\n```dart\r\nDe acordo com o autor Wazlawick, um projeto de pesquisa é uma etapa fundamental na condução de uma investigação científica. Em seu livro \"Metodologia de Pesquisa para Ciência da Computação\", Wazlawick ressalta a importância de um projeto claro e bem estruturado, capaz de guiar o pesquisador na realização de sua investigação. O projeto de pesquisa, segundo Wazlawick, deve conter elementos essenciais, como a definição do problema a ser investigado, a formulação de hipóteses, a revisão bibliográfica e a descrição dos métodos e técnicas a serem utilizados.\r\n\r\nAlém disso, Wazlawick destaca que o projeto de pesquisa deve ser elaborado de forma coerente e detalhada, fornecendo uma visão abrangente sobre o estudo a ser realizado. O autor ressalta a importância de uma revisão bibliográfica aprofundada, que permita ao pesquisador identificar lacunas no conhecimento existente e fundamentar sua proposta de pesquisa. O projeto também deve incluir a definição dos objetivos a serem alcançados, bem como a delimitação do escopo da pesquisa, garantindo assim um direcionamento claro e eficiente.\r\n\r\nAo seguir as orientações de Wazlawick, o pesquisador estará apto a elaborar um projeto de pesquisa sólido e consistente, capaz de guiar suas ações e contribuir para a produção de conhecimento científico de qualidade. O projeto de pesquisa se torna uma ferramenta essencial na organização e planejamento da investigação, permitindo ao pesquisador antecipar possíveis obstáculos e estabelecer um cronograma adequado. Portanto, a compreensão e aplicação dos princípios propostos por Wazlawick são fundamentais para o desenvolvimento de uma pesquisa bem-sucedida e contribuem para o avanço da ciência em diferentes áreas do conhecimento.\r\n```",
+      "created_at": "2023-07-07T00:20:43.795Z",
+      "updated_at": "2023-07-07T12:20:31.865Z"
     }
   },
   {
     "model": "blog.post",
     "pk": 8,
     "fields": {
-      "id_user": 1,
-      "id_prog_language": null,
-      "id_grid": 4,
-      "title": "Teste Mobile",
-      "content": "# Apena um teste via smartphone\r\n## Site tá mec \r\n\r\nVamos falar sobre inglês, e talvez sobre mais nd.\r\n\r\nItem 1\r\n* Item 2\r\n * Item 2a\r\n* Item 2b\r\n1. Item 1\r\n 1. Item 2\r\n  2. Ddjjdjdh\r\n2. Ju",
-      "created_at": "2023-05-16T13:34:25.344Z",
-      "updated_at": "2023-05-16T13:34:25.344Z"
+      "id_user": 7,
+      "id_prog_language": 3,
+      "id_grid": 24,
+      "title": "Variáveis Constantes em JavaScript: Valores Imutáveis para Código Seguro",
+      "content": "Em JavaScript, a palavra-chave \"const\" é usada para declarar uma variável cujo valor é constante, ou seja, não pode ser alterado após a atribuição inicial. Isso significa que uma vez que uma constante é definida, seu valor não pode ser reatribuído.\r\n\r\nA declaração de uma constante segue a sintaxe: \"const nomeDaVariavel = valor;\". O nome da variável segue as regras de nomenclatura padrão em JavaScript, e o valor atribuído pode ser qualquer expressão válida.\r\n\r\nAs constantes são especialmente úteis quando queremos definir valores fixos que não devem ser modificados ao longo do programa. Por exemplo, podemos usar uma constante para armazenar um valor matemático constante, como o valor de Pi, que é 3.14159.\r\n\r\nUma vantagem das constantes é que elas ajudam a evitar alterações acidentais de valores importantes no código. Se tentarmos reatribuir um valor a uma constante, o JavaScript lançará um erro e impedirá que a alteração ocorra.\r\n\r\nNo entanto, vale ressaltar que as constantes não são imutáveis em JavaScript. Se uma constante for um objeto ou um array, por exemplo, suas propriedades ou elementos podem ser modificados. A constância se aplica apenas à atribuição da variável em si.\r\n\r\nEm resumo, as constantes em JavaScript são uma ferramenta valiosa para manter a integridade do código, fornecendo valores fixos que não podem ser alterados posteriormente. Elas nos ajudam a escrever um código mais seguro e legível, protegendo contra alterações indesejadas de valores cruciais.",
+      "created_at": "2023-07-07T00:33:37.151Z",
+      "updated_at": "2023-07-07T00:33:37.151Z"
     }
   },
   {
     "model": "blog.post",
     "pk": 9,
     "fields": {
-      "id_user": 4,
+      "id_user": 1,
       "id_prog_language": null,
-      "id_grid": 18,
-      "title": "Teste de Estevão",
-      "content": "# Título <h1>\r\n## Título <h2>\r\n### Título <h3>\r\n#### Título <h4>\r\n##### Título <h5>\r\n###### Título <h6>\r\n\r\n>Este é um *blockquote*. O sinal usado abre e fecha este código no HTML. \r\n>Para adicionar mais uma linha à citação, basta teclar Enter para um novo\r\n>código sinal. Isso gerará um novo parágrafo dentro do *blockquote*.\r\n>Códigos de **negrito**, _itálico_ e <https://links.com> funcionam aqui.\r\n\r\n1. Item 1\r\n2. Item 2\r\n3. Item 3",
-      "created_at": "2023-05-16T15:33:16.663Z",
-      "updated_at": "2023-05-16T15:33:16.663Z"
+      "id_grid": 38,
+      "title": "Aprenda Programação de Forma Prática e Divertida com o Exercism!",
+      "content": "# Aprenda Programação de Forma Prática e Divertida com o Exercism!\r\n\r\n![Exercism](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdg8krxphbh767.cloudfront.net%2Fmeta%2Fog.png&f=1&nofb=1&ipt=01cb22160d498ff540bafa70b5fa470649f4692833010074b9e5f2ee5a66a054&ipo=images)\r\n\r\nOlá, caros leitores!\r\n\r\nHoje, estou muito empolgado em compartilhar com vocês uma plataforma online incrível para aprender programação de maneira interativa e colaborativa: o Exercism!\r\n\r\n## O que é o Exercism?\r\n\r\nO Exercism é uma comunidade educacional online que visa ajudar programadores de todos os níveis a melhorarem suas habilidades de codificação através da prática de exercícios em diversas linguagens de programação populares. Criada por Katrina Owen em 2013, essa plataforma inovadora tem transformado a forma como as pessoas aprendem a programar.\r\n\r\n## Como Funciona?\r\n\r\nO Exercism oferece uma ampla variedade de trilhas de aprendizado, cada uma focada em uma linguagem de programação específica. A partir do momento em que você escolhe uma linguagem de interesse, o processo é simples e divertido:\r\n\r\n1. Resolva Exercícios: A plataforma fornece exercícios desafiadores em sua trilha escolhida. Você pode resolver esses exercícios no seu próprio ritmo.\r\n\r\n2. Receba Feedback Personalizado: Depois de completar um exercício, você pode enviar sua solução para revisão. Os membros da comunidade, conhecidos como \"mentores\", fornecerão feedback valioso e sugestões de melhorias.\r\n\r\n3. Aprenda com os Mentores: Aproveite os comentários dos mentores para aprimorar suas habilidades e aprender abordagens mais eficientes para resolver problemas.\r\n\r\n## Por que escolher o Exercism?\r\n\r\n- **Aprendizado Prático**: Em vez de apenas ler teoria, o Exercism permite que você coloque as mãos na massa e pratique a codificação real.\r\n\r\n- **Feedback Personalizado**: Receba orientações personalizadas de membros experientes da comunidade, acelerando seu progresso e compreensão.\r\n\r\n- **Variedade de Linguagens**: O Exercism oferece trilhas de aprendizado para várias linguagens populares, desde JavaScript até Python, Ruby, Go e muito mais!\r\n\r\n- **Gratuito e de Código Aberto**: A plataforma é completamente gratuita e de código aberto, o que significa que você pode contribuir e ajudar a melhorá-la.\r\n\r\n- **Comunidade Acolhedora**: Faça parte de uma comunidade inclusiva e amigável, onde você pode aprender e crescer com outros programadores.\r\n\r\n## Como Começar?\r\n\r\n1. Acesse o [Exercism.org](https://exercism.org/) e crie uma conta gratuitamente.\r\n\r\n2. Escolha a linguagem de programação que você deseja aprender.\r\n\r\n3. Explore os exercícios disponíveis em sua trilha e comece a resolver!\r\n\r\nLembre-se, não importa se você é um iniciante ou um programador experiente, o Exercism é projetado para atender às necessidades de todos.\r\n\r\n## Vamos Programar Juntos!\r\n\r\nNão perca mais tempo! Junte-se à comunidade do Exercism e mergulhe em uma experiência de aprendizado prática e envolvente. Estou animado para ver você evoluir em suas habilidades de programação e compartilhar seus conhecimentos com outros entusiastas.\r\n\r\nDivirta-se codificando!",
+      "created_at": "2023-07-20T15:44:21.224Z",
+      "updated_at": "2023-07-20T15:44:21.224Z"
     }
   },
   {
-    "model": "blog.post",
+    "model": "blog.rating",
+    "pk": 1,
+    "fields": {
+      "id_user_rated": 1,
+      "id_post": 3,
+      "like": true,
+      "created_at": "2023-06-28T14:43:18.149Z",
+      "updated_at": "2023-06-28T14:43:18.149Z"
+    }
+  },
+  {
+    "model": "blog.rating",
+    "pk": 2,
+    "fields": {
+      "id_user_rated": 1,
+      "id_post": 2,
+      "like": true,
+      "created_at": "2023-06-28T14:43:31.822Z",
+      "updated_at": "2023-06-28T14:43:31.822Z"
+    }
+  },
+  {
+    "model": "blog.rating",
+    "pk": 3,
+    "fields": {
+      "id_user_rated": 2,
+      "id_post": 3,
+      "like": true,
+      "created_at": "2023-06-28T21:39:07.511Z",
+      "updated_at": "2023-06-28T21:39:07.511Z"
+    }
+  },
+  {
+    "model": "blog.rating",
+    "pk": 4,
+    "fields": {
+      "id_user_rated": 3,
+      "id_post": 3,
+      "like": true,
+      "created_at": "2023-06-28T21:48:20.432Z",
+      "updated_at": "2023-06-28T21:48:20.432Z"
+    }
+  },
+  {
+    "model": "blog.rating",
+    "pk": 7,
+    "fields": {
+      "id_user_rated": 4,
+      "id_post": 2,
+      "like": true,
+      "created_at": "2023-06-29T21:29:17.488Z",
+      "updated_at": "2023-06-29T21:29:17.488Z"
+    }
+  },
+  {
+    "model": "blog.rating",
+    "pk": 8,
+    "fields": {
+      "id_user_rated": 1,
+      "id_post": 4,
+      "like": true,
+      "created_at": "2023-07-06T13:20:14.643Z",
+      "updated_at": "2023-07-06T13:20:14.643Z"
+    }
+  },
+  {
+    "model": "blog.rating",
+    "pk": 9,
+    "fields": {
+      "id_user_rated": 1,
+      "id_post": 1,
+      "like": true,
+      "created_at": "2023-07-06T13:50:04.308Z",
+      "updated_at": "2023-07-06T13:50:04.308Z"
+    }
+  },
+  {
+    "model": "blog.rating",
     "pk": 10,
     "fields": {
-      "id_user": 5,
-      "id_prog_language": 20,
-      "id_grid": 13,
-      "title": "A cornice de Gabriel por Rayline",
-      "content": "#Ele simplesmente é um corno nato!!",
-      "created_at": "2023-05-16T22:13:59.471Z",
-      "updated_at": "2023-05-16T22:13:59.471Z"
+      "id_user_rated": 6,
+      "id_post": 3,
+      "like": false,
+      "created_at": "2023-07-07T00:13:27.173Z",
+      "updated_at": "2023-07-07T17:00:17.531Z"
     }
   },
   {
-    "model": "blog.post",
+    "model": "blog.rating",
     "pk": 11,
     "fields": {
-      "id_user": 6,
-      "id_prog_language": null,
-      "id_grid": 23,
-      "title": "Amaral é???",
-      "content": "#hello, my name is Amaral\r\n##is",
-      "created_at": "2023-05-16T23:35:28.754Z",
-      "updated_at": "2023-05-16T23:35:28.754Z"
+      "id_user_rated": 6,
+      "id_post": 7,
+      "like": true,
+      "created_at": "2023-07-07T00:20:51.693Z",
+      "updated_at": "2023-07-07T16:56:20.005Z"
     }
   },
   {
-    "model": "blog.post",
+    "model": "blog.rating",
     "pk": 12,
     "fields": {
-      "id_user": 5,
-      "id_prog_language": 4,
-      "id_grid": 6,
-      "title": "Como vender drogas online (rápido)",
-      "content": "![](https://occ-0-1313-3852.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABXzvRigXCENBD4aHiDcVFKjjP_rq6FlJT4UxgrCbkkgUkrRM1SoKjx-U-NydyPH8N_KZnHSIle31dZx8lxdC8_OdCYSDj2fJlYs2.jpg?r=12f)",
-      "created_at": "2023-05-17T13:30:57.898Z",
-      "updated_at": "2023-05-17T13:30:57.898Z"
+      "id_user_rated": 7,
+      "id_post": 8,
+      "like": true,
+      "created_at": "2023-07-07T00:36:12.898Z",
+      "updated_at": "2023-07-07T00:36:12.898Z"
     }
   },
   {
-    "model": "blog.post",
+    "model": "blog.rating",
     "pk": 13,
     "fields": {
-      "id_user": 1,
-      "id_prog_language": null,
-      "id_grid": 12,
-      "title": "Teste",
-      "content": "Teste",
-      "created_at": "2023-06-02T18:32:20.073Z",
-      "updated_at": "2023-06-02T18:32:20.074Z"
+      "id_user_rated": 6,
+      "id_post": 1,
+      "like": true,
+      "created_at": "2023-07-07T16:58:30.072Z",
+      "updated_at": "2023-07-07T16:58:30.072Z"
     }
   },
   {
-    "model": "blog.post",
+    "model": "blog.rating",
     "pk": 14,
     "fields": {
-      "id_user": 1,
-      "id_prog_language": null,
-      "id_grid": 31,
-      "title": "Testes",
-      "content": "teafaeaew",
-      "created_at": "2023-06-02T18:32:40.449Z",
-      "updated_at": "2023-06-02T18:32:40.449Z"
+      "id_user_rated": 1,
+      "id_post": 9,
+      "like": true,
+      "created_at": "2023-07-20T15:44:34.834Z",
+      "updated_at": "2023-07-20T15:44:34.834Z"
     }
   },
   {
-    "model": "blog.post",
-    "pk": 15,
+    "model": "core.requestpermission",
+    "pk": 1,
     "fields": {
-      "id_user": 1,
-      "id_prog_language": null,
-      "id_grid": 30,
-      "title": "fsadfasdfadsfs",
-      "content": "fsadfdsafaasdfsdasdfs",
-      "created_at": "2023-06-02T18:33:01.567Z",
-      "updated_at": "2023-06-02T18:33:01.567Z"
+      "requesting_user": 2,
+      "description": "Gostaria de compartilhar o meus conhecimentos prévios com demais alunos.",
+      "approved_by": 1,
+      "is_approved": true,
+      "created_at": "2023-06-28T21:41:54.971Z",
+      "updated_at": "2023-06-28T23:01:47.386Z"
+    }
+  },
+  {
+    "model": "core.requestpermission",
+    "pk": 2,
+    "fields": {
+      "requesting_user": 4,
+      "description": "Eu quero colaborar.",
+      "approved_by": 1,
+      "is_approved": true,
+      "created_at": "2023-06-29T21:20:24.231Z",
+      "updated_at": "2023-07-17T22:50:48.474Z"
+    }
+  },
+  {
+    "model": "core.requestpermission",
+    "pk": 3,
+    "fields": {
+      "requesting_user": 5,
+      "description": "Sou aluno de ADS.",
+      "approved_by": 1,
+      "is_approved": true,
+      "created_at": "2023-06-30T17:52:36.997Z",
+      "updated_at": "2023-06-30T17:52:49.633Z"
+    }
+  },
+  {
+    "model": "core.requestpermission",
+    "pk": 4,
+    "fields": {
+      "requesting_user": 6,
+      "description": "me aprova",
+      "approved_by": 1,
+      "is_approved": true,
+      "created_at": "2023-07-07T00:15:05.233Z",
+      "updated_at": "2023-07-07T00:16:28.460Z"
+    }
+  },
+  {
+    "model": "core.requestpermission",
+    "pk": 5,
+    "fields": {
+      "requesting_user": 7,
+      "description": "porque sim",
+      "approved_by": 1,
+      "is_approved": true,
+      "created_at": "2023-07-07T00:22:01.669Z",
+      "updated_at": "2023-07-07T00:22:48.895Z"
     }
   }
 ]
