@@ -21,10 +21,11 @@
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
 </p>
 
-<img alt="Home Page" src="https://github.com/RochaGabriell/ProjetoIntegradorI/blob/main/.github/Pages/Home.png?raw=true">
+<img alt="Meme Dev.Duck" src="https://github.com/RochaGabriell/ProjetoIntegradorI/blob/main/.github/Dev.Duck.png?raw=true">
 
 <details>
   <summary>Outras Telas</summary>
+  <img alt="Home Page" src="https://github.com/RochaGabriell/ProjetoIntegradorI/blob/main/.github/Pages/Home.png?raw=true">
   <img alt="See Post" src="https://github.com/RochaGabriell/ProjetoIntegradorI/blob/main/.github/Pages/See_Post.png?raw=true">
   <img alt="Profile" src="https://github.com/RochaGabriell/ProjetoIntegradorI/blob/main/.github/Pages/Profile.png?raw=true">
   <img alt="New Post" src="https://github.com/RochaGabriell/ProjetoIntegradorI/blob/main/.github/Pages/New_Post.png?raw=true">
