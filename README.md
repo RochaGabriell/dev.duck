@@ -23,13 +23,20 @@
 
 <img alt="Meme Dev.Duck" src="https://github.com/RochaGabriell/ProjetoIntegradorI/blob/main/.github/Dev.Duck.png?raw=true">
 
+<br>
+
 <details>
-  <summary>Outras Telas</summary>
+  <summary style="font-size: 1.5rem; font-weight: bold;">Telas do Sistema</summary>
   <img alt="Home Page" src="https://github.com/RochaGabriell/ProjetoIntegradorI/blob/main/.github/Pages/Home.png?raw=true">
   <img alt="See Post" src="https://github.com/RochaGabriell/ProjetoIntegradorI/blob/main/.github/Pages/See_Post.png?raw=true">
   <img alt="Profile" src="https://github.com/RochaGabriell/ProjetoIntegradorI/blob/main/.github/Pages/Profile.png?raw=true">
   <img alt="New Post" src="https://github.com/RochaGabriell/ProjetoIntegradorI/blob/main/.github/Pages/New_Post.png?raw=true">
 </details>
+
+## 🏗️ [Diagrama de classes UML](https://simpleit.rocks/python/django/generate-uml-class-diagrams-from-django-models/)
+Para visualizar e entender melhor a estrutura do projeto.
+
+<img alt="UML Class Diagrams" src="https://github.com/RochaGabriell/ProjetoIntegradorI/blob/main/.github/UML/UML_class_diagrams.png?raw=true">
 
 ## 🚀 Começando
 
