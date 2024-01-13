@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from django.core.exceptions import ImproperlyConfigured
 from dotenv import load_dotenv
 from pathlib import Path
-import dj_database_url
 import os
 
 # Initialise environment variables
@@ -105,12 +104,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
-# DATABASE_URL = os.environ.get('DATABASE_URL')
-
-# DATABASES = {
-#     'default': dj_database_url.config(default=DATABASE_URL, conn_max_age=1800),
-# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
